@@ -1,0 +1,14 @@
+# --- Temas a desarrollar ---
+Modelo Cliente-servidor
+Concepto de modularización
+Estructura si-entonces
+Estructura si-sino-entonces
+Estructura case
+Ciclo Mientras
+Ciclo hacer-mientras
+Ciclo Para
+Estructuras de datos variables. constantes, arreglos, pilas y colas
+Concepto de algoritmo
+Concepto de programa
+Concepto de sistema
+Proceso de desarrollo de software
