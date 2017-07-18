@@ -1,5 +1,7 @@
-# Listado de los alumnos del curso 
+﻿# Listado de los alumnos del curso 
 # CFP 401
 # Azul
 Ducca Agustín
+Borra Joaquín
+Tartara Ariel
 
