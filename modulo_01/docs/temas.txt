@@ -15,7 +15,9 @@
          0023-df-secuencial.png
 
 0030  Estructura si-entonces
-0040  Estructura si-sino-entonces
+0040 * Estructura si-sino-entonces
+         0041-df-seleccion-sino.png
+
 0050  Estructura case
 0060  Ciclo Mientras
 0070  Ciclo hacer-mientras
