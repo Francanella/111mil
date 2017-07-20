@@ -1,0 +1,19 @@
+DIAGRAMA DE FLUJO
+
+Los diagramas de flujo son una de las técnicas que
+se emplean para representar algoritmos normalizados
+en forma visual.
+
+Estan formados por bloques o símbolos unidos por
+flechas.
+
+Algunos símbolos, más importantes, son:
+
+- inicio
+- fin
+- instrucción
+- condición
+- entrada 
+- salida
+
+

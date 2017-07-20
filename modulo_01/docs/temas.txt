@@ -7,7 +7,8 @@
          0020-modularizacion.txt
 0021 * Concepto de programa
          0021-programa.txt
-
+0022 * Diagrama de flujo
+         0022-diagrama-de-flujo.txt
 0030  Estructura si-entonces
 0040  Estructura si-sino-entonces
 0050  Estructura case
