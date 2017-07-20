@@ -1,18 +1,20 @@
 # --- Temas a desarrollar ---
-001 Modelo Cliente-servidor
-002 Concepto de modularización
-003 Estructura si-entonces
-004 Estructura si-sino-entonces
-005 Estructura case
-006 Ciclo Mientras
-007 Ciclo hacer-mientras
-008 Ciclo Para
-009 Estructuras de datos variables
-010 constantes
-011 arreglos
-012 pilas
-013 colas
-014 Concepto de algoritmo
-015 Concepto de programa
-016 Concepto de sistema
-017 Proceso de desarrollo de software
+0010  Modelo Cliente-servidor
+0011 * Algoritmo - concepto
+         algoritmo.txt 
+0020  Concepto de modularización
+0030  Estructura si-entonces
+0040  Estructura si-sino-entonces
+0050  Estructura case
+0060  Ciclo Mientras
+0070  Ciclo hacer-mientras
+0080  Ciclo Para
+0090  Estructuras de datos variables
+0100  constantes
+0110  arreglos
+0120  pilas
+0130  colas
+0140  Concepto de algoritmo
+0150  Concepto de programa
+0160  Concepto de sistema
+0170  Proceso de desarrollo de software

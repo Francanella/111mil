@@ -1,0 +1,35 @@
+ALGORITMO
+
+El algoritmo surge de una necesidad del ser humano
+de resolver problemas.  Si estos se reiteran mas
+a menudo o si son más complejos pareciera importan
+te pensar en algo que ayude a resolverlos lo más
+eficientemente posible.
+
+El algoritmo es un método de resolución de proble
+mas que consta de pasos que se deben seguir en 
+orden, siempre de la misma manera y sin omisiones.
+Puede tener datos de entrada para adaptarse a si-
+tuaciones específicas.
+
+Características importantes:
+  Un algoritmo es finito: tiene principio y fin
+  
+  Un algoritmo arroja siempre el mismo resultado
+  (en el caso de los valores de entrada, si exis-
+  ten, deberían ser los mismos).
+
+  No se puede alterar el orden de los pasos.
+
+  Debe ser claro, sin ambiguedades ni posibles
+  malinterpretaciones.
+
+Ejemplos:
+  los algoritmos aritméticos para sumar, restar,
+  multiplicar, dividir, etc (las matemáticas estan
+  plagadas de algoritmos).
+
+  los procedimientos que se realizan en fabrica-
+  ciones en serie de productos.
+
+  
