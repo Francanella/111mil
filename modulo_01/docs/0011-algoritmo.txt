@@ -21,8 +21,13 @@ Características importantes:
 
   No se puede alterar el orden de los pasos.
 
+  El resultado siempre debe ser el esperado
+
   Debe ser claro, sin ambiguedades ni posibles
   malinterpretaciones.
+
+  No depende de un equipo o arquitectura en par-
+  ticular.
 
 Ejemplos:
   los algoritmos aritméticos para sumar, restar,
