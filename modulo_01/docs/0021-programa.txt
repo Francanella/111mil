@@ -1,0 +1,16 @@
+PROGRAMA
+
+Un algoritmo puede ser reflejado en un lenguaje de
+programación el cual a su vez se puede convertir 
+en instrucciones que un procesador pueda interpre-
+tar, es decir, convertirse en un programa.
+
+Los programas estan compuestos por instrucciones
+que respetan las reglas sintácticas de un lenguaje
+determinado para poder ser compilados/interpretados.
+
+Normalmente un programa tiene entradas y salidas
+que le permiten interactuar con el usuario y otros
+programas.
+
+
