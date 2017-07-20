@@ -1,0 +1,21 @@
+MODULARIZACION
+
+Cuando el problema a resolver es demasiado complejo
+es conveniente analizarlo minuciosamente al punto 
+de descubrir que este formado por sub-problemas me-
+nos complejos, los cuales se pueden analizar indivi
+dualmente.  Seguramente, para estos sub-problemas, 
+es mas sencillo encontrar un algoritmo capaz de re-
+solverlos.  De esa manera, parte por parte, se lle-
+ga mas fácil a resolver el problema original.
+A esta técnica se la conoce como "divide y 
+venceras" y el resultado es la división del algorit
+mo principal en sub-algoritmos denominados módulos.
+Por eso también se le aplica el nombre de modulari-
+zación.
+Para que estos módulos puedan interrelacionarse de
+la manera adecuada, es importante definir sus inter
+faces, es decir, sus entradas y salidas.
+De hecho, esto es más importante que el método em-
+pleado para la solución.
+
