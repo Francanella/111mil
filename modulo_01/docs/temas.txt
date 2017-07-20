@@ -11,6 +11,9 @@
          0022-diagrama-de-flujo.txt
 0022 * Diagramas de flujo
          0022-diagramas-de-flujo.png
+0023 * DF Estructura secuencial
+         0023-df-secuencial.png
+
 0030  Estructura si-entonces
 0040  Estructura si-sino-entonces
 0050  Estructura case
