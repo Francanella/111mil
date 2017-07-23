@@ -1,2 +1,1 @@
-# 111mil
-Repositorio para el curso 111mil
+Este repositorio se ha creado como ayuda para quienes asisten al curso de 111mil programadores dictado en el CFP 401 de Azul así como para quienes estén interesados en el tema del mismo sin ningún tipo de restricción pero sin ninguna obligación o responsabilidad sobre el uso de los materiales publicados
