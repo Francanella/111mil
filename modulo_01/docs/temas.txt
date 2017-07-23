@@ -20,7 +20,9 @@
 0040 * Estructura si-sino-entonces
          0041-df-seleccion-sino.png
 
-0050  Estructura case
+0050 * Estructura case
+         0051-df-case.png
+
 0060  Ciclo Mientras
 0070  Ciclo hacer-mientras
 0080  Ciclo Para
