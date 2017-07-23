@@ -25,9 +25,8 @@
 
 0060  Ciclo Mientras
          0061-df-mientras.png
-
 0070  Ciclo hacer-mientras
-
+         0071-df-do-while.png
 0080  Ciclo Para
 0090  Estructuras de datos variables
 0100  constantes
