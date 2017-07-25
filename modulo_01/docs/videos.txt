@@ -1,0 +1,8 @@
+# --- Listado de los videos del curso ---
+0000 Presentación
+
+# -- Videos de los ejercicios
+E01 - Video del ejercicio 1
+E02 - Video del ejercicio 2
+E03 - Video del ejercicio 3
+

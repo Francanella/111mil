@@ -25,10 +25,11 @@
          0071-df-do-while.png
 0080  Ciclo Para
          0081-df-for-next.png
+0090  Recursión
 
-0090  Estructuras de datos variables
-0100  constantes
-0110  arreglos
-0120  pilas
-0130  colas
+0100  Estructuras de datos variables
+0110  constantes
+0120  arreglos
+0130  pilas
+0140  colas
 
