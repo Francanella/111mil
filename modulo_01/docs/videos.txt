@@ -16,5 +16,7 @@ E04 - Video del ejercicio 4
       0004-EJE04.mp4
 E05 - Video del ejercicio 5
       0005-EJE05.mp4
+E06 - Video del ejercicio 6
+      0006-EJE06.mp4
 
 
