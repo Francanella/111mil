@@ -1,5 +1,9 @@
 # --- Listado de los videos del curso ---
 0000 Presentación
+A01 - Video de la instalación del jdk de Java en Windows 10
+      0004-instalar-jdk-java.mp4
+A02 - Video de la instalación del editor de textos Sublime
+      000B-instalar-sublime.mp4
 
 # -- Videos de los ejercicios
 E01 - Video del ejercicio 1
@@ -8,5 +12,7 @@ E02 - Video del ejercicio 2
       0002-EJE02.mp4
 E03 - Video del ejercicio 3
       0003-EJE03.mp4
+E04 - Video del ejercicio 4
+      0004-EJE04.mp4
 
 
