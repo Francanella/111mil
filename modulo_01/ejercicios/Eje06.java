@@ -28,9 +28,15 @@ class Eje06{
 
 		multiplicacion = 1;
 		while (multiplicacion <= hastaNum){
-			System.out.println(multiplicacion + " * " + tablaNum +
-				" = " + tablaNum * multiplicacion);
+
+			System.out.println(multiplicacion + 
+													" * " + 
+													tablaNum +
+													" = " + 
+													tablaNum * multiplicacion);
+
 			multiplicacion++;
+
 		}
 
 	}
