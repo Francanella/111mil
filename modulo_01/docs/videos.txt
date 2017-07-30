@@ -20,5 +20,7 @@ E06 - Video del ejercicio 6
       0006-EJE06.mp4
 E07 - Video del ejercicio 7
       0007-EJE07.mp4
+E08 - Video del ejercicio 8
+      0008-EJE08.mp4
 
 
