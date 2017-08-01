@@ -1,0 +1,43 @@
+/*
+	Programacion01.txt
+	Ejercicios de referencia 
+	para aprender programación
+*/
+
+--------------------------------------------
+Proceso de desarrollo simplificado
+1. Edición del programa
+   class Programa ----> Programa.java
+2. Compilación del programa
+	 javac Programa.java
+3. Ejecución del programa
+	 java Programa
+
+--------------------------------------------
+Tipo de datos
+Constantes o literales
+Variables
+Operadores
+	aritméticos: + - * /
+	asignación: =
+	relacionales: == != < > <= >=
+
+--------------------------------------------
+Declaración
+Asignación
+Inicialización
+
+--------------------------------------------
+Ejercicios:
+001 Convertir grados celsius a fahrenheit
+002 Convertir centímetros a pulgadas
+003 Determinar el mayor de tres números
+004 Dados tres números imprimirlos en orden ascendente
+005 Intercambiar los valores de 2 variables
+006 Intercambiar los valores de 3 variables
+007 Dados dos números indicar su suma, resta, producto,
+		cociente, igualdad
+008 Dados dos números indicar la potencia tomando el 
+		primero como base y el segundo como exponente
+
+--------------------------------------------

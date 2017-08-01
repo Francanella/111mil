@@ -1,0 +1,285 @@
+/*
+	Java01.txt
+	Ejercicios de referencia 
+	para aprender Java
+*/
+
+
+--------------------------------------------
+/*
+	Hola
+	Primer programa en java
+*/
+class Ejemplo{
+	public static void main(String[] args){
+		System.out.println("Hola, mundo!");
+	}
+}
+
+Comentarios
+class Ejemplo
+llaves
+punto y coma
+public static void main(String args[])
+System.out.println
+
+--------------------------------------------
+Errores de sintaxis
+
+--------------------------------------------
+class Ejemplo{
+	public static void main(String[] args){
+		int a;					// declara una variable entera
+		int b;					// declara una variable entera
+
+		a = 1;					// asignación
+		System.out.println(a);	// Salida
+
+		b = 2;
+		System.out.println(b);
+
+		int c;
+		c = a + b;
+		System.out.println(c);
+
+		int d = 10;			// declaración e inicialización
+		System.out.println("d: " + d);// Expresión String + int
+
+		System.out.println(a + b + c);// Expresión con 3 int
+
+		System.out.println("Fin");
+	}
+}
+
+--------------------------------------------
+int a, b, c;
+int a, b = 10, c = 0;
+
+--------------------------------------------
+Tipos de datos: int y double
+	int a = 175;
+	double b = 3.1416;
+
+--------------------------------------------
+/*
+	Diferencias entre 
+	int y double
+*/
+class Ejemplo{
+	public static void main(String[] args){
+		int a;
+		double x;
+
+		a = 10;
+		x = 10.0;
+
+		System.out.println("Valor original de a: " + a);
+		System.out.println("Valor original de x: " + x);
+
+		// división por 3
+		a = a / 3;
+		x = x / 3;
+
+		System.out.println("Valor de a luego de la división por 3: " + a);
+		System.out.println("Valor de x luego de la división por 3: " + x);
+	}
+}
+
+--------------------------------------------
+/*
+	Sentencia if
+*/
+class Ejemplo{
+	public static void main(String[] args){
+		int a = 1;
+		int b = 10;
+
+		System.out.println("Valor de a: " + a);
+		System.out.println("Valor de b: " + b);
+
+		if(a < b)
+			System.out.println("a es menor que b");
+
+		if(a == b)
+			System.out.println("a y b son iguales");
+
+		if(a != b)
+			System.out.println("a y b son distintos");
+
+	}
+}
+
+--------------------------------------------
+/*
+	Operadores relacionales
+*/
+class Ejemplo{
+	public static void main(String[] args){
+		int a = 1;
+		int b = 10;
+
+		System.out.println("a == b: " + (a == b));
+		System.out.println("a != b: " + (a != b));
+		System.out.println("a < b:  " + (a < b));
+		System.out.println("a <= b: " + (a <= b));
+		System.out.println("a > b:  " + (a > b));
+		System.out.println("a >= b: " + (a >= b));
+	}
+}
+
+--------------------------------------------
+/* 
+	Ejemplo de if .. else
+*/
+class Ejemplo{
+	public static void main(String[] args){
+		int a = 10, b = 5;
+
+		if(a > b)
+			System.out.println("Mayor es a");
+		else
+			System.out.println("b es mayor o igual");
+	}
+}
+
+--------------------------------------------
+/*
+	Ejemplo de if..else anidados
+	el mayor de tres números distintos
+*/
+class Ejemplo{
+	public static void main(String[] args){
+		int a = 10, 
+				b = 6, 
+				c = 8;
+
+		if(a > b)
+			if(a > c)
+				System.out.println("Mayor: " + a);
+			else
+				System.out.println("Mayor: " + c);
+		else
+			if(b > c)
+				System.out.println("Mayor: " + b);
+			else
+				System.out.println("Mayor: " + c);
+	}
+}
+
+--------------------------------------------
+Operador
+	++
+	--
+
+--------------------------------------------
+/*
+	Bucle for
+*/
+class Ejemplo{
+	public static void main(String[] args){
+		int i;
+
+		for(i=0; i<10; i++)
+			System.out.println("Ciclo: " + i);
+		
+	}
+}
+
+--------------------------------------------
+/*
+	Bloques de código
+*/
+class Ejemplo{
+	public static void main(String[] args){
+		for(int i=0; i<5; i++){
+			System.out.println(i + " al cuadrado es " + i * i);
+			System.out.println(i + " por 2 es " + 2 * i);
+			System.out.println(i + " por 3 es " + 3 * i);
+		}
+	}
+}
+
+--------------------------------------------
+/*
+	Sentencias que ocupan varias líneas
+*/
+class Ejemplo{
+	public static void main(String[] args){
+		System.out.println("Una sentencia se puede escribir " +
+					"en varias líneas.   No se puede separar una " +
+					"cadena de texto en varias líneas, salvo " +
+					"dividiéndola en subcadenas y sumándolas unas " +
+					"con otras");
+	}
+}
+
+--------------------------------------------
+/* 
+	Usos de la indentación
+*/
+class Ejemplo{
+	public static void main(String[] args){
+		int a = 2, b = 1;
+
+		System.out.println("Ordenar dos números diferentes");
+		if(a < b)
+			System.out.println(a + " - " + b);
+		else
+			System.out.println(b + " - " + a);
+	}
+}
+
+--------------------------------------------
+Palabras reservadas de java
+	abstract	
+	assert
+	boolean
+	break
+	byte
+	case
+	catch
+	char
+	class
+	const
+	continue
+	default
+	do
+	double
+	else
+	enum
+	extends
+	final
+	finally
+	float
+	for
+	goto
+	if
+	implements
+	import
+	instanceof
+	int
+	interface
+	long
+	native
+	new
+	package
+	private
+	protected
+	public
+	return
+	short
+	static
+	strictfp
+	super
+	switch
+	synchronized
+	this
+	throw
+	throws
+	transient
+	try
+	void
+	volatile
+	while
+
+--------------------------------------------

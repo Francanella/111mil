@@ -1,9 +1,13 @@
 # --- Listado de los videos del curso ---
 0000 Presentación
 A01 - Video de la instalación del jdk de Java en Windows 10
-      0004-instalar-jdk-java.mp4
+      000A-instalar-jdk-java.mp4
 A02 - Video de la instalación del editor de textos Sublime
       000B-instalar-sublime.mp4
+
+# --- Videos de prácticas ---
+P01 - Intercambio de valores de variables (swap)
+      
 
 # -- Videos de los ejercicios
 E01 - Video del ejercicio 1
