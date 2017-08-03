@@ -40,6 +40,7 @@ class Ejemplo
 	Mayúscula inicial para el nombre
 	VariasPalabras (con iniciales en mayúsculas)
 
+
 llaves
 	Sirven para delimitar un bloque de código
 
@@ -52,10 +53,23 @@ public static void main(String args[])
 		Un método es un bloque de código con un nombre
 		y algunos especificadores o modificadores que
 		permite ejecutar una parte de un programa.
+		El método main, en particular, es el método que
+		busca la máquina virtual de java al ejecutar una
+		aplicación.  Es decir, por ejemplo, que, si 
+		ingresamos:
+
+		java Clase <enter>
+
+		La máquina virtual de java va a buscar en la clase
+		Clase un método llamado main con la firma:
+
+		public static void main(String[] args)
+
 
 System.out.println
-	Es un método estático que permite visualizar en
-	pantalla una expresión
+	Es un método estático (de la clase System) que permite
+	visualizar en pantalla una expresión.  A esa expresión 
+	le agrega un "salto de línea"
 
 --------------------------------------------
 /*
@@ -83,6 +97,24 @@ Numéricos
 	Decimales
 Caracteres
 Booleanos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 --------------------------------------------
