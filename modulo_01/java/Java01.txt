@@ -16,12 +16,74 @@ class Ejemplo{
 	}
 }
 
+
+
+
+
+
+
+
+
+--------------------------------------------
 Comentarios
+	Son textos que se encuentran delimitados por
+	caracteres con un significado especial los 
+	cuales son ignorados por el compilador.
+		/*
+			Este es un comentario
+			Puede tener varias líneas
+		*/
+
+		// Comentarios de una línea
+
 class Ejemplo
+	Mayúscula inicial para el nombre
+	VariasPalabras (con iniciales en mayúsculas)
+
 llaves
+	Sirven para delimitar un bloque de código
+
 punto y coma
+	Sirve para indicar el final de la sentencia o
+	instrucción
+
 public static void main(String args[])
+	Método main
+		Un método es un bloque de código con un nombre
+		y algunos especificadores o modificadores que
+		permite ejecutar una parte de un programa.
+
 System.out.println
+	Es un método estático que permite visualizar en
+	pantalla una expresión
+
+--------------------------------------------
+/*
+	Otro ejemplo en Java
+*/
+class Example2 {
+	public static void main(String args[]) {
+		int num; // declara una variable entera denominada num
+
+		num = 100; // asigna (almacena) 100 en la variable num
+
+		System.out.println("Esto es num: " + num);
+
+		num = num * 2;
+
+		System.out.print("El valor de num * 2 es ");
+		System.out.println(num);
+	}
+}
+
+--------------------------------------------
+Tipos de datos
+Numéricos
+	Enteros
+	Decimales
+Caracteres
+Booleanos
+
 
 --------------------------------------------
 Errores de sintaxis
@@ -283,3 +345,7 @@ Palabras reservadas de java
 	while
 
 --------------------------------------------
+Identificadores
+	CamelCase
+	inicio
+	Simbolos

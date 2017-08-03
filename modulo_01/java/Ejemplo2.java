@@ -1,8 +1,7 @@
 /*
-	Autor: Claudio
 	Otro ejemplo en Java
 */
-class Ejemplo {
+class Ejemplo2 {
 	public static void main(String args[]) {
 		int num; // declara una variable entera denominada num
 
@@ -10,7 +9,7 @@ class Ejemplo {
 
 		System.out.println("Esto es num: " + num);
 
-		num = num * 2;		// Asignación de la expresión a la variable num
+		num = num * 2;
 
 		System.out.print("El valor de num * 2 es ");
 		System.out.println(num);
