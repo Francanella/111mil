@@ -1,5 +1,5 @@
 /*
-	Otro ejemplo en Java
+	Tipos de datos
 */
 class Practica03 {
 	public static void main(String args[]) {
