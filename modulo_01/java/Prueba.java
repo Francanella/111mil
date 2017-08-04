@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class Prueba{
-	public void main(String[] args){
+	public static void main(String[] args){
 		String a = "argentina";					// Se declara e inicializa ...
 		String pais;
 		Scanner sc = new Scanner(System.in);

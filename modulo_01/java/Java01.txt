@@ -90,42 +90,131 @@ class Example2 {
 	}
 }
 
+
 --------------------------------------------
 Tipos de datos
+
+
+	00000001           1
+	00000000           0
+	00000010           2
+	00000011           3
+	00000100           4
+	01111111         127
+
+	10000001				  -1
+	11111111        -127
+
+  IEEE-754
+  2e2   ----> 200
+  2e-2
+
+  PIEDRA
+  ASCII 
+  1000001   ---> 65   ----> A
+  1000010   ---> 66   ----> B
+  1100001   ---> 97   ----> a
+  ASCII ext
+  00000000
+  11111111  ---> 255
+  UNICODE 
+
+
+Tipos de datos primitivos
+-------------------------------
 Numéricos
 	Enteros
+		byte
+		short
+		- int
+		long
 	Decimales
+		float
+		- double
 Caracteres
+	'a'
+	'Z'
+	'\n'			---> Enter - Salto de línea
+	'\t'			---> Tabulación
+
 Booleanos
+	true
+	false
+
+Objetos
+--------------------------------
+String
+Date
+Persona
+
+/*
+	Tipos de datos
+*/
+class Practica03 {
+	public static void main(String args[]) {
+		int a = 2147423432;
+		byte b = -128;
+		short s = 31000;
+		long l = 21474234322345L;			// El sufijo L permite manejar
+																	// literales enteros-largos
+
+		float f = 3.1416F;						// El sufijo F permite manejar
+																	// literales de tipo float
+		double d = 3.0000000000000000000001;
+
+		char c = 'F' + 32;
+
+		boolean bb = 10 > 100;
+
+		System.out.println("Entero: " + a);
+		System.out.println("Byte: " + b);
+		System.out.println("Short: " + s);
+		System.out.println("Long: " + l);
 
 
+		System.out.println("Float: " + f);
+		System.out.println("Double: " + d);
 
 
+		System.out.println('8' - '0');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		System.out.println(bb);
+	}
+}
 
 --------------------------------------------
-Errores de sintaxis
+Algunos errores de compilación
+
+/*
+	Otro ejemplo en Java
+*/
+class Example2 {
+	public static void main(String args[]) {
+		int num; // declara una variable entera denominada num
+
+		num = 100; // asigna (almacena) 100 en la variable num
+
+		System.out.println("Esto es num: " + num);
+
+		num = num * 2;
+
+		System.out.print("El valor de num * 2 es ");
+		System.out.println(num);
+	}
+}
 
 --------------------------------------------
+/*
+	Declaraciones, asignaciones e inicializaciones
+	algunos ejemplos prácticos
+*/
 class Ejemplo{
 	public static void main(String[] args){
 		int a;					// declara una variable entera
 		int b;					// declara una variable entera
 
+		String mensaje = "Fin del programa!";
+		
 		a = 1;					// asignación
 		System.out.println(a);	// Salida
 
@@ -141,9 +230,12 @@ class Ejemplo{
 
 		System.out.println(a + b + c);// Expresión con 3 int
 
-		System.out.println("Fin");
+		System.out.println(mensaje);
 	}
 }
+
+
+
 
 --------------------------------------------
 int a, b, c;
@@ -181,7 +273,32 @@ class Ejemplo{
 
 --------------------------------------------
 /*
-	Sentencia if
+	Ejemplo
+	Introducción a las estructuras de control
+	if(expresión_lógica)
+*/
+class Ejemplo{
+	public static void main(String[] args){
+		int a = 10;
+		int b = 20;
+
+		if(a < b) System.out.println("a es menor que b!");
+
+		a = a * 2;
+		if(a == b) System.out.println("a, ahora, es igual a b!");
+
+		a = a * 2;
+		if(a > b) System.out.println("a, ahora, es mayor que b!");
+
+		a = a * 2;
+		if(a == b) System.out.println("Esto no se imprime!");
+	}
+}
+
+/*
+	Ejemplo
+	Introducción a las estructuras de control
+	if(expresión_lógica)
 */
 class Ejemplo{
 	public static void main(String[] args){
@@ -207,10 +324,28 @@ class Ejemplo{
 /*
 	Operadores relacionales
 */
+
+import java.util.Scanner;
+
 class Ejemplo{
 	public static void main(String[] args){
-		int a = 1;
-		int b = 10;
+		Scanner sc = new Scanner(System.in);
+			/*
+				System.in es un elemento de la clase System que
+					representa la entrada estándar
+				System.out es un elemento de la clase System que
+					representa la salida estándar
+			*/
+
+		System.out.print("Como te llamas: ");
+		String nombre = sc.next();	// next() permite leer un texto
+																// desde el teclado
+
+		System.out.print("Ingrese un número: ");
+		int a = sc.nextInt();			// nextInt() permite leer un entero 
+															// desde el teclado
+		System.out.print("Ingrese otro número: ");
+		int b = sc.nextInt();
 
 		System.out.println("a == b: " + (a == b));
 		System.out.println("a != b: " + (a != b));
@@ -220,6 +355,7 @@ class Ejemplo{
 		System.out.println("a >= b: " + (a >= b));
 	}
 }
+
 
 --------------------------------------------
 /* 

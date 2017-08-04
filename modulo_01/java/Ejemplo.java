@@ -1,34 +1,22 @@
 /*
-	Operadores relacionales
+	Ejemplo
+	Introducción a las estructuras de control
+	if(expresión_lógica)
 */
-
-import java.util.Scanner;
-
 class Ejemplo{
 	public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
-			/*
-				System.in es un elemento de la clase System que
-					representa la entrada estándar
-				System.out es un elemento de la clase System que
-					representa la salida estándar
-			*/
+		int a = 10;
+		int b = 20;
 
-		System.out.print("Como te llamas: ");
-		String nombre = sc.next();	// next() permite leer un texto
-																// desde el teclado
+		if(a < b) System.out.println("a es menor que b!");
 
-		System.out.print("Ingrese un número: ");
-		int a = sc.nextInt();			// nextInt() permite leer un entero 
-															// desde el teclado
-		System.out.print("Ingrese otro número: ");
-		int b = sc.nextInt();
+		a = a * 2;
+		if(a == b) System.out.println("a, ahora, es igual a b!");
 
-		System.out.println("a == b: " + (a == b));
-		System.out.println("a != b: " + (a != b));
-		System.out.println("a < b:  " + (a < b));
-		System.out.println("a <= b: " + (a <= b));
-		System.out.println("a > b:  " + (a > b));
-		System.out.println("a >= b: " + (a >= b));
+		a = a * 2;
+		if(a > b) System.out.println("a, ahora, es mayor que b!");
+
+		a = a * 2;
+		if(a == b) System.out.println("Esto no se imprime!");
 	}
 }

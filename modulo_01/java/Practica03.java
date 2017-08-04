@@ -4,7 +4,7 @@
 class Practica03 {
 	public static void main(String args[]) {
 		int a = 2147423432;
-		byte b = -128;
+		byte b = 127;
 		short s = 31000;
 		long l = 21474234322345L;			// El sufijo L permite manejar
 																	// literales enteros-largos
@@ -13,9 +13,9 @@ class Practica03 {
 																	// literales de tipo float
 		double d = 3.0000000000000000000001;
 
-		char c = 97;				// 'F' - 'A'
+		char c = 'H';				// 'F' - 'A'
 
-		boolean bb = 10 > 100;
+		boolean bb = 123 < 18;
 
 		System.out.println("Entero: " + a);
 		System.out.println("Byte: " + b);
