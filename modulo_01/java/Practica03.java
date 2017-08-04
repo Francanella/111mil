@@ -13,7 +13,7 @@ class Practica03 {
 																	// literales de tipo float
 		double d = 3.0000000000000000000001;
 
-		char c = 'F' + 32;
+		char c = 97;				// 'F' - 'A'
 
 		boolean bb = 10 > 100;
 
@@ -27,8 +27,8 @@ class Practica03 {
 		System.out.println("Double: " + d);
 
 
-		System.out.println('8' - '0');
+		System.out.println("Caracter: " + c);
 
-		System.out.println(bb);
+		System.out.println("Booleano: " + bb);
 	}
 }
