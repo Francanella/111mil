@@ -273,6 +273,34 @@ class Ejemplo{
 
 --------------------------------------------
 /*
+	Práctica:
+	intercambio de valores entre dos variables
+*/
+
+class Ejemplo{
+	public static void main(String[] args){
+		int a = 10;
+		int b = 20;
+
+		System.out.println("Valor inicial de a: " + a);
+		System.out.println("Valor inicial de b: " + b);
+
+		// --------------------
+		int c;
+
+		c = a;
+		a = b;
+		b = c;
+
+		// --------------------
+
+		System.out.println("Valor final de a: " + a);
+		System.out.println("Valor final de b: " + b);
+	}
+}
+
+--------------------------------------------
+/*
 	Ejemplo
 	Introducción a las estructuras de control
 	if(expresión_lógica)
@@ -322,6 +350,31 @@ class Ejemplo{
 
 --------------------------------------------
 /*
+	Ejemplo
+	Introducción a las estructuras de control
+	if(expresión_lógica)
+*/
+class Ejemplo{
+	public static void main(String[] args){
+		int a = 1;
+		int b = 10;
+
+		System.out.println("Valor de a: " + a);
+		System.out.println("Valor de b: " + b);
+
+		// --------------------------------------
+		int c = b - a;
+
+		if(a > b)
+			c = a - b;
+
+		// --------------------------------------
+		System.out.println("La diferencia entre ambos valores es: " + c);
+	}
+}
+
+--------------------------------------------
+/*
 	Operadores relacionales
 */
 
@@ -356,6 +409,49 @@ class Ejemplo{
 	}
 }
 
+--------------------------------------------
+/*
+	Práctica
+	Uso de Scanner
+
+	Scanner es una clase que define objetos que se 
+	pueden ser usados para leer datos desde una 
+	entrada (por ejemplo: un archivo de texto o
+	la entrada del sistema).
+*/
+
+// Importar la clase Scanner ubicada en el 
+// paquete java.util
+import java.util.Scanner;
+
+class Ejemplo{
+	public static void main(String[] args){
+		// Declarar una variable de tipo Scanner
+		Scanner sc;
+
+		// Inicializar el Scanner indicando desde donde
+		// leerá los datos (System.in es la entrada estándar)
+		sc = new Scanner(System.in);
+
+		System.out.print("Ingrese un entero: ");
+		int n = sc.nextInt();
+
+		System.out.print("Ingrese una palabra: ");
+		/* 
+			Asignar en una variable los datos leidos con el 
+		 	objeto Scanner
+		 		Si se quiere leer un String sin espacios se usa el método next()
+		 		Si se quiere leer un int se usa el método nextInt()
+		 		Si se quiere leer un double se usa el método nextDouble()
+		*/
+		String palabra = sc.next();
+
+
+		System.out.println("La palabra es: " + palabra);
+		System.out.println("El entero es: " + n);
+	}
+
+}
 
 --------------------------------------------
 /* 
@@ -363,7 +459,37 @@ class Ejemplo{
 */
 class Ejemplo{
 	public static void main(String[] args){
-		int a = 10, b = 5;
+		
+		int a = 10;
+		int b = 50;
+
+		if(a > b)
+			System.out.println("Mayor es a");
+		else
+			System.out.println("b es mayor o igual");
+	}
+}
+--------------------------------------------
+/* 
+	Ejemplo de if .. else
+	Práctica:
+	Indicar cual es el mayor de dos números
+	leídos desde el teclado
+*/
+
+import java.util.Scanner;
+
+class Ejemplo{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int a;
+		int b;
+
+		System.out.println("Ingrese dos números:");
+		System.out.print("a: ");
+		a = sc.nextInt();
+		System.out.print("b: ");
+		b = sc.nextInt();
 
 		if(a > b)
 			System.out.println("Mayor es a");

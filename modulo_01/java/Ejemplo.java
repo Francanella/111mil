@@ -1,22 +1,27 @@
-/*
-	Ejemplo
-	Introducción a las estructuras de control
-	if(expresión_lógica)
+/* 
+	Ejemplo de if .. else
+	Práctica:
+	Indicar cual es el mayor de dos números
+	leídos desde el teclado
 */
+
+import java.util.Scanner;
+
 class Ejemplo{
 	public static void main(String[] args){
-		int a = 10;
-		int b = 20;
+		Scanner sc = new Scanner(System.in);
+		int a;
+		int b;
 
-		if(a < b) System.out.println("a es menor que b!");
+		System.out.println("Ingrese dos números:");
+		System.out.print("a: ");
+		a = sc.nextInt();
+		System.out.print("b: ");
+		b = sc.nextInt();
 
-		a = a * 2;
-		if(a == b) System.out.println("a, ahora, es igual a b!");
-
-		a = a * 2;
-		if(a > b) System.out.println("a, ahora, es mayor que b!");
-
-		a = a * 2;
-		if(a == b) System.out.println("Esto no se imprime!");
+		if(a > b)
+			System.out.println("Mayor es a");
+		else
+			System.out.println("b es mayor o igual");
 	}
 }
