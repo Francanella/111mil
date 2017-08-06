@@ -1012,3 +1012,361 @@ Se puede forzar una conversión explícita entre tipos incompatibles (esto es lo
 
 Conversión automática
 ---------------------
+Esta se lleva a cabo, siempre y cuando se den las condiciones, si los tipos son compatibles y el rango del destino es mayor que el del origen.
+Por ejemplo: byte a int.
+En esos casos no se requiere conversión explícita (cast).
+
+Casting de tipos incompatibles
+------------------------------
+Ocurre cuando, a criterio del programador, es necesario convertir un tipo de datos de rango mayor en otro de rango menor.  Se usa la forma:
+
+	(tipo_destino) valor
+
+- tipo_destino es el tipo de rango menor
+- valor es la expresión a convertir
+
+Por ejemplo:
+	(byte) 150
+
+Si el valor excede el rango se resuelve haciendo un módulo por el menor.
+Si se convierte de un tipo decimal a un entero, se trunca la parte decimal.
+
+--------------------------------------------
+Promoción automática de tipos en expresiones
+--------------------------------------------
+En expresiones, Java, convierte automáticamente de tipos cuando lo considera necesarios.  Por ejemplo:
+
+class Ejemplo{
+
+	public static void main(String[] args){
+
+		byte a = 40;
+		byte b = 50;
+		byte c = 100;
+		
+		int d = a * b / c;			// funciona con un int
+		
+		// byte d = (byte)a * b / c;		// error
+		// byte d = (byte)(a * b / c);	// funciona
+		
+		System.out.println("d " + d);
+
+	}
+
+}
+
+En este caso a * b es 2000, fuera del rango de byte, pero java convierte la expresión a int, luego al dividir por 100, el resultado, también int, es 20.
+
+Por otro lado, considere el siguiente error:
+
+class Prueba{
+
+	public static void main(String[] args){
+
+		byte b = 40;
+		
+		b = b * 2;			// Error porque la expresión se 
+										// promueve a int
+
+		// b = (byte)(b * 2);	// funciona
+		
+		System.out.println("b " + b);
+
+	}
+
+}
+
+Aun que b * 2 es 80 y entra dentro del rango de un byte, Java lo ha convertido, previamente en un int con rango mayor que un byte
+Por ello hay que hacer una conversión explícita para que funcione.  Considere el uso de paréntesis para que el cast se aplique a toda la expresión y no solo al elemento (variable o literal) inmediatamente a su derecha.
+
+Las reglas de promoción
+-----------------------
+Los tipos enteros:
+	byte, short y char se promueven a int
+	Si un operando es long, la expresión se promueve a long
+	Si un operando es float, la expresión se promueve a float
+	Si un operando es double, la expresión se promueve a double
+
+class Ejemplo{
+	public static void main(String args[]) {
+		byte b = 42;
+		char c = 'a';
+		short s = 1024;
+		int i = 50000;
+		float f = 5.67f;
+		double d = .1234;
+
+		double result = (f * b) + (i / c) - (d * s);
+
+		System.out.println((f * b) + " + " + (i / c) + " - " + (d * s));
+		System.out.println("resultado = " + result);
+	}
+}
+
+---------------------------
+Arrays, vectores o matrices
+---------------------------
+Un array es un grupo de variables similares referidas por un simple nombre.
+En algunos casos, sabemos de antemano, que necesitamos dos valores y, por ejemplo, creamos dos variables a y b para manejarlos.  Pero otras veces, no sabemos, porque, por ejemplo, eso lo determina el usuario o son tantos los valores que es poco práctico usar una variable para cada uno.
+En esos casos conviene usar un array.
+Por ejemplo cuando un usuario ingresa una serie de números a sumar o promediar y termina la serie con un -1 (una señal o bandera).  Debemos irlos sumando y contando pero, de antemano, no sabemos cuantos son.
+Otro caso es cuando queremos manejar los nombres de los doce meses, es poco conveniente tener una variable por cada mes.
+
+Los arrays pueden contener otros arrays.
+
+Se declaran usando corchetes []
+
+	tipo nombre[];
+
+es equivalente a:
+	tipo[] nombre;
+
+Cuando se declara, el array, todavía no ocupa espacio en memoria.
+Puede usar new para reservar el espacio de memoria.  Por ejemplo:
+
+	meses = new String[12];
+
+	edades = new int[40];			// los 40 valores se inicializan automáticamente
+														// a cero
+
+Para acceder a un elemento se usan corchetes, por ejemplo:
+	edades[0]				es el primer elemento
+	edades[10]			etc
+
+El primer índice siempre es el 0
+
+Se puede asignar un valor del tipo adecuado de la siguiente manera:
+
+	edades[3] = 40;
+
+Y se puede referir al mismo en una expresión así:
+
+	System.out.println("Edad: " + edades[3]);
+
+/*
+	Un ejemplo de programa con arrays
+*/
+
+class Ejemplo{
+	public static void main(String args[]) {
+		int month_days[];
+		
+		month_days = new int[12];
+
+		month_days[0] = 31;
+		month_days[1] = 28;
+		month_days[2] = 31;
+		month_days[3] = 30;
+		month_days[4] = 31;
+		month_days[5] = 30;
+		month_days[6] = 31;
+		month_days[7] = 31;
+		month_days[8] = 30;
+		month_days[9] = 31;
+		month_days[10] = 30;
+		month_days[11] = 31;
+
+		System.out.println("Abril tiene " + month_days[3] + " dias.");
+	}
+}
+
+Se puede usar un incializador (valores separados por coma entre llaves).
+Por ejemplo:
+
+/*
+	Con inicializador
+*/
+class Ejemplo{
+	public static void main(String args[]) {
+		int month_days[] = { 31, 28, 31, 30, 
+												31, 30, 31, 31, 
+												30, 31,30, 31 };
+
+		System.out.println("Abril tiene " + month_days[3] + " días.");
+	}
+}
+
+Si se trata de acceder a una posición no válida se obtiene la excepción:
+	
+	java.lang.ArrayIndexOutOfBoundsException
+
+/*
+	Un ejemplo que calcula el 
+	promedio de los valores de 
+	un array
+*/
+class Ejemplo{
+	public static void main(String args[]) {
+		double nums[] = {10.1, 11.2, 12.3, 13.4, 14.5};
+		double result = 0;
+		int i;
+
+		for(i=0; i<5; i++)
+			result = result + nums[i];
+
+		System.out.println("El promedio es " + result / 5);
+	}
+}
+
+Arrays multidimensionales
+-------------------------
+Se le llama así a un array de arrays.  Un ejemplo de declaración de un array bidimensional:
+
+	int dosD[][] = new int[4][5];
+
+/*
+	Ejemplo de array
+	bidimensional
+*/
+class Ejemplo{
+	public static void main(String args[]) {
+		int dosD[][]= new int[4][5];
+		int i, j, k = 0;
+
+		// Asignar un valor a cada elemento 
+		for(i=0; i<4; i++)
+			for(j=0; j<5; j++) {
+				dosD[i][j] = k;		// asignar el valor
+				k++;							// actualizar el valor a asignar
+		}
+
+		// Mostrar los valores d elos elementos
+		for(i=0; i<4; i++) {
+			for(j=0; j<5; j++)
+				System.out.print(dosD[i][j] + " ");
+			
+			System.out.println();
+		}
+	}
+}
+
+El índice izquierdo determina la dimensión principal (filas).
+El derecho la secundaria (columnas).
+
+También se puede declarar y reservar espacio de la siguiente manera:
+	int dosD[][] = new int[4][];
+	dosD[0] = new int[5];
+	dosD[1] = new int[5];
+	dosD[2] = new int[5];
+	dosD[3] = new int[5];
+
+/*
+	Array de arrays de 
+	diferentes tamaños
+*/
+class Ejemplo{
+	public static void main(String args[]) {
+		int dosD[][] = new int[4][];
+		dosD[0] = new int[1];
+		dosD[1] = new int[2];
+		dosD[2] = new int[3];
+		dosD[3] = new int[4];
+		int i, j, k = 0;
+
+		/* 
+			i es el índice de la dimensión superior	
+				i toma valores desde 0 hasta 3
+			j es el índice de la dimensión inferior
+				j toma valores diferentes para cada valor de i
+					cuando i vale 0, j toma valores desde 0 hasta 0, es decir 0
+					cuando i vale 1, j toma valores desde 0 hasta 1, es decir 0, 1
+					cuando i vale 2, j toma valores desde 0 hasta 2, es decir 0, 1, 2
+					cuando i vale 3, j toma valores desde 0 hasta 3, es decir 0, 1, 2, 3
+				En conclusión j vale desde cero hasta i, inclusive
+		*/
+		for(i=0; i<4; i++)
+			for(j=0; j<i+1; j++) {
+				dosD[i][j] = k;
+				k++;
+			}
+
+		// Se muestran los valores del array
+		for(i=0; i<4; i++) {
+			for(j=0; j<i+1; j++)
+				System.out.print(dosD[i][j] + " ");
+
+			System.out.println();
+		}
+	}
+}
+
+Se puede inicializar un array bidimensional, o multidimensional, de la manera mostrada en el siguiente ejemplo:
+
+class Ejemplo{
+	public static void main(String args[]) {
+		double m[][] = {								// Las llaves encierran el array
+																		// multidimensional
+
+					{ 0*0, 1*0, 2*0, 3*0 },		// cada sub-array se encierra en
+																		// su propio par de llaves
+																		// y se separan entre ellos con comas
+					{ 0*1, 1*1, 2*1, 3*1 },
+					{ 0*2, 1*2, 2*2, 3*2 },
+					{ 0*3, 1*3, 2*3, 3*3 }
+				};
+
+		// i para las filas y j para las columnas
+		int i, j;
+		
+		for(i=0; i<4; i++) {
+
+			for(j=0; j<4; j++)
+				System.out.print(m[i][j] + "  ");
+
+			System.out.println();
+		}
+	}
+}
+
+/*
+	Un ejemplo con un array de
+	tres dimensiones
+*/
+class Ejemplo{
+	public static void main(String args[]) {
+		// el array tridimensional de 3 x 4 x 5
+		int tresD[][][] = new int[3][4][5];
+		// las tres dimensiones del array
+		int i, j, k;
+
+		// Se carga el array
+		for(i=0; i<3; i++)
+			for(j=0; j<4; j++)
+				for(k=0; k<5; k++)
+					tresD[i][j][k] = i * j * k;			// Cada elemento vale
+																					// el producto de sus
+																					// tres dimensiones
+
+		// Se muestra el array
+		for(i=0; i<3; i++) {
+			for(j=0; j<4; j++) {
+				for(k=0; k<5; k++)
+					System.out.print(tresD[i][j][k] + " ");
+
+				System.out.println();				// para el salto de línea
+																		// luego de cada fila
+			}
+			System.out.println();					// el salto de línea
+																		// entre cada plano
+		}
+	}
+}
+
+Delaración alternativa de un array
+----------------------------------
+
+	tipo[] nombre;			// equivale a --->			tipo nombre[];
+
+	tipo[][] nombre;		// equivale a --->			tipo nombre[][];
+
+Otros ejemplos de declaraciones:
+
+	int[] nums, nums2, nums3; 		// tres arrays
+
+	equivale a:
+
+	int nums[], nums2[], nums3[]; // tres arrays
+
+Aclaración sobre String
+-----------------------
+En Java, un String, a diferencia de otros lenguajes de programación, no es un array de caracteres.  Es un objeto con un tratamiento especial en Java.
