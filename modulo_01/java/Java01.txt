@@ -202,7 +202,8 @@ class Example2 {
 		System.out.println(num);
 	}
 }
-
+--------------------------------------------
+Hasta acá llegamos el 3 de agosto de 2017
 --------------------------------------------
 /*
 	Declaraciones, asignaciones e inicializaciones
@@ -286,11 +287,12 @@ class Ejemplo{
 		System.out.println("Valor inicial de b: " + b);
 
 		// --------------------
-		int c;
+		int c;			// variable auxiliar para guardar
+								// el valor de una de las variables
 
-		c = a;
-		a = b;
-		b = c;
+		c = a;			// guardamos el "valor" de a
+		a = b;			// pasamos el valor de b a la variable a
+		b = c;			// pasamos a b el valor original de a
 
 		// --------------------
 
@@ -310,19 +312,27 @@ class Ejemplo{
 		int a = 10;
 		int b = 20;
 
-		if(a < b) System.out.println("a es menor que b!");
+		if(a < b) 		// expresión lógica verdadera
+			System.out.println("a es menor que b!");
 
-		a = a * 2;
-		if(a == b) System.out.println("a, ahora, es igual a b!");
+		a = a * 2;		// el nuevo valor de a es 20
+		// la expresión lógica del if, es verdadera
+		if(a == b) 
+			System.out.println("a, ahora, es igual a b!");
 
-		a = a * 2;
-		if(a > b) System.out.println("a, ahora, es mayor que b!");
+		a = a * 2;		// el nuevo valor de a es 40
+		if(a > b) 		// la expresión lógica es positiva
+			System.out.println("a, ahora, es mayor que b!");
 
-		a = a * 2;
-		if(a == b) System.out.println("Esto no se imprime!");
+		a = a * 2;		// el nuevo valor de a es 80
+		if(a == b) 		// la expresión es falsa
+			System.out.println("Esto no se imprime!");
+
 	}
 }
 
+
+--------------------------------------------
 /*
 	Ejemplo
 	Introducción a las estructuras de control
@@ -373,39 +383,28 @@ class Ejemplo{
 	}
 }
 
+
 --------------------------------------------
 /*
-	Operadores relacionales
+	Uso de un objeto de tipo Scanner
+	para leer un entero desde el teclado
 */
 
+// se debe importar la clase Scanner desde el paquete java.util
 import java.util.Scanner;
 
 class Ejemplo{
 	public static void main(String[] args){
-		Scanner sc = new Scanner(System.in);
-			/*
-				System.in es un elemento de la clase System que
-					representa la entrada estándar
-				System.out es un elemento de la clase System que
-					representa la salida estándar
-			*/
-
-		System.out.print("Como te llamas: ");
-		String nombre = sc.next();	// next() permite leer un texto
-																// desde el teclado
+		Scanner sc = new Scanner(System.in);		// se debe crear un objeto
+																						// de la clase Scanner y se
+																						// le debe decir que leerá
+																						// desde la entrada estándar
+																						// es decir: el teclado
 
 		System.out.print("Ingrese un número: ");
-		int a = sc.nextInt();			// nextInt() permite leer un entero 
-															// desde el teclado
-		System.out.print("Ingrese otro número: ");
-		int b = sc.nextInt();
+		int n = sc.nextInt();		// leer un entero desde el teclado
 
-		System.out.println("a == b: " + (a == b));
-		System.out.println("a != b: " + (a != b));
-		System.out.println("a < b:  " + (a < b));
-		System.out.println("a <= b: " + (a <= b));
-		System.out.println("a > b:  " + (a > b));
-		System.out.println("a >= b: " + (a >= b));
+		System.out.println("El número ingresado fue: " + n);	
 	}
 }
 
@@ -440,7 +439,7 @@ class Ejemplo{
 		/* 
 			Asignar en una variable los datos leidos con el 
 		 	objeto Scanner
-		 		Si se quiere leer un String sin espacios se usa el método next()
+		 		Si se quiere leer un String se usa el método next()
 		 		Si se quiere leer un int se usa el método nextInt()
 		 		Si se quiere leer un double se usa el método nextDouble()
 		*/
@@ -451,6 +450,32 @@ class Ejemplo{
 		System.out.println("El entero es: " + n);
 	}
 
+}
+
+--------------------------------------------
+/*
+	Operadores relacionales
+*/
+
+import java.util.Scanner;
+
+class Ejemplo{
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Ingrese un número: ");
+		int a = sc.nextInt();			// nextInt() permite leer un entero 
+															// desde el teclado
+		System.out.print("Ingrese otro número: ");
+		int b = sc.nextInt();
+
+		System.out.println("a == b: " + (a == b));
+		System.out.println("a != b: " + (a != b));
+		System.out.println("a < b:  " + (a < b));
+		System.out.println("a <= b: " + (a <= b));
+		System.out.println("a > b:  " + (a > b));
+		System.out.println("a >= b: " + (a >= b));
+	}
 }
 
 --------------------------------------------
@@ -474,7 +499,7 @@ class Ejemplo{
 	Ejemplo de if .. else
 	Práctica:
 	Indicar cual es el mayor de dos números
-	leídos desde el teclado
+	diferentes leídos desde el teclado
 */
 
 import java.util.Scanner;
@@ -494,7 +519,7 @@ class Ejemplo{
 		if(a > b)
 			System.out.println("Mayor es a");
 		else
-			System.out.println("b es mayor o igual");
+			System.out.println("b es mayor");
 	}
 }
 
@@ -503,11 +528,21 @@ class Ejemplo{
 	Ejemplo de if..else anidados
 	el mayor de tres números distintos
 */
+
+import java.util.Scanner;
+
 class Ejemplo{
 	public static void main(String[] args){
-		int a = 10, 
-				b = 6, 
-				c = 8;
+		int a, b, c;
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Ingrese tres números");
+		System.out.print("a: ");
+		a = sc.nextInt();
+		System.out.print("b: ");
+		b = sc.nextInt();
+		System.out.print("c: ");
+		c = sc.nextInt();
 
 		if(a > b)
 			if(a > c)
@@ -522,6 +557,42 @@ class Ejemplo{
 	}
 }
 
+
+
+
+
+--------------------------------------------
+/*
+	Ejemplo de if..else anidados
+	el valor medio de tres números distintos
+	leídos por teclado
+*/
+class Ejemplo{
+	public static void main(String[] args){
+		int a = 3;
+		int b = 2; 
+		int c = 1;
+
+		if(a > b)
+			if(a > c)
+				if(b > c)
+					System.out.println("Medio: " + b);
+				else
+					System.out.println("Medio: " + c);
+			else
+				System.out.println("Medio: " + a);
+		else
+			if(b > c)
+				if(a > c)
+					System.out.println("Medio: " + a);
+				else
+					System.out.println("Medio: " + c);
+			else
+				System.out.println("Medio: " + b);
+	}
+}
+--------------------------------------------
+hasta acá llegamos el 04 de agosto de 2017
 --------------------------------------------
 Operador
 	++
@@ -541,6 +612,41 @@ class Ejemplo{
 	}
 }
 
+/*
+	Bucle for
+*/
+class Ejemplo{
+	public static void main(String[] args){
+		int i;
+
+		/*
+			i=10  Inicialización
+			i>0   Test
+			i--   Actualización
+		*/
+		for(i=10; i>0; i--)
+			System.out.println(i);
+		
+	}
+}
+
+/*
+	Bucle for
+	Ejemplos ascendentes, descendentes, con incrementos
+	diferentes a 1, etc
+*/
+class Ejemplo{
+	public static void main(String[] args){
+		int i;
+		int suma = 0;
+
+		for(i=1; i <= 1000; i++)
+			suma += i;
+
+		System.out.println("La suma es igual a: " + suma);
+	}
+}
+
 --------------------------------------------
 /*
 	Bloques de código
@@ -555,17 +661,51 @@ class Ejemplo{
 	}
 }
 
+/*
+	Bloques de código
+*/
+
+import java.util.Scanner;
+
+class Ejemplo{
+
+	public static void main(String[] args){
+		int suma = 0;
+		int n;
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Cuántos números: ");
+		int tope = sc.nextInt();
+
+		System.out.println("Ingrese números enteros");
+		for(int i=0; i<tope; i++){
+			System.out.print("> ");
+			n = sc.nextInt();
+			suma += n;
+		}
+
+		System.out.println("Se acumularon " + tope + " números.");
+		System.out.println("La suma es: " + suma);
+	}
+
+}
 --------------------------------------------
 /*
 	Sentencias que ocupan varias líneas
 */
 class Ejemplo{
 	public static void main(String[] args){
-		System.out.println("Una sentencia se puede escribir " +
+		System.out.println("Una sentencia se puede escribir" +
 					"en varias líneas.   No se puede separar una " +
 					"cadena de texto en varias líneas, salvo " +
 					"dividiéndola en subcadenas y sumándolas unas " +
 					"con otras");
+
+		int n = 10 *				// Comentario
+			128 + 						// Comentario
+			(32 * 5);
+
+		System.out.println("El valor de n es: " + n);
 	}
 }
 
@@ -638,8 +778,237 @@ Palabras reservadas de java
 	volatile
 	while
 
---------------------------------------------
+-------------------------------------------------------------------------------
+Video 21
+-------------------------------------------------------------------------------
 Identificadores
-	CamelCase
+	Son los nombres que se pone a los diferentes símbolos:
+		variables,
+		métodos,
+		clases,
+		etc
+
+	CamelCase o notación húngara
+		existe un corte entre palabras que forman un
+		identificador
+
 	inicio
+		las clases comienzan con mayúscula
+		los nombres de las variables y los métodos (main, por ejemplo),
+		con minúscula.
 	Simbolos
+		tratar de no abusar del uso de símbolos en los identificadores
+		_ subrayado
+		__ doble
+
+	claridad en los nombres de los identificadores
+		no abusar de nombres de variables de un carácter:
+			n
+			i
+			a
+			b
+			numeroEntero
+			primerNumero
+			nombreDeUsuario
+			operandoUno
+
+-------------------------------------------------------------------------------
+Video 22
+-------------------------------------------------------------------------------
+Java es un lenguaje con tipos marcados (fuertemente tipado)
+	cada variable y expresión tienen su tipo
+	los cambios de tipo están bien regulados por el lenguaje
+
+Los tipos primitivos no son objetos
+
+El tamaño que requieren al almacenarse no es variable
+
+Números
+-------
+Nombre 	Ancho 	Rango
+long 		64 			–9,223,372,036,854,775,808 a 9,223,372,036,854,775,807
+int 		32 			–2,147,483,648 a 2,147,483,647
+short 	16 			–32,768 a 32,767
+byte 		8 			–128 a 127
+double 	64 			4.9e–324 a 1.8e+308
+float 	32 			1.4e–045 a 3.4e+038
+
+Caracteres
+----------
+Java usa el tipo char, el cual usa el estándar UNICODE de 16 bits de ancho sin
+signo (es decir, sin negativos).
+
+class Ejemplo{
+	public static void main(String[] args){
+		char c;
+
+		for(c=0; c<256; c++){
+			System.out.print(" " + c);
+			c++;
+		}
+
+		System.out.println();
+	}
+}
+
+Booleanos
+---------
+Se usa como valores lógicos.  Pueden tomar dos posibles valores: verdadero (true) o falso (false).
+Es requerido para las expresiones condicionales de las sentencias if y for, 
+por ejemplo.
+
+Considerando una variable booleana es equivalente escribir:
+	
+	if(b == true)
+
+que escribir, directamente:
+
+	if(b)
+
+
+Literales
+---------
+
+- Enteros
+
+Son los más comunes en cualquier programa Java. Normalmente se expresan en base decimal (base 10), pero también, suelen usarse en base 8 (octales) y base 16 (hexadecimales).
+
+Octales comienzan en cero, por ejemplo:
+	0345
+Hexadecimales comienzan con 0x, por ejemplo:
+	0x1df
+
+Si se asigna un valor entero a una variable de menor tamaño (por ejemplo un int a un byte), si está dentro del rango de la última, se asigna sin problemas.
+
+- Literales de punto flotante
+Se representan con un punto decimal o en notación científica
+En el caso de los float se les debe agregar el sufijo F o f
+
+- Booleanos
+true
+false
+
+- Caracteres
+'a'
+Se pueden ingresar en formato octal, por ejemplo:
+	'\141' con un número de tres dígitos
+	System.out.println('\141');
+
+En hexadecimal, por ejemplo:
+	'\u0041'
+	System.out.println('\u0041');
+
+- Literales de cadena (String)
+Se indican entre comillas dobles.
+Para usar una comilla dentro de la cadena se le antepone una \
+	System.out.println("Esta \" es una comilla");
+
+Cuando nos encontramos frente a una expresión de tipo carácter que comienza con una barra invertida \ le llamamos "secuencia de escape".
+
+Secuencia de escape			Descripción
+\ddd 										Octal (ddd)
+\uxxxx 									Hexadecimal Unicode (xxxx)
+\' 											Comilla simple
+\" 											Comilla doble
+\\ 											Barra invertida
+\r 											Retorno de carro
+\n 											Nueva línea
+\f 											Avance de formulario
+\t 											Tabulación
+\b 											Retroceso
+
+En un programa, un String, debe comenzar y terminar en la misma línea.
+
+Variables
+---------
+Es la unidad básica de almacenamiento en un programa Java.
+Consta de un identificador, un tipo y un inicializador opcional.
+Tiene un ámbito que define donde puede ser usada y su existencia.
+
+- Declaración
+tipo identificador [= valor][, identificador[= valor]...];
+
+tipo:
+	es un tipo primitivo, una clase o interface
+inicializador:
+	es un valor inicial que puede tomar una variable.
+
+Inicialización dinámica
+	Una variable puede ser inicializada con una expresión que contenga
+	otra variable mientras que tenga un valor válido para el tipo de 
+	la misma.
+
+class Ejemplo{
+	public static void main(String args[]) {
+		double a = 3.0, b = 4.0;
+
+		// c is inicializada dinámicamente
+		double c = Math.sqrt(a * a + b * b);	// Math.sqrt calcula la raíz 
+																					// cuadrada
+		
+		System.out.println("La hipotenusa es " + c);
+	}
+}
+
+- Ambito y existencia de una variable
+El ámbito de una variable está definido por el bloque de código en el cual se declara.
+Un bloque define un ámbito.
+Esto también define la existencia de una variable.
+Sin entrar dentro de la programación orientada a objetos, podemos decir que el ámbito máximo de una variable es el método en que se declara.
+Los ámbitos se pueden anidar.  En ese caso las variables "externas" son visibles en los ámbitos "internos" pero no viceversa.
+
+class Ejemplo{
+	public static void main(String args[]) {
+		int x; 							// su ámbito es main
+		x = 10;
+		if(x == 10) { 			// comienza un nuevo ámbito
+			int y = 20; 			// y existe en este bloque solamente
+
+			// x e y pueden ser usadas aquí
+			System.out.println("x e y: " + x + " " + y);
+
+			x = y * 2;
+		}
+		// y = 100; // Error! y no se puede usar acá porque no es conocida
+		// x permanece conocida acá.
+		System.out.println("x es " + x);
+	}
+}
+
+No se puede usar una variable previo a su declaración aunque sea en el mismo bloque de código
+	i = 10
+	int i;
+
+Las variables son destruídas al salir de su ámbito.
+
+class Ejemplo{
+	public static void main(String args[]) {
+		int x;
+		for(x = 0; x < 3; x++) {
+			int y = -1; // y es inicializada cada vez que se ingresa al bloque
+			System.out.println("y es: " + y); 	// siempre muestra -1
+			y = 100;
+			System.out.println("y es ahora: " + y);
+		}
+	}
+}
+
+No puede declarar una variable con el mismo nombre de una existente en un bloque superior.  Por ejemplo:
+
+class Ejemplo{
+	public static void main(String args[]) {
+		int a = 1;
+		{ // crea un nuevo ámbito
+		int a = 2; // Error! a está definida previamente
+		}
+	}
+}
+
+----------------------------
+Conversión de tipo y Casting
+----------------------------
+Muchas veces puede ser necesario convertir un valor de un tipo a otro. Si se trata de tipos compatibles Java trata de hacerlo automáticamente.  Por ejemplo un int a un long.
+Se puede forzar una conversión explícita entre tipos incompatibles (esto es lo que se denomina cast).
+
+Conversión automática
+---------------------
