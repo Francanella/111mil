@@ -1,29 +1,15 @@
 class Ejemplo{
 	public static void main(String args[]) {
-		// el array tridimensional de 3 x 4 x 5
-		int tresD[][][] = new int[3][4][5];
-		// las tres dimensiones del array
-		int i, j, k;
 
-		// Se carga el array
-		for(i=0; i<3; i++)
-			for(j=0; j<4; j++)
-				for(k=0; k<5; k++)
-					tresD[i][j][k] = i * j * k;			// Cada elemento vale
-																					// el producto de sus
-																					// tres dimensiones
+		for(int i=1; i<10; i++){
+			System.out.println("Múltiplos de: " + i);
 
-		// Se muestra el array
-		for(i=0; i<3; i++) {
-			for(j=0; j<4; j++) {
-				for(k=0; k<5; k++)
-					System.out.print(tresD[i][j][k] + " ");
-
-				System.out.println();				// para el salto de línea
-																		// luego de cada fila
+			for(int j=0; j<10; j++){
+				System.out.print(i * j + " ");
 			}
-			System.out.println();					// el salto de línea
-																		// entre cada plano
+			System.out.println();
 		}
+		System.out.println();
 	}
+	
 }

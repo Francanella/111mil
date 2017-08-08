@@ -842,14 +842,33 @@ class Ejemplo{
 	public static void main(String[] args){
 		char c;
 
-		for(c=0; c<256; c++){
-			System.out.print(" " + c);
-			c++;
+		for(c=33; c<256; c++){
+			System.out.print(" " + (int)c + " " + c);
+			if(c % 8 == 0){
+				System.out.println();
+			}
 		}
 
 		System.out.println();
 	}
 }
+
+
+/*
+	Operación módulo
+	Operador %
+	a % b    ------> c
+	Ejemplo:
+	10 % 2   ------> 0
+	11 % 2   ------> 1
+	10 % 4   ------> 2
+	11 % 4   ------> 3
+	12 % 4   ------> 0
+	13 % 4   ------> 1
+	14 % 4   ------> 2
+	15 % 4   ------> 3
+	16 % 4   ------> 0
+*/
 
 Booleanos
 ---------
@@ -865,7 +884,9 @@ que escribir, directamente:
 
 	if(b)
 
-
+-------------------------------------------------------------------------------
+Video 23
+-------------------------------------------------------------------------------
 Literales
 ---------
 
@@ -919,6 +940,7 @@ Secuencia de escape			Descripción
 
 En un programa, un String, debe comenzar y terminar en la misma línea.
 
+----------------------------------------------------------------------
 Variables
 ---------
 Es la unidad básica de almacenamiento en un programa Java.
