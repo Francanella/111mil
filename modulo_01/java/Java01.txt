@@ -597,7 +597,28 @@ hasta acá llegamos el 04 de agosto de 2017
 Operador
 	++
 	--
+/*
+	Operadores compuestos
+	a++
+	a--
+	a+= n
+	a*= n
+*/
+class Ejemplo{
+	public static void main(String[] args){
+		int a = 3;
 
+		// a = a + 1;			// a++
+		// a--;		// a = a - 1;
+
+		// a += 10;			// a = a + 10;
+		a *= 3;					// a = a * 3;
+
+
+
+		System.out.println(a);
+	}
+}
 --------------------------------------------
 /*
 	Bucle for
@@ -726,57 +747,64 @@ class Ejemplo{
 }
 
 --------------------------------------------
+Identificadores
+	Letras, números, _, $
+	no pueden comenzar por números
+	_esta				válido
+	este 				válido
+	Este 				válido
+	2Casa				no válido
+	casa2				válido
+
+
+Comentarios
+	// comentario de una sola línea
+
+	/* 
+		comentario de múltiples
+		líneas
+	*/
+
+	/** ... */
+
+Separadores
+	()		se usan para agrupar los argumentos
+				de los métodos
+	{}		para formar los bloques de código
+	[]		para los arrays
+	;			fin de sentencia
+	,			lista de variables en declaración
+	.			separador de clases, paquetes, métodos
+				System.out.println
+				java.util.Scanner
+
+
 Palabras reservadas de java
-	abstract	
-	assert
-	boolean
-	break
-	byte
-	case
-	catch
-	char
-	class
-	const
-	continue
-	default
-	do
-	double
-	else
-	enum
-	extends
-	final
-	finally
-	float
-	for
-	goto
-	if
-	implements
-	import
-	instanceof
-	int
-	interface
-	long
-	native
-	new
-	package
-	private
-	protected
-	public
-	return
-	short
-	static
-	strictfp
-	super
-	switch
-	synchronized
-	this
-	throw
-	throws
-	transient
-	try
-	void
-	volatile
-	while
+	abstract				assert
+	boolean 				break
+	byte 						case
+	catch 					char
+	class 					const
+	continue 				default
+	do 							double
+	else 						enum
+	extends 				final
+	finally 				float
+	for 						goto
+	if 							implements
+	import 					instanceof
+	int 						interface
+	long 						native
+	new 						package
+	private 				protected
+	public 					return
+	short 					static
+	strictfp 				super
+	switch 					synchronized
+	this 						throw
+	throws 					transient
+	try	  					void
+	volatile 				while
 
 -------------------------------------------------------------------------------
 Video 21
@@ -796,6 +824,13 @@ Identificadores
 		las clases comienzan con mayúscula
 		los nombres de las variables y los métodos (main, por ejemplo),
 		con minúscula.
+		Ejemplos de métodos:
+			main
+			println
+			print
+			nextInt
+			nextDouble
+
 	Simbolos
 		tratar de no abusar del uso de símbolos en los identificadores
 		_ subrayado
@@ -852,6 +887,9 @@ class Ejemplo{
 		System.out.println();
 	}
 }
+--------------------------------------------------------
+Hasta acá llegamos el 10 de agosto
+--------------------------------------------------------
 
 
 /*
@@ -877,7 +915,7 @@ Es requerido para las expresiones condicionales de las sentencias if y for,
 por ejemplo.
 
 Considerando una variable booleana es equivalente escribir:
-	
+
 	if(b == true)
 
 que escribir, directamente:
@@ -899,6 +937,34 @@ Octales comienzan en cero, por ejemplo:
 Hexadecimales comienzan con 0x, por ejemplo:
 	0x1df
 
+class Ejemplo{
+	public static void main(String[] args){
+		int o = 0221;
+		int h = 0x3d3;
+
+		System.out.println(o);
+		System.out.println(h);
+	
+	}
+}
+
+/*
+	Mostrar los primeros 50 números
+	enteros decimales con su correspondiente
+	octal
+*/
+class Ejemplo{
+	public static void main(String[] args){
+		int i;
+
+		for(i=0; i<25; i++){
+			System.out.println(i + " - " +
+				Integer.toOctalString(i) + " - " + Integer.toHexString(i) +
+				" - " + Integer.toBinaryString(i));
+		}
+	}
+}
+
 Si se asigna un valor entero a una variable de menor tamaño (por ejemplo un int a un byte), si está dentro del rango de la última, se asigna sin problemas.
 
 - Literales de punto flotante
@@ -918,6 +984,25 @@ Se pueden ingresar en formato octal, por ejemplo:
 En hexadecimal, por ejemplo:
 	'\u0041'
 	System.out.println('\u0041');
+
+/*
+	Mostrar literales caracteres en 
+	sus distintos formatos
+*/
+class Ejemplo{
+	public static void main(String[] args){
+
+		System.out.println('\142');
+		System.out.println("Este es un ejemplo: \143 de literal caracter octal");
+
+		System.out.println('\u0041');		
+		System.out.println("Este es un ejemplo: \u0041 de literal caracter hexadecimal");
+
+		System.out.println('\'');
+		System.out.println('\\');
+		System.out.println("Entre \"comillas\".");
+	}
+}
 
 - Literales de cadena (String)
 Se indican entre comillas dobles.
@@ -940,7 +1025,9 @@ Secuencia de escape			Descripción
 
 En un programa, un String, debe comenzar y terminar en la misma línea.
 
-----------------------------------------------------------------------
+-------------------------------------------------------------------------------
+Video 24
+-------------------------------------------------------------------------------
 Variables
 ---------
 Es la unidad básica de almacenamiento en un programa Java.
@@ -972,12 +1059,23 @@ class Ejemplo{
 	}
 }
 
-- Ambito y existencia de una variable
-El ámbito de una variable está definido por el bloque de código en el cual se declara.
+-------------------------------------------------------------------------------
+Video 25
+-------------------------------------------------------------------------------
+Ambito y existencia de una variable
+
+El ámbito de una variable está definido por el bloque de código en el 
+cual se declara.
+
 Un bloque define un ámbito.
+
 Esto también define la existencia de una variable.
-Sin entrar dentro de la programación orientada a objetos, podemos decir que el ámbito máximo de una variable es el método en que se declara.
-Los ámbitos se pueden anidar.  En ese caso las variables "externas" son visibles en los ámbitos "internos" pero no viceversa.
+
+Sin entrar dentro de la programación orientada a objetos, podemos decir que el 
+ámbito máximo de una variable es el método en que se declara.
+
+Los ámbitos se pueden anidar.  En ese caso las variables "externas" son 
+visibles en los ámbitos "internos" pero no viceversa.
 
 class Ejemplo{
 	public static void main(String args[]) {
@@ -1015,7 +1113,8 @@ class Ejemplo{
 	}
 }
 
-No puede declarar una variable con el mismo nombre de una existente en un bloque superior.  Por ejemplo:
+No puede declarar una variable con el mismo nombre de una existente en un bloque superior.  
+Por ejemplo:
 
 class Ejemplo{
 	public static void main(String args[]) {
@@ -1025,6 +1124,10 @@ class Ejemplo{
 		}
 	}
 }
+
+-------------------------------------------------------------------------------
+Video 
+-------------------------------------------------------------------------------
 
 ----------------------------
 Conversión de tipo y Casting

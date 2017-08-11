@@ -1,15 +1,29 @@
+/*
+	Secuencia de escape			Descripción
+	\ddd 										Octal (ddd)
+	\ uxxxx 									Hexadecimal Unicode (xxxx)
+	\' 											Comilla simple
+	\" 											Comilla doble
+	\\ 											Barra invertida
+	\r 											Retorno de carro
+	\n 											Nueva línea
+	\f 											Avance de formulario
+	\t 											Tabulación
+	\b 											Retroceso
+*/
 class Ejemplo{
-	public static void main(String args[]) {
+	public static void main(String[] args){
 
-		for(int i=1; i<10; i++){
-			System.out.println("Múltiplos de: " + i);
+		System.out.println('\141');
+		System.out.println('\u0041');
+		System.out.println('\'');
+		System.out.println('\"');
+		System.out.println('\\');
+		System.out.println('\r');
+		System.out.println('\n');
+		System.out.println('\f');
+		System.out.println('\t');
+		System.out.println("abcde\bx");
 
-			for(int j=0; j<10; j++){
-				System.out.print(i * j + " ");
-			}
-			System.out.println();
-		}
-		System.out.println();
 	}
-	
 }
