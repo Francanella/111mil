@@ -9,40 +9,40 @@
 import java.util.Scanner;
 
 class Ejemplo{
-	public static void main(String args[]) {
-		int month_days[];
+	public static void main(String[] args) {
+		int diasDelMes[];
 		
-		month_days = new int[12];		// generamos el espacio
+		diasDelMes = new int[12];		// generamos el espacio
 																// para almacenar 12 enteros
 		int n;
 		Scanner sc = new Scanner(System.in);
 
-		month_days[0] = 31;			// damos valor a cada elemento
-		month_days[1] = 28;
-		month_days[2] = 31;
-		month_days[3] = 30;
-		month_days[4] = 31;
-		month_days[5] = 30;
-		month_days[6] = 31;
-		month_days[7] = 31;
-		month_days[8] = 30;
-		month_days[9] = 31;
-		month_days[10] = 30;
-		month_days[11] = 31;
+		diasDelMes[0] = 31;			// damos valor a cada elemento
+		diasDelMes[1] = 28;
+		diasDelMes[2] = 31;
+		diasDelMes[3] = 30;
+		diasDelMes[4] = 31;
+		diasDelMes[5] = 30;
+		diasDelMes[6] = 31;
+		diasDelMes[7] = 31;
+		diasDelMes[8] = 30;
+		diasDelMes[9] = 31;
+		diasDelMes[10] = 30;
+		diasDelMes[11] = 31;
 
-		String[] meses = new String[12];
-		meses[0] = "Enero";
-		meses[1] = "Febrero";
-		meses[2] = "Marzo";
-		meses[3] = "Abril";
-		meses[4] = "Mayo";
-		meses[5] = "Junio";
-		meses[6] = "Julio";
-		meses[7] = "Agosto";
-		meses[8] = "Septiembre";
-		meses[9] = "Octubre";
-		meses[10] = "Noviembre";
-		meses[11] = "Diciembre";
+		String[] nombreDelMes = new String[12];
+		nombreDelMes[0] = "Enero";
+		nombreDelMes[1] = "Febrero";
+		nombreDelMes[2] = "Marzo";
+		nombreDelMes[3] = "Abril";
+		nombreDelMes[4] = "Mayo";
+		nombreDelMes[5] = "Junio";
+		nombreDelMes[6] = "Julio";
+		nombreDelMes[7] = "Agosto";
+		nombreDelMes[8] = "Septiembre";
+		nombreDelMes[9] = "Octubre";
+		nombreDelMes[10] = "Noviembre";
+		nombreDelMes[11] = "Diciembre";
 		
 
 		System.out.print("Ingrese el número de mes (1 al 12): ");
@@ -50,9 +50,9 @@ class Ejemplo{
 
 
 		System.out.println("El mes de " + 
-									meses[n-1] + 
+									nombreDelMes[n-1] + 
 									" tiene " + 
-									month_days[n-1] + 
+									diasDelMes[n-1] + 
 									" dias.");
 	}
 }
