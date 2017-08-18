@@ -1,18 +1,15 @@
-import java.util.Scanner;
+import java.util.Random;
 
 class Prueba{
-
 	public static void main(String[] args){
+		Random rnd = new Random();
 
-		byte b = 40;
-		
-		b = b * 2;			// Error porque la expresión se 
-										// promueve a int
+		for(int i=0; i<100; i++){
+ 			System.out.print("[" + rnd.nextInt(10) + "] ");
+ 			if((i % 10) == 8)
+ 				System.out.println();
+ 		}
 
-		b = (byte)(b * 2);	// funciona
-		
-		System.out.println("b " + b);
-
+ 		System.out.println();
 	}
-
 }

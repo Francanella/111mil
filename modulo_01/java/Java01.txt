@@ -1390,13 +1390,40 @@ Por ejemplo:
 */
 class Ejemplo{
 	public static void main(String args[]) {
-		int month_days[] = { 31, 28, 31, 30, 
+		int diasDelMes[] = { 31, 28, 31, 30, 
 												31, 30, 31, 31, 
 												30, 31,30, 31 };
 
-		System.out.println("Abril tiene " + month_days[3] + " días.");
+		System.out.println("Abril tiene " + diasDelMes[3] + " días.");
 	}
 }
+
+
+/*
+	Con inicializador
+	Variante 1
+*/
+import java.util.Scanner;
+
+class Ejemplo{
+	public static void main(String args[]) {
+		int diasDelMes[] = { 31, 28, 31, 30, 
+												31, 30, 31, 31, 
+												30, 31,30, 31 };
+		String nombreDelMes[] = {"Ene", "Feb", "Mar",
+													"Abr", "May", "Jun",
+													"Jul", "Ago", "Sep", 
+													"Oct", "Nov", "Dic"};
+		Scanner sc = new Scanner(System.in);
+		int n;
+
+		System.out.print("Ingrese el número del mes: ");
+		n = sc.nextInt();
+
+		System.out.println(nombreDelMes[n-1] + " tiene " + diasDelMes[n-1] + " días.");
+	}
+}
+
 
 Si se trata de acceder a una posición no válida se obtiene la excepción:
 	
@@ -1419,6 +1446,116 @@ class Ejemplo{
 		System.out.println("El promedio es " + result / 5);
 	}
 }
+
+/*
+	Un ejemplo que calcula el 
+	promedio de los valores de 
+	un array
+
+	Variante 1:
+	Modificarlo para que los elementos del array se
+	ingresen por teclado.
+*/
+
+import java.util.Scanner;
+
+class Ejemplo{
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		double nums[] = new double[5];
+		double result = 0;
+		int i;
+
+		System.out.println("Ingrese los valores del array");
+		for(i=0; i<5; i++){
+			System.out.print("> ");
+			nums[i] = sc.nextDouble();
+		}
+
+		for(i=0; i<5; i++)
+			result = result + nums[i];
+
+		System.out.println("El promedio es " + result / 5);
+	}
+}
+
+
+/*
+	Un ejemplo que calcula el 
+	promedio de los valores de 
+	un array
+
+	Variante 2:
+	Modificarlo para que los elementos del array se
+	generen aleatoriamente usando un objeto de la
+	clase java.util.Random.
+*/
+
+import java.util.Random;
+
+class Ejemplo{
+	public static void main(String args[]) {
+		double result = 0;
+		Random rnd = new Random();
+		int i;
+		int n = rnd.nextInt(100);
+		double nums[] = new double[n];
+		
+		for(i=0; i<n; i++){
+			nums[i] = rnd.nextDouble();
+		}
+
+		for(i=0; i<n; i++)
+			result = result + nums[i];
+
+		System.out.println("El array tiene: " + n + " elementos.");
+		System.out.println("El promedio es " + result / n);
+	}
+}
+
+/*
+	Crear un programa que declare un
+	array de 10 elementos enteros,
+	lo inicialice con valores 
+	aleatorios y, finalmente, los
+	muestre en pantalla.
+
+	Visualizar los elementos en orden
+	descendente.
+
+	usar:
+		java.util.Random
+			nextInt(n)
+				n es el valor tope que pueden
+				tomar los números pseudoaleatorios
+*/
+
+import java.util.Random;
+
+class Ejemplo{
+	public static void main(String[] args){
+		int cantidad = 10;
+		int numeritos[] = new int[cantidad];
+		Random rnd = new Random();
+		int i;
+
+		for(i=0; i<cantidad; i++)
+			numeritos[i] = rnd.nextInt(100);
+
+		for(i=0; i<cantidad; i++)
+			System.out.print("[" + numeritos[i] + "] ");
+		System.out.println();
+
+		for(i=cantidad-1; i>=0; i--)
+			System.out.print("[" + numeritos[i] + "] ");
+		
+
+		System.out.println();
+	}
+
+}
+
+
 
 Arrays multidimensionales
 -------------------------
