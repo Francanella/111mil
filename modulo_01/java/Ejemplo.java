@@ -8,34 +8,31 @@
 	determinar:
 
 	a) cuantas veces se encuentra
-		 dicho número en el array
+		 dicho número en el array.
+	b) cuantas veces se encuentra
+		 cada número.
 */
 
 import java.util.Random;
-import java.util.Scanner;
 
 class Ejemplo{
 	public static void main(String[] args){
-		int longitud = 1000;
+		int longitud = 10000;
 		int numeros[] = new int[longitud];
 		Random rnd = new Random();
-		Scanner sc = new Scanner(System.in);
-		int n;
-		int veces;
+		int veces[] = new int[100];
 
-		for(int i=0; i<longitud; i++){
+		for(int i=0; i<longitud; i++)
 			numeros[i] = rnd.nextInt(100);
-		}
+		
+		for(int i=0; i<100; i++)
+			veces[i] = 0;
 
-		System.out.print("Ingrese un número: ");
-		n = sc.nextInt();
-
-		veces = 0;
 		for(int i=0; i<longitud; i++){
-			if(numeros[i] == n)
-				veces++;
+			veces[numeros[i]]++;
 		}
 
-		System.out.println("El número, " + n + ", se encuentra " + veces + " veces.");
+		for(int i=0; i<100; i++)
+			System.out.println("El número, " + i + ", se encuentra " + veces[i] + " veces.");
 	}
 }
