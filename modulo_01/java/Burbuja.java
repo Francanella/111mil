@@ -47,15 +47,19 @@ class Burbuja{
             for(int i=0; i<10;i++)
                 numeros[i] = rnd.nextInt(10);
         */
+
+        // Inicializar el array
 		int[] numeros = {6,5,3,1,8,7,2,4};
 
+        // Mostrar el array antes de ordenar
         for(int i=0; i<numeros.length; i++)
         	System.out.print("[" + numeros[i] + "] ");
         System.out.println();
         
-        int aux;
+        int aux;    // Se usa para el intercambio
      
         // i: desde el final hasta la segunda posición
+        //    7 - 1
         for(int i=numeros.length-1; i>0;i--){       
             // j: desde la primera posición hasta i - 1
             for(int j=0; j<i; j++){

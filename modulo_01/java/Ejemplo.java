@@ -1,38 +1,34 @@
 /*
-	Dado un array de 1000 elementos 
-	enteros cargados aleatoriamente
-	con valores comprendidos entre
-	0 y 99, y un número entero, 
-	también en dicho rango, 
-	ingresado por teclado,
-	determinar:
 
-	a) cuantas veces se encuentra
-		 dicho número en el array.
-	b) cuantas veces se encuentra
-		 cada número.
 */
 
-import java.util.Random;
+import java.util.Scanner;
 
 class Ejemplo{
 	public static void main(String[] args){
-		int longitud = 10000;
-		int numeros[] = new int[longitud];
-		Random rnd = new Random();
-		int veces[] = new int[100];
+		boolean[] colectivo = new boolean[10];
+		Scanner sc = new Scanner(System.in);
+		for(int i=0; i<colectivo.length; i++)
+			colectivo[i] = false;
 
-		for(int i=0; i<longitud; i++)
-			numeros[i] = rnd.nextInt(100);
-		
-		for(int i=0; i<100; i++)
-			veces[i] = 0;
-
-		for(int i=0; i<longitud; i++){
-			veces[numeros[i]]++;
+		int asiento = 0;
+		while(asiento != -1){
+			System.out.print("Asiento: ");
+			asiento = sc.nextInt();
+			if(asiento != -1){
+				if(colectivo[asiento-1])
+					System.out.println("Ya está ocupado!!!");
+				colectivo[asiento-1] = true;
+			}
 		}
 
-		for(int i=0; i<100; i++)
-			System.out.println("El número, " + i + ", se encuentra " + veces[i] + " veces.");
+		for(int i=0; i<colectivo.length; i++){
+			System.out.print("Asiento[" + i + "]: ");
+			if(colectivo[i])
+				System.out.println("Ocupado");
+			else
+				System.out.println("Libre");
+		}
+		System.out.println();
 	}
 }

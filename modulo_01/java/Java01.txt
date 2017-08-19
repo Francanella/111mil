@@ -1377,8 +1377,34 @@ class Ejemplo{
 	}
 }
 
+class Ejemplo{
+	public static void main(String[] args){
+		int[] numeros;					// declaración del array de enteros
+		numeros = new int[6];		// inicialización
+
+		numeros[0] = 100;
+		numeros[1] = 101;
+		numeros[2] = 300;
+		numeros[3] = 800;
+		numeros[4] = 55;
+		numeros[5] = 230;
+
+
+		System.out.println("Valor: " + 
+			(numeros[2] + numeros[4]));
+
+		System.out.println("Longitud del array: " +
+			numeros.length);
+
+		// System.out.println(numeros[numeros.length]);
+
+		for(int i=0; i<numeros.length; i++)
+			System.out.println(numeros[i]);
+	}
+}
+
 -------------------------------------------------------------
-Hasta acá llegamos el 11 de agosto de 2017
+Hasta acá llegamos el 17 de agosto de 2017
 -------------------------------------------------------------
 
 
@@ -1598,6 +1624,10 @@ class Ejemplo{
 	}
 }
 
+-------------------------------------------------------------
+Hasta acá llegamos el 17 de agosto de 2017
+-------------------------------------------------------------
+
 /*
 	Dado un array de 1000 elementos 
 	enteros cargados aleatoriamente
@@ -1634,6 +1664,65 @@ class Ejemplo{
 			System.out.println("El número, " + i + ", se encuentra " + veces[i] + " veces.");
 	}
 }
+
+Estructura repetitiva while..do
+
+/*
+	Ingrese números por teclado
+	hasta que se introduzca
+	-1
+*/
+import java.util.Scanner;
+
+class Ejemplo{
+
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int i = 0;
+
+		System.out.println("Ingrese un número distinto a -1");
+		while(i != -1){
+			System.out.print("> ");
+			i = sc.nextInt();
+		}
+
+	}
+
+}
+
+/*
+	Dado un programa en el cual se ingresen 
+	números por teclado, contar los mismos.
+	La condición de salida es cuando se 
+	ingresa el número -1 (el cual no se 
+	cuenta).
+*/
+import java.util.Scanner;
+
+class Ejemplo{
+
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		int i = 0;
+		int contador = 0;
+
+		System.out.println("Ingrese un número distinto a -1");
+		while(i != -1){
+			System.out.print("> ");
+			i = sc.nextInt();
+
+			contador++;
+		}
+
+
+		System.out.println("Se ingresaron " + (contador - 1) + 
+			" números");
+	}
+
+}
+
+
+
 
 Arrays multidimensionales
 -------------------------
