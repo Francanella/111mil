@@ -1722,7 +1722,117 @@ class Ejemplo{
 }
 
 
+/*
 
+*/
+
+import java.util.Scanner;
+
+class Ejemplo{
+	public static void main(String[] args){
+		boolean[] colectivo = new boolean[10];
+		Scanner sc = new Scanner(System.in);
+		for(int i=0; i<colectivo.length; i++)
+			colectivo[i] = false;
+
+		int asiento = 0;
+		while(asiento != -1){
+			System.out.print("Asiento: ");
+			asiento = sc.nextInt();
+			if(asiento != -1){
+				if(colectivo[asiento-1])
+					System.out.println("Ya está ocupado!!!");
+				colectivo[asiento-1] = true;
+			}
+		}
+
+		for(int i=0; i<colectivo.length; i++){
+			System.out.print("Asiento[" + i + "]: ");
+			if(colectivo[i])
+				System.out.println("Ocupado");
+			else
+				System.out.println("Libre");
+		}
+		System.out.println();
+	}
+}
+
+/*
+    inicio
+    6 5 3 1 8 7 2 4
+
+    i:7 j:0-6
+    5 6 3 1 8 7 2 4
+    5 3 6 1 8 7 2 4
+    5 3 1 6 8 7 2 4
+    5 3 1 6 8 7 2 4
+    5 3 1 6 7 8 2 4
+    5 3 1 6 7 2 8 4
+    5 3 1 6 7 2 4 8
+    i:6 j:0-5
+    3 5 1 6 7 2 4 8
+    3 1 5 6 7 2 4 8
+    3 1 5 6 7 2 4 8
+    3 1 5 6 7 2 4 8
+    3 1 5 6 2 7 4 8
+    3 1 5 6 2 4 7 8
+    i:5 j:0-4
+    1 3 5 6 2 4 7 8
+    1 3 5 6 2 4 7 8
+    1 3 5 6 2 4 7 8
+    1 3 5 2 6 4 7 8
+    1 3 5 2 4 6 7 8
+    i:4 j:0-3
+    1 3 5 2 4 6 7 8
+    1 3 5 2 4 6 7 8
+    1 3 2 5 4 6 7 8
+    1 3 2 4 5 6 7 8
+    i:3 j:0-2
+    1 3 2 4 5 6 7 8
+    1 2 3 4 5 6 7 8
+    1 2 3 4 5 6 7 8
+    i:2 j:0-1
+    1 2 3 4 5 6 7 8
+    1 2 3 4 5 6 7 8
+    i:1 j:0-0
+    1 2 3 4 5 6 7 8
+*/
+import java.util.Random;
+
+class Burbuja{
+	public static void main(String[] args){
+        /*
+            Random rnd = new Random();
+            int[] numeros = new int[10];
+            for(int i=0; i<10;i++)
+                numeros[i] = rnd.nextInt(10);
+        */
+		int[] numeros = {6,5,3,1,8,7,2,4};
+
+        for(int i=0; i<numeros.length; i++)
+        	System.out.print("[" + numeros[i] + "] ");
+        System.out.println();
+        
+        int aux;
+     
+        // i: desde el final hasta la segunda posición
+        for(int i=numeros.length-1; i>0;i--){       
+            // j: desde la primera posición hasta i - 1
+            for(int j=0; j<i; j++){
+                // si el elemento j es mayor al siguiente, lo intercambia
+                if(numeros[j] > numeros[j+1]){
+                    aux = numeros[j];
+                    numeros[j] = numeros[j+1];
+                    numeros[j+1] = aux;
+                }
+            }
+            for(int k=0; k<numeros.length; k++)
+                System.out.print("[" + numeros[k] + "] ");
+            System.out.println();
+        }
+
+	}
+}
 
 Arrays multidimensionales
 -------------------------
@@ -1886,3 +1996,321 @@ Otros ejemplos de declaraciones:
 Aclaración sobre String
 -----------------------
 En Java, un String, a diferencia de otros lenguajes de programación, no es un array de caracteres.  Es un objeto con un tratamiento especial en Java.
+
+----------------------
+Operadores aritméticos
+----------------------
+
+class Ejemplo {
+	public static void main(String args[]) {
+		// aritmética con enteros
+		System.out.println("Enteros");
+		int a = 1 + 1;
+		int b = a * 3;
+		int c = b / 4;
+		int d = c - a;
+		int e = -d;
+		System.out.println("a = " + a);
+		System.out.println("b = " + b);
+		System.out.println("c = " + c);
+		System.out.println("d = " + d);
+		System.out.println("e = " + e);
+		// aritmetica usando double
+		System.out.println("\nDecimales");
+		double da = 1 + 1;
+		double db = da * 3;
+		double dc = db / 4;
+		double dd = dc - a;
+		double de = -dd;
+		System.out.println("da = " + da);
+		System.out.println("db = " + db);
+		System.out.println("dc = " + dc);
+		System.out.println("dd = " + dd);
+		System.out.println("de = " + de);
+	}
+}
+
+Operador módulo %
+-----------------
+/*
+	El operador módulo
+*/
+class Ejemplo {
+	public static void main(String args[]) {
+		int x = 42;
+		double y = 42.25;
+		System.out.println("x mod 10 = " + x % 10);
+		System.out.println("y mod 10 = " + y % 10);
+	}
+}
+
+Operadores compuestos
+---------------------
+class Ejemplo {
+	public static void main(String args[]) {
+		int a = 1;
+		int b = 2;
+		int c = 3;
+		a += 5;
+		b *= 4;
+		c += a * b;
+		c %= 6;
+		System.out.println("a = " + a);
+		System.out.println("b = " + b);
+		System.out.println("c = " + c);
+	}
+}
+
+Operadores de incremento/decremento
+-----------------------------------
+class Ejemplo {
+	public static void main(String args[]) {
+		int a = 1;
+		int b = 2;
+		int c;
+		int d;
+		c = ++b;
+		d = a++;
+		c++;
+		System.out.println("a = " + a);
+		System.out.println("b = " + b);
+		System.out.println("c = " + c);
+		System.out.println("d = " + d);
+	}
+}
+
+Operadores de bits
+------------------
+
+Java utiliza complemento a 2 (invertir y sumar 1)
+0000 0000 ---> +0
+1111 1111
++       1
+0000 0000 ---> -0
+
+0000 0001 ---> +1
+1111 1110
++       1
+1111 1111 ---> -1
+
+Operadores de bit lógicos
+-------------------------
+& and
+| or
+^ xor
+~ not
+
+Not
+ 0101 0001
+~1010 1110
+
+And
+ 0101 0001
+&0001 1101
+ 0001 0001
+
+Or
+ 0101 0001
+|0001 1101
+ 0101 1101
+
+Xor
+ 0101 0001
+^0001 1101
+ 0100 1100
+
+class Ejemplo {
+	public static void main(String args[]) {
+		String binario[] = {
+			"0000", "0001", "0010", "0011", "0100", "0101", "0110", "0111",
+			"1000", "1001", "1010", "1011", "1100", "1101", "1110", "1111"
+		};
+
+		int a = 3; // 0 + 2 + 1 or 0011 en binario
+		int b = 6; // 4 + 2 + 0 or 0110 en binario
+		int c = a | b;
+		int d = a & b;
+		int e = a ^ b;
+		int f = (~a & b) | (a & ~b);
+		int g = ~a & 0x0f;
+		System.out.println(" a = " + binario[a]);
+		System.out.println(" b = " + binario[b]);
+		System.out.println(" a|b = " + binario[c]);
+		System.out.println(" a&b = " + binario[d]);
+		System.out.println(" a^b = " + binario[e]);
+		System.out.println("~a&b|a&~b = " + binario[f]);
+		System.out.println(" ~a = " + binario[g]);
+	}
+}
+
+Operador Shift Left
+-------------------
+
+	8 << 1  (16)
+	4 << 2  (16)
+
+class Ejemplo {
+	public static void main(String args[]) {
+		byte a = 64, b;
+		int i;
+
+		i = a << 2;
+		b = (byte) (a << 2);
+		System.out.println("Valor original de a: " + a);
+		System.out.println("entero y byte: " + i + " " + b);
+	}
+}
+
+/*
+	El problema de usar shift left como 
+	multiplicación por dos
+*/
+class Ejemplo {
+	public static void main(String args[]) {
+		int i;
+		int num = 0xFFFFFFE;
+		
+		for(i=0; i<4; i++) {
+			num = num << 1;
+			System.out.println(num);
+		}
+	}
+}
+
+Shift right
+-----------
+	8 >> 1	(4)
+	4 >> 2	(1)
+
+Shift right sin signo
+---------------------
+-1 >>> 24 (255)
+
+11111111 11111111 11111111 11111111		-1
+00000000 00000000 00000000 11111111		255
+
+Operadores de bits compuestos
+-----------------------------
+a = a >> 4
+a >>= 4
+
+a = a | b
+a |= b
+
+Operadores relacionales
+-----------------------
+== 	igual
+!= 	distinto
+<		menor que
+<=	menor o igual que
+>		mayor que
+>=	mayor o igual que
+
+Operadores lógicos
+------------------
+Operador 	Operación
+& 				AND lógico
+| 				OR lógico
+^ 				XOR lógico (OR exclusivo)
+|| 				OR corto-circuito
+&& 				AND corto-circuito
+! 				NOT
+&= 				AND asignación
+|= 				OR asignación
+^= 				XOR asignación
+== 				igual a
+!= 				no igual a
+?: 				if-then-else ternario
+
+?:				a<b?a:b (si a<b entonces a sino b)
+
+class Ejemplo {
+	public static void main(String args[]) {
+		boolean a = true;
+		boolean b = false;
+		boolean c = a | b;
+		boolean d = a & b;
+		boolean e = a ^ b;
+		boolean f = (!a & b) | (a & !b);
+		boolean g = !a;
+		System.out.println(" a = " + a);
+		System.out.println(" b = " + b);
+		System.out.println(" a|b = " + c);
+		System.out.println(" a&b = " + d);
+		System.out.println(" a^b = " + e);
+		System.out.println("!a&b|a&!b = " + f);
+		System.out.println(" !a = " + g);
+	}
+}
+
+Operador asignación
+-------------------
+a = 0;
+a = b = c = d = 0;
+
+Operador ?
+----------
+/*
+	operador if ternario
+	if <exprl>?a:b
+	if(<exprl>)
+		a
+	else
+		b
+*/
+class Ejemplo {
+	public static void main(String args[]) {
+		int a = 10;
+		int b = 2;
+
+		System.out.println(a>b?a:b);
+	}
+}
+
+/*
+	operador if ternario
+	if <exprl>?a:b
+	if(<exprl>)
+		a
+	else
+		b
+*/
+class Ejemplo {
+	public static void main(String args[]) {
+		int i, k;
+		i = 10;
+		k = i < 0 ? -i : i; // valor absoluto de i
+		System.out.print("Valor absoluto de ");
+		System.out.println(i + " es " + k);
+		i = -10;
+		k = i < 0 ? -i : i; // valor absoluto i
+		System.out.print("Valor absoluto de ");
+		System.out.println(i + " es " + k);
+	}
+}
+
+Precedencia de los operadores
+-----------------------------
+
+Más alta
+( ) 			[ ] 			.
+++ 				–– 				~ 			!
+* 				/ 				%
++ 				–
+>> 				>>> 			<<
+> 				>= 				< 			<=
+== !=
+&
+^
+|
+&&
+||
+?:
+= 				op=
+Menos alta
+
+Paréntesis
+----------
+Los paréntesis sirven para modificar el orden
+de precedencia de los operadores en las expresiones
+
