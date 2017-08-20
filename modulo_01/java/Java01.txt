@@ -1997,7 +1997,11 @@ Aclaración sobre String
 -----------------------
 En Java, un String, a diferencia de otros lenguajes de programación, no es un array de caracteres.  Es un objeto con un tratamiento especial en Java.
 
-----------------------
+----------
+Operadores
+----------
+
+
 Operadores aritméticos
 ----------------------
 
@@ -2313,4 +2317,592 @@ Paréntesis
 ----------
 Los paréntesis sirven para modificar el orden
 de precedencia de los operadores en las expresiones
+
+----------------------
+Estructuras de control
+----------------------
+
+if
+--
+
+if(exprl) sentencia1;
+else sentencia2;
+
+La parte else es opcional
+
+No se pueden ejecutar ambas sentencias en ningun caso.
+
+exprl puede ser una variable booleana
+
+Se pueden usar bloques de código si se requiere ejecutar
+más de una sentencia.
+
+if anidados
+-----------
+un else es asociado con el if más inmediato dentro del
+mismo bloque
+
+if-else-if
+----------
+/*
+	Ejemplo
+*/
+class Ejemplo {
+	public static void main(String args[]) {
+		int mes = 4; 					// Abril
+		String estacion;
+
+		if(mes == 12 || mes == 1 || mes == 2)
+			estacion = "Verano";
+		else if(mes == 3 || mes == 4 || mes == 5)
+			estacion = "Otoño";
+		else if(mes == 6 || mes == 7 || mes == 8)
+			estacion = "Invierno";
+		else if(mes == 9 || mes == 10 || mes == 11)
+			estacion = "Primavera";
+		else
+			estacion = "Mes inexistente!";
+
+		System.out.println("Abril es en " + estacion + ".");
+	}
+}
+
+Switch
+------
+<expr> 	debe ser byte, short, int o char
+<valor> debe ser un tipo compatible con la expresión <expr>
+
+switch(<expr>){
+	case <valor>:
+		sentencia;
+		break;
+	case <valor>:
+		sentencia;
+		break;
+	...
+
+	default:
+		sentencia
+}
+
+class Ejemplo {
+	public static void main(String args[]) {
+		for(int i=0; i<6; i++)
+			switch(i) {
+				case 0:
+					System.out.println("i es cero.");
+					break;
+				case 1:
+					System.out.println("i es uno.");
+					break;
+				case 2:
+					System.out.println("i es dos.");
+					break;
+				case 3:
+					System.out.println("i es tres.");
+					break;
+				default:
+					System.out.println("i es mayor que tres.");
+			}
+	}
+}
+
+Se pueden omitir los break
+--------------------------
+
+class Ejemplo {
+	public static void main(String args[]) {
+		for(int i=0; i<12; i++)
+			switch(i) {
+				case 0:
+				case 1:
+				case 2:
+				case 3:
+				case 4:
+					System.out.println("i es menor que 5");
+					break;
+				case 5:
+				case 6:
+				case 7:
+				case 8:
+				case 9:
+					System.out.println("i es menor que 10");
+					break;
+				default:
+					System.out.println("i es 10 o mayor");
+			}
+	}
+}
+
+class Ejemplo {
+	public static void main(String args[]) {
+		int mes = 4;
+		String estacion;
+		switch (mes) {
+			case 12:
+			case 1:
+			case 2:
+				estacion = "Verano";
+				break;
+			case 3:
+			case 4:
+			case 5:
+				estacion = "Otoño";
+				break;
+			case 6:
+			case 7:
+			case 8:
+				estacion = "Invierno";
+				break;
+			case 9:
+			case 10:
+			case 11:
+				estacion = "Primavera";
+				break;
+			default:
+				estacion = "Mes incorrecto!";
+		}
+		System.out.println("Abril es en " + estacion + ".");
+	}
+}
+
+Los switch se pueden anidar
+
+Estructuras repetitivas
+-----------------------------------------------------------
+
+While
+-----
+while(<exprl>)
+	sentencia;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		int i = 10;
+
+		while(i>0){
+			System.out.println("Pasada: " + i);
+			i--;
+		}
+
+		System.out.println();
+
+		i = 0;
+		while(i<10){
+			System.out.println("Pasada: " + i);
+			i++;
+		}
+	}
+}
+
+Si <exprl> es falsa al ser evaluada por primera vez
+no se ejecuta jamás el cuerpo del bucle.
+
+El cuerpo del bucle puede estar vacío
+
+class Ejemplo {
+	public static void main(String args[]) {
+		int i, j;
+		i = 100;
+		j = 200;
+
+		// busca el punto medio entre i y j
+		while(++i < --j) ; // este loop no tiene cuerpo
+
+		System.out.println("El punto medio es " + i);
+	}
+}
+
+do-while
+--------
+
+Evalúa la expresión al final
+
+do{
+	sentencia;
+}while(<exprl>);
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]){
+		Scanner sc = new Scanner(System.in);
+
+		int opcion;
+		do {
+			System.out.println("Menú:");
+			System.out.println(" 1. Altas");
+			System.out.println(" 2. Bajas");
+			System.out.println(" 3. Modificaciones");
+			System.out.println(" 4. Informes");
+			
+			System.out.println("Seleccione una opción:");
+			opcion = sc.nextInt();
+		} while( opcion < 1 || opcion > 4);
+
+		System.out.println("\n");
+
+		switch(opcion) {
+			case 1:
+				System.out.println("Opción de altas.");
+				break;
+			case 2:
+				System.out.println("Opción de bajas.");
+				break;
+			case 3:
+				System.out.println("Opción de modificaciones");
+				break;
+			case 4:
+				System.out.println("Opción de informes");
+				break;
+		}
+	}
+}
+
+for
+---
+
+for(inicialización; condición; actualización)
+	sentencia;
+
+class Ejemplo {
+	public static void main(String args[]){
+		int i;
+
+		for(i=0; i<10; i++)
+			System.out.println("Pasada: " + i);
+	}
+}
+
+La variable de control se puede declarar dentro 
+del bucle
+
+	for(int i=0; i<10; i++)
+		...
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		int num;
+		boolean esPrimo = true;
+		Scanner sc = new Scanner(System.in);
+
+		System.out.print("Ingrese un número: ");
+		num = sc.nextInt();
+
+		for(int i=2; i <= num/i; i++) {
+			if((num % i) == 0) {
+				esPrimo = false;
+				break;
+			}
+		}
+		if(esPrimo) 
+			System.out.println("Primo");
+		else 
+			System.out.println("No primo");
+	}
+}
+
+Uso de comas en la inicialización
+---------------------------------
+class Ejemplo {
+	public static void main(String args[]) {
+		int a, b;
+		for(a=10, b=20; a<b; a++, b--) {
+			System.out.println("a = " + a);
+			System.out.println("b = " + b);
+		}
+	}
+}
+
+Variaciones de for
+------------------
+
+Salida evaluando una variable boolean
+-------------------------------------
+boolean b = false;
+
+for(int i=0; !b; i++){
+	...
+	if(<exprl>)
+		b = true;
+}
+
+Omisión de inicialización y actualización
+-----------------------------------------
+
+for(; !b; ){
+	...
+}
+
+class Ejemplo {
+	public static void main(String args[]) {
+		int i;
+		boolean salir = false;
+		i = 0;
+		for( ; !salir; ) {
+			System.out.println("i es " + i);
+			if(i == 10) 
+				salir = true;
+			i++;
+		}
+	}
+}
+
+Infinito
+--------
+
+for(;;){
+	...
+}
+
+for .. each
+-----------
+
+for(tipo var : colección){
+	...
+}
+
+class Ejemplo {
+	public static void main(String args[]) {
+		int numeros[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		int sum = 0;
+		// Uso del estilo for-each para sumar y mostrar valores
+		for(int x : numeros) {
+			System.out.println("El valor es: " + x);
+			sum += x;
+		}
+		System.out.println("Sumatoria: " + sum);
+	}
+}
+
+Se puede usar break:
+
+class Ejemplo {
+	public static void main(String args[]) {
+		int sum = 0;
+		int nums[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		// muestra y suma los valores
+		for(int x : nums) {
+			System.out.println("Valor: " + x);
+			sum += x;
+			if(x == 5) 	
+				break; // sale cuando llega a 5
+		}
+		System.out.println("Sumatoria de los primeros 5 elementos: " + sum);
+	}
+}
+
+El bucle es de solo-lectura
+
+class Ejemplo {
+	public static void main(String args[]) {
+		int numeros[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+		
+		for(int x : numeros) {
+			System.out.print(x + " ");
+			x = x * 10; // no tiene efecto en numeros
+		}
+
+		System.out.println();
+		
+		for(int x : numeros)
+			System.out.print(x + " ");
+		System.out.println();
+	}
+}
+
+class Ejemplo {
+	public static void main(String args[]) {
+		int sum = 0;
+		int numeros[][] = new int[3][5];
+		// cargar algunos
+		for(int i = 0; i < 3; i++)
+			for(int j=0; j < 5; j++)
+				numeros[i][j] = (i+1)*(j+1);
+		// usar for-each para sumar los valores
+		for(int x[] : numeros) {
+			for(int y : x) {
+				System.out.println("Valor: " + y);
+				sum += y;
+			}
+		}
+		System.out.println("Sumatoria: " + sum);
+	}
+}
+
+class Ejemplo {
+	public static void main(String args[]) {
+		int numeros[] = { 6, 8, 3, 7, 5, 6, 1, 4 };
+		int val = 5;
+		boolean encontrado = false;
+		// uso de for para buscar
+		for(int x : numeros) {
+			if(x == val) {
+				encontrado = true;
+				break;
+			}
+		}
+		if(encontrado)
+			System.out.println("Valor encontrado!");
+	}
+}
+
+Bucles anidados
+---------------
+class Ejemplo {
+	public static void main(String args[]) {
+		int i, j;
+		for(i=0; i<10; i++) {
+			for(j=i; j<10; j++)
+				System.out.print(".");
+			System.out.println();
+		}
+	}
+}
+
+Instrucciones de salto
+----------------------
+
+break
+-----
+class Ejemplo {
+	public static void main(String args[]) {
+		for(int i=0; i<100; i++) {
+			if(i == 10) 
+				break; // termina cuando i vale 10
+			System.out.println("i: " + i);
+		}
+		System.out.println("Loop completado.");
+	}
+}
+
+class Ejemplo {
+	public static void main(String args[]) {
+		int i = 0;
+		while(i < 100) {
+			if(i == 10) 
+				break; // termina cuando i vale 10
+			System.out.println("i: " + i);
+			i++;
+		}
+		System.out.println("Loop completado.");
+	}
+}
+
+Si existen loops anidados corta cuando termina el 
+mas interno
+
+class Ejemplo {
+	public static void main(String args[]) {
+		for(int i=0; i<3; i++) {
+			System.out.print("Pasada " + i + ": ");
+			for(int j=0; j<100; j++) {
+				if(j == 10) 
+					break; // termina cuando j vale 10
+				System.out.print(j + " ");
+			}
+			System.out.println();
+		}
+		System.out.println("Loops completados.");
+	}
+}
+
+Uso de break como un go-to
+--------------------------
+
+Se emplean etiquetas a bloques de código:
+
+class Ejemplo {
+	public static void main(String args[]) {
+		boolean t = true;
+		primero: {
+			segundo: {
+				tercero: {
+					System.out.println("Antes del break.");
+					if(t) 
+						break segundo; // break sale al segundo bloque
+					System.out.println("ESTO NO SE VA A EJECUTAR");
+				}
+				System.out.println("ESTO NO SE VA A EJECUTAR");
+			}
+			System.out.println("Esto esta después del segundo bloque.");
+		}
+	}
+}
+
+class Ejemplo {
+	public static void main(String args[]) {
+		externo: for(int i=0; i<3; i++) {
+			System.out.print("Pasada " + i + ": ");
+			for(int j=0; j<100; j++) {
+				if(j == 10) 
+					break externo; // sale de ambos loops
+				System.out.print(j + " ");
+			}
+			System.out.println("ESTO NO SE IMPRIME");
+		}
+		System.out.println("Loops completados.");
+	}
+}
+
+/*
+	Error: undefined label
+*/
+class Ejemplo {
+	public static void main(String args[]) {
+		uno: for(int i=0; i<3; i++) {
+			System.out.print("Pasada " + i + ": ");
+		}
+		for(int j=0; j<100; j++) {
+			if(j == 10) 
+				break uno; // INCORRECTO
+			System.out.print(j + " ");
+		}
+	}
+}
+
+Continue
+--------
+class Ejemplo {
+	public static void main(String args[]) {
+		for(int i=0; i<10; i++) {
+			System.out.print(i + " ");
+			if (i%2 == 0) 
+				continue;
+			System.out.println("");
+		}
+	}
+}
+
+Continue con etiquetas
+----------------------
+class Ejemplo {
+	public static void main(String args[]) {
+		outer: 
+		for (int i=0; i<10; i++) {
+			for(int j=0; j<10; j++) {
+				if(j > i) {
+					System.out.println();
+					continue outer;
+				}
+				System.out.print(" " + (i * j));
+			}
+		}
+		System.out.println();
+	}
+}
+
+return
+------
+class Ejemplo {
+	public static void main(String args[]) {
+		boolean t = true;
+		System.out.println("Antes del return.");
+		if(t) 
+			return; // Retorna a quien llamó el método
+		System.out.println("ESTO NO SE EJECUTARA.");
+	}
+}
 

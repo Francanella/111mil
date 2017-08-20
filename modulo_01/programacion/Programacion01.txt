@@ -14,20 +14,6 @@ Proceso de desarrollo simplificado
 	 java Programa
 
 --------------------------------------------
-Tipo de datos
-Constantes o literales
-Variables
-Operadores
-	aritméticos: + - * /
-	asignación: =
-	relacionales: == != < > <= >=
-
---------------------------------------------
-Declaración
-Asignación
-Inicialización
-
---------------------------------------------
 Ejercicios:
 001 Convertir grados celsius a fahrenheit
 002 Convertir centímetros a pulgadas

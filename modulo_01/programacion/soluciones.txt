@@ -1,0 +1,152 @@
+Soluciones
+---------------------------------------------------------------------
+01
+	la variable VALOR toma el valor de la expresión
+	4.0 * 5
+	es decir que VALOR pasa a ser 20
+
+02
+	X toma el valor 3.0
+	Y toma el valor 2.0
+	VALOR toma el valor de la expresión
+		X   ^ Y   - Y
+		3.0 ^ 2.0 - 2.0 
+		    8.0   - 2.0
+		          6.0
+	VALOR toma el valor 6.0
+
+03 
+	VALOR toma el valor 5
+	X toma el valor 3
+	VALOR toma el valor de la expresión
+		VALOR * X
+		5     * 3
+					15
+	VALOR toma el valor 15
+
+04 
+	Muestra en pantalla:
+		1	5
+
+05
+	A + B + C = 5 + 25 + 10 = 40
+	A + B * C = 5 + 25 * 10 = 5 + 250 = 255
+	A + B / C = 5 + 25 / 10 = 5 + 2.5 = 7.5
+	A + B \ C = 5 + 25 \ 10 = 5 + 2 = 7
+	A + B mod C = 5 + 25 mod 10 = 5 + 5 = 10
+	(A + B) \ C = (5 + 25) \ 10 = 30 \ 10 = 3
+	A + (B / C) = 5 + 2.5 = 7.5
+
+06
+	a) M / N + P
+	b) M + N / ( P - Q )
+	c) ( sen(x) + cos(x) ) / tan(x)
+	d) (m + n) / (p - q)
+	e) (m + n / p) / (q - r / 5)
+	f) ( - b + sqr(b^2 - 4 * a * c)) / 2 * a
+
+07 
+	a) 8 + 7 * 3 + 4 * 6 = 8 + 21 + 24 = 53
+	b) -2 ^ 3 = -8 (depende del orden de precedencia de los operadores)
+	c) (33 + 3 * 4) / 5) = (33 + 12) / 5 = 45 / 5 = 9
+	d) 2 ^ 2 * 3 = 4 * 3 = 12
+	e) 3 + 2 * (18 – 4 ^ 2) = 3 + 2 * (18 - 16) = 3 + 2 * 2 = 3 + 4 = 7
+	f ) 16 * 6 – 3 * 2 = 96 - 6 = 90
+
+08
+	AUX = A
+	A = C
+	C = B
+	B = AUX
+
+09 
+	AUX = A
+	A = B
+	B = AUX
+
+10														A: 		B:
+	A = 4												4			
+	B = A 											4			4
+	B = A + 3										4			7
+
+	A: 4
+	B: 7
+
+11 														A: 		B:
+	A = 5												5
+	B = A + 6										5			11
+	A = A + 1										6			11
+	B = A - 5										6			6
+
+	A: 6
+	B: 6
+
+12														A:		B:		C:
+	A = 3												3
+	B = 20											3			20
+	C = A + B 									3			20		23
+	B = A * B 									3			60		23
+	A = B - C 									37		60		23
+
+	A: 37
+	B: 60
+	C: 23
+
+13 														A:		B:
+	A = 10 											10
+	B = 5 											10		5
+	A = B 											 5		5
+	B = A 											 5		5
+
+	A: 5
+	B: 5
+
+14 
+	leer a
+	leer b
+	leer c
+
+	si a > b entonces
+		si a > c entonces
+			escribir "Mayor es a"
+		sino
+			escribir "Mayor es c"
+	sino
+		si b > c entonces
+			escribir "Mayor es b"
+		sino
+			escribir "Mayor es c"
+
+15 
+	leer pasos
+	
+	si pasos <= 5 entonces
+		costo = 10
+	sino
+		costo = 10 + (pasos - 5) * 5
+
+	escribir "La llamada costó " + costo
+
+16 
+	suma = 0
+	i = 1
+	mientras i <= 50 hacer
+		suma = suma + i
+		i = i + 1
+	fin mientras
+
+	escribir "La suma de los primeros 50 enteros es " + suma
+
+17 
+	leer n
+
+	factorial = 1
+
+	mientras n > 1 hacer
+		factorial = factorial * n
+		n = n - 1
+	fin mientras
+
+	escribir "El factorial es " + factorial
+
+18 

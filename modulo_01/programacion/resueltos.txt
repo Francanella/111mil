@@ -1,0 +1,112 @@
+Ejercicios resueltos
+---------------------------------------------------------------------
+		01 al 03 cual es el valor de VALOR al final de las sentencias?
+01	VALOR ← 4.0 * 5
+
+02	X ← 3.0
+		Y ← 2.0
+		VALOR ← X ^ Y - Y
+
+03	VALOR ← 5
+		X ← 3
+		VALOR ← VALOR * X
+
+04	Cual sería el resultado luego de las sentencias?
+	var Entero : X, Y
+	X ← 1
+	Y ← 5
+	escribir (X, Y)
+
+05 Deducir el valor de las expresiones siguientes 
+	(Siendo A = 5 B = 25 C = 10):
+	X ← A + B + C
+	X ← A + B * C
+	X ← A + B / C
+	X ← A + B \ C
+	X ← A + B mod C
+	X ← (A + B) \ C
+	X ← A + (B / C)
+	
+06  Escribir las siguientes expresiones en forma de expresiones algorítmicas:
+		a)  M
+		   --- + P
+		    N
+
+		          N
+		b) M + -------
+		        P - Q
+
+		    sen(x) + cos(x)
+		c) -----------------
+		        tan(x)
+
+		    m + n
+		d) -------
+		    p - q
+
+		         n
+		    m + ---
+		         p
+		e) ---------
+		         r
+		    q - ---
+		         5
+
+		            ____________
+		         \ /  2
+		    - b + V b   - 4 a c
+		f) ----------------------
+		            2 a
+
+07 Calcúlese el valor de las siguientes expresiones:
+		a) 8 + 7 * 3 + 4 * 6
+		b) –2 ^ 3
+		c) (33 + 3 * 4) / 5
+		d) 2 ^ 2 * 3
+		e) 3 + 2 * (18 – 4 ^ 2)
+		f ) 16 * 6 – 3 * 2
+
+08 Se tienen tres variables A, B y C. Escribir las instrucciones necesarias para intercambiar entre sí sus valores del modo
+siguiente:
+• B toma el valor de A
+• C toma el valor de B
+• A toma el valor de C
+Nota: Sólo se debe utilizar una variable auxiliar.
+
+09 Cómo se intercambian los valores de dos variables, A y B.
+
+10 Deducir el valor que toma la variable tras la ejecución de las instrucciones:
+	A ← 4
+	B ← A
+	B ← A + 3
+
+11 ¿Qué se obtiene en las variables A y B, después de la ejecución de las siguientes instrucciones?
+	A ← 5
+	B ← A + 6
+	A ← A + 1
+	B ← A - 5
+
+12 ¿Qué se obtiene en las variables A, B y C después de ejecutar las instrucciones siguientes?
+	A ← 3
+	B ← 20
+	C ← A + B
+	B ← A + B
+	A ← B - C
+
+13 ¿Qué se obtiene en A y B tras la ejecución de
+	A ← 10
+	B ← 5
+	A ← B
+	B ← A
+
+14 Determinar el mayor de tres números enteros.
+
+15 Determinar la cantidad total a pagar por una llamada telefónica, teniendo en cuenta lo siguiente:
+	• toda llamada que dure menos de tres minutos (cinco pasos) tiene un coste de 10 céntimos,
+	• cada minuto adicional a partir de los tres primeros es un paso de contador y cuesta 5 céntimos.
+
+16 Calcular la suma de los cincuenta primeros números enteros.
+
+17 Escribir un algoritmo que calcule el producto de los n primeros números naturales (factorial).
+
+18 

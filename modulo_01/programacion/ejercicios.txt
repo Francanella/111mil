@@ -1,0 +1,175 @@
+Ejercicios para hacer
+---------------------------------------------------------------------
+01 ¿Cuáles de los siguientes identificadores no son válidos?
+	a) XRayo 
+	b) X_Rayo
+	c) R2D2 
+	d) X
+	e) 45 
+	f ) N14
+	g) ZZZZ 
+	h) 3μ
+02 ¿Cuáles de las siguientes constantes no son válidas?
+	a) 234 
+	b) –8.975
+	c) 12E – 5 
+	d) 0
+	e) 32,767 
+	f ) 1/2
+	g) 3.6E + 7 
+	h) –7E12
+	i) 3.5 x 10 
+	j) 0,456
+	k) 0.000001 
+	l) 224E1
+03 Evaluar la siguiente expresión para A = 2 y B = 5:
+	3 * A - 4 * B / A ^ 2
+
+04 Evaluar la expresión
+	4 / 2 * 3 / 6 + 6 / 2 / 1 / 5 ^ 2 / 4 * 2
+
+05 Escribir las siguientes expresiones algebraicas como
+expresiones algorítmicas:
+
+	      ___________
+	   \ /  2
+	a)  V  b   - 4ac 
+
+	     2    2
+	    x  + y 
+	b) ---------
+	       2
+	      z
+
+	    3x + 2y
+	c) ---------
+	      2z
+
+
+	    a + b
+	d) -------
+	    c - d
+
+	     2
+	e) 4x - 2x + 7
+
+	    x + y     3x
+	f) ------- - ----
+	      x       5
+
+	    a
+	g) ----
+	    bc
+
+	h) xyz
+
+	    y2 - y1
+	i) ---------
+	    x2 - x1
+
+	j) 2 π r
+
+	    4     3
+	k) --- π r
+	    3
+
+	            2            2
+	l) (x2 - x1)  + (y2 - y1)
+
+06 Escribir las siguientes expresiones algorítmicas como
+expresiones algebraicas:
+	a) b ^ 2 – 4 * a * c
+	b) 3 * X ^ 4 – 5 * X ^ 3 + X 12 – 17
+	c) (b + d) / (c + 4)
+	d) (x ^ 2 + y ^ 2) ^ (1 / 2)
+
+07 Si el valor de A es 4, el valor de B es 5 y el valor
+de C es 1, evaluar las siguientes expresiones:
+	a) B * A – B ^ 2 / 4 * C
+	b) (A * B) / 3 ^ 2
+	c) (((B + C) / 2 * A + 10) * 3 * B) – 6
+
+08 Si el valor de A es 2, B es 3 y C es 2, evaluar la expresión:
+	A ^ B ^ C
+
+09 Obtener el valor de cada una de las siguientes expresiones
+aritméticas:
+	a) 7 div 2
+	b) 7 mod 2
+	c) 12 div 3
+	d) 12 mod 3
+	e) 0 mod 5
+	f ) 15 mod 5
+	g) 7 * 10 – 50 mod 3 * 4 + 9
+	h) (7 * (10 – 5) mod 3) * 4 + 9
+	Nota: Considérese la prioridad: 
+		más alta: *, /, div, mod; 
+		más baja: +, –.
+
+10 Encontrar el valor de cada una de las siguientes expresiones
+o decir si no es una expresión válida:
+	a) 9 – 5 – 3
+	b) 2 div 3 + 3 / 5
+	c) 9 div 2 / 5
+	d) 7 mod 5 mod 3
+	e) 7 mod (5 mod 3)
+	f) (7 mod 5) mod 3
+	g) (7 mod 5 mod 3)
+	h) ((12 + 3) div 2) / (8 – (5 + 1))
+	i) 12 / 2 * 3
+	j) raiz2(cuadrado(4)
+	k) cuadrado (raiz2(4))
+	l) trunc(815) + redondeo(815)
+
+11 Se desea calcular independiente la suma de los números
+pares e impares comprendidos entre 1 y 200.
+
+12 Leer una serie de números distintos de cero (el último
+número de la serie es –99) y obtener el número
+mayor. Como resultado se debe visualizar el número
+mayor y un mensaje de indicación de número negativo,
+caso de que se haya leído un número negativo.
+
+13 Calcular y visualizar la suma y el producto de los
+números pares comprendidos entre 20 y 400, ambos
+inclusive.
+
+14 Leer 500 números enteros y obtener cuántos son positivos.
+
+15 Se trata de escribir el algoritmo que permita emitir
+la factura correspondiente a una compra de un
+artícu lo determinado, del que se adquieren una o
+varias unidades. El IVA a aplicar es del 15 por 100
+y si el precio bruto (precio venta más IVA) es mayor
+de 1.000 pesos, se debe realizar un descuento del 5
+por 100.
+
+
+16 Calcular la suma de los cuadrados de los cien primeros
+números naturales.
+
+17 Sumar los números pares del 2 al 100 e imprimir su
+valor.
+
+18 Sumar diez números introducidos por teclado.
+
+19 Calcular la media de cincuenta números e imprimir
+su resultado.
+
+20 Calcular los N primeros múltiplos de 4 (4 inclusive),
+donde N es un valor introducido por teclado.
+
+21 Dados diez números enteros, visualizar la suma de
+los números pares de la lista, cuántos números pares
+existen y cuál es la media aritmética de los números
+impares.
+
+22 Escribir la suma de los diez primeros números
+pares.
+
+23 Desarrollar un algoritmo que determine en un conjunto
+de cien números naturales:
+• ¿Cuántos son menores de 15?
+• ¿Cuántos son mayores de 50?
+• ¿Cuántos están comprendidos entre 25 y 45?
+
