@@ -1,0 +1,228 @@
+Ejemplos de ejercicios
+---------------------------------------------------------------------
+01 Cálculo de la suma y producto de dos números.  La suma S de dos números es S = A + B y el producto P es P = A * B.  El pseudocódigo para resolver dicho problema, podría ser:
+
+inicio
+	entero S, P
+	leer A
+	leer B
+
+	S = A + B
+	P = A * B
+
+	escribir "La suma de ambos números es: " + S
+	escribir "El producto de ambos es: " + P
+fin
+
+02 Se trata de calcular el salario neto de un trabajador en función del número de horas trabajadas, precio de la hora de trabajo y, considerando unos descuentos fijos, el sueldo bruto en concepto de impuestos (20 por 100).
+
+inicio
+	entero nombre, horas, precio_hora, 
+	decimal salario_neto, salario_bruto, impuestos
+
+	leer nombre
+	leer horas
+	leer precio_hora
+
+	salario_bruto = horas * precio_hora
+	impuestos = salario_bruto * 0.2
+	salario_neto = salario_bruto - impuestos
+
+	escribir nombre, salario_bruto, salario_neto
+fin
+
+03 Si la ecuación es ax + b = 0, a y b son los datos, y las posibles soluciones son:
+• a <> 0 x = -b/a
+• a = 0 b <> 0 entonces "solución imposible"
+• a = 0 b = 0 entonces "solución indeterminada"
+
+inicio 
+	decimal a, b, x
+
+	leer a
+	leer b
+
+	si != 0 entonces
+		x = -b / a
+		escribir "La solución es: " + x
+	sino
+		si b != 0 entonces
+			escribir "Solución imposible"
+		sino
+			escribir "Solución indeterminada"
+		finsi
+	finsi
+fin
+
+04 Calcular la media aritmética de una serie de números positivos.
+La media aritmética de n números es
+
+	 x1 + x2 + x3 + ... + xn
+	-------------------------
+	             n
+
+En el problema se supondrá la entrada de datos por el teclado hasta que se introduzca el último número, en nuestro caso -99. Para calcular la media aritmética se necesita saber cuántos números se han introducido hasta llegar a -99; para ello se utilizará un contador n que llevará la cuenta del número de datos introducidos.
+
+inicio
+	entero n = 0
+	entero s = 0
+	decimal media
+
+	hacer
+		leer n
+		si n > 0 entonces
+			s = s + n
+			n = n + 1
+		finsi
+	mientras n != -99
+
+	si n > 0 entonces
+		media = s / n
+		escribir media
+	else
+		escribir "No se ingresaron números válidos!"
+	finsi
+fin
+
+05 Se desea obtener la nómina semanal —salario neto— de los empleados de una empresa cuyo trabajo se paga por horas y del modo siguiente:
+• las horas inferiores o iguales a 35 horas (normales) se pagan a una tarifa determinada que se debe introducir por teclado al igual que el número de horas y el nombre del trabajador,
+• las horas superiores a 35 se pagarán como extras a un promedio de 1,5 horas normales,
+• los impuestos a deducir a los trabajadores varían en función de su sueldo mensual:
+— sueldo <= 2.000, libre de impuestos,
+— las siguientes 220 pesos al 20 por 100,
+— el resto, al 30 por 100.
+
+inicio 
+	entero horasTrabajadas
+	decimal tarifaHora, salarioBruto, salarioNeto, impuestos
+	cadena nombre
+
+	leer nombre, horasTrabajadas, tarifaHora
+	si horasTrabajadas <= 35 entonces
+		salarioBruto = horasTrabajadas * tarifaHora
+	sino
+		salarioBruto = 35 * tarifaHora + (horasTrabajadas - 35) * 
+						tarifaHora * 1.5
+	finsi
+	si salarioBruto <= 2000 entonces
+		impuestos = 0
+	sino
+		si salarioBruto <= 2220 entonces
+			impuestos = (salarioBruto - 2000) * 0.2
+		sino
+			impuestos = 220 * 0.2 + (salarioBruto - 2220) * 0.3
+		finsi
+	finsi
+	salarioNeto = salarioBruto - impuestos
+	escribir nombre
+	escribir salarioBruto
+	escribir impuestos
+	escribir salarioNeto
+fin
+
+06 Empleo de estructura selectiva para detectar si un número tiene o no parte fraccionaria.
+
+inicio
+	decimal n
+
+	leer n
+	si n == trunc(n) entonces
+		escribir "Es entero!"
+	sino
+		escribir "Tiene parte decimal"
+	finsi
+
+fin
+
+07 Estructura selectiva para averiguar si un año leído de teclado es o no bisiesto.
+
+inicio
+	int año
+	leer año
+
+	if (año % 4 == 0) && (año % 100 != 0) || (año % 400 == 0) entonces
+		escribir "Año bisiesto!"
+	else
+		escribir "Año no bisiesto!"
+	finsi
+
+fin
+
+08 Algoritmo que nos calcule el área de un triángulo conociendo sus lados. La estructura selectiva se utiliza para el control de la entrada de datos en el programa.
+Nota: 
+	Area = raiz2(p * (p – a) * (p – b) * (p – c)) 
+	p = (a + b + c)/2
+
+inicio
+	decimal a, b, c, semiPerimetro, area
+
+	leer a
+	leer b
+	leer c
+
+	p = (a + b + c) / 2
+
+	si (p > a) && (p > b) && (p > c) entonces
+		area = raiz2(p * (p - a) * (p - b) * (p - c))
+		escribir area
+	sino
+		escribir "No es un triángulo!"
+	finsi
+fin
+
+09 Se desea diseñar un algoritmo que escriba los nombres de los días de la semana en función del valor de una variable DIA introducida por teclado.
+Los días de la semana son 7; por consiguiente, el rango de valores de DIA será 1 .. 7, y caso de que DIA tome un valor fuera de este rango se deberá producir un mensaje de error advirtiendo la situación anómala.
+
+inicio
+	entero dia
+
+	leer dia
+
+	segun dia hacer
+		1:	escribir "Lunes"
+				break
+		2:	escribir "Martes"
+				break
+		3:	escribir "Miércoles"
+				break
+		4:	escribir "Jueves"
+				break
+		5:	escribir "Viernes"
+				break
+		6:	escribir "Sábado"
+				break
+		7:	escribir "Domingo"
+				break
+		sino:
+				escribir "Día no válido!"
+	fin_segun
+
+fin
+
+10 Se desea convertir las calificaciones alfabéticas A, B, C, D, E y F a calificaciones numéricas 4, 5, 6, 7, 8 y 9 respectivamente.
+
+inicio
+	caracter letra
+	entero calificacion
+
+	leer letra
+
+	segun letra hacer
+		'A':	calificacion = 4
+					break
+		'B':	calificacion = 5
+					break
+		'C': 	calificacion = 6
+					break
+		'D':	calificacion = 7
+					break
+		'E':	calificacion = 8
+					break
+		'F':	calificacion = 9
+					break
+		sino:
+					escribir "Letra errónea!"
+	fin_segun
+
+fin
+
