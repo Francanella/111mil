@@ -3,7 +3,8 @@ Ejemplos de ejercicios
 01 Cálculo de la suma y producto de dos números.  La suma S de dos números es S = A + B y el producto P es P = A * B.  El pseudocódigo para resolver dicho problema, podría ser:
 
 inicio
-	entero S, P
+	entero S, P, A, B
+
 	leer A
 	leer B
 
@@ -14,21 +15,25 @@ inicio
 	escribir "El producto de ambos es: " + P
 fin
 
-02 Se trata de calcular el salario neto de un trabajador en función del número de horas trabajadas, precio de la hora de trabajo y, considerando unos descuentos fijos, el sueldo bruto en concepto de impuestos (20 por 100).
+02 Calcular el salario de un trabajador.  Se debe ingresar el nombre, horas 
+trabajadas y el importe a cobrar por hora.  Existen impuestos a descontar 
+del 20%.
+Mostrar en pantalla: nombre, salario bruto y salario neto
 
 inicio
-	entero nombre, horas, precio_hora, 
-	decimal salario_neto, salario_bruto, impuestos
+	cadena nombre
+	entero horas, precioHora, 
+	decimal salarioNeto, salarioBruto, impuestos
 
 	leer nombre
 	leer horas
-	leer precio_hora
+	leer precioHora
 
-	salario_bruto = horas * precio_hora
-	impuestos = salario_bruto * 0.2
-	salario_neto = salario_bruto - impuestos
+	salarioBruto = horas * precioHora
+	impuestos = salarioBruto * 0.2
+	salario_neto = salarioBruto - impuestos
 
-	escribir nombre, salario_bruto, salario_neto
+	escribir nombre, salarioBruto, salarioNeto
 fin
 
 03 Si la ecuación es ax + b = 0, a y b son los datos, y las posibles soluciones son:

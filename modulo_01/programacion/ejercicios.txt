@@ -27,6 +27,9 @@ Ejercicios para hacer
 
 04 Evaluar la expresión
 	4 / 2 * 3 / 6 + 6 / 2 / 1 / 5 ^ 2 / 4 * 2
+	4 / 2 * 3 / 6 + 6 / 2 / 1 / 25 / 4 * 2
+	      1       +       0.06
+	             1.06
 
 05 Escribir las siguientes expresiones algebraicas como
 expresiones algorítmicas:
@@ -35,31 +38,44 @@ expresiones algorítmicas:
 	   \ /  2
 	a)  V  b   - 4ac 
 
+		R:	raiz2(b ^ 2 - 4 * a * c )
+
 	     2    2
 	    x  + y 
 	b) ---------
 	       2
 	      z
 
+	  R: (x ^ 2 + y ^ 2) / z ^ 2
+
 	    3x + 2y
 	c) ---------
 	      2z
 
+	  R: (3 * x + 2 * y) / (2 * z)
 
 	    a + b
 	d) -------
 	    c - d
 
+	  R: ( a + b ) / ( c - d )
+ 
 	     2
 	e) 4x - 2x + 7
+
+		R: 4 * x ^ 2 - 2 * x + 7
 
 	    x + y     3x
 	f) ------- - ----
 	      x       5
 
+	  R: ((x + y) / x) - (3 * x / 5)
+
 	    a
 	g) ----
 	    bc
+
+	  R: 
 
 	h) xyz
 
@@ -68,6 +84,8 @@ expresiones algorítmicas:
 	    x2 - x1
 
 	j) 2 π r
+
+		R: 2 * pi * r 
 
 	    4     3
 	k) --- π r
@@ -79,6 +97,9 @@ expresiones algorítmicas:
 06 Escribir las siguientes expresiones algorítmicas como
 expresiones algebraicas:
 	a) b ^ 2 – 4 * a * c
+
+
+
 	b) 3 * X ^ 4 – 5 * X ^ 3 + X 12 – 17
 	c) (b + d) / (c + 4)
 	d) (x ^ 2 + y ^ 2) ^ (1 / 2)
@@ -86,22 +107,41 @@ expresiones algebraicas:
 07 Si el valor de A es 4, el valor de B es 5 y el valor
 de C es 1, evaluar las siguientes expresiones:
 	a) B * A – B ^ 2 / 4 * C
+	   5 * 4 - 5 ^ 2 / 4 * 1
+
 	b) (A * B) / 3 ^ 2
 	c) (((B + C) / 2 * A + 10) * 3 * B) – 6
 
 08 Si el valor de A es 2, B es 3 y C es 2, evaluar la expresión:
 	A ^ B ^ C
+	2 ^ 3 ^ 2
+	  8   ^ 2
+	     64
 
 09 Obtener el valor de cada una de las siguientes expresiones
 aritméticas:
 	a) 7 div 2
+			3
 	b) 7 mod 2
+			1
 	c) 12 div 3
 	d) 12 mod 3
 	e) 0 mod 5
 	f ) 15 mod 5
+	   0
 	g) 7 * 10 – 50 mod 3 * 4 + 9
+		   70   -     2    * 4 + 9
+		   70   -     8        + 9
+		        62             + 9
+		                      71
+
 	h) (7 * (10 – 5) mod 3) * 4 + 9
+     (7 *     5    mod 3) * 4 + 9
+     (  35         mod 3) * 4 + 9
+              2           * 4 + 9
+                          8   + 9
+                             17 
+
 	Nota: Considérese la prioridad: 
 		más alta: *, /, div, mod; 
 		más baja: +, –.
@@ -109,17 +149,42 @@ aritméticas:
 10 Encontrar el valor de cada una de las siguientes expresiones
 o decir si no es una expresión válida:
 	a) 9 – 5 – 3
+		R: 1
+
 	b) 2 div 3 + 3 / 5
+		R:  0    + 0.6 = 0.6
+
 	c) 9 div 2 / 5
+		R: 4 / 5 = 0.8
+
 	d) 7 mod 5 mod 3
+		R:  2    mod 3 = 2
+
 	e) 7 mod (5 mod 3)
+		R: 7 mod 2 = 1
+
 	f) (7 mod 5) mod 3
+		R: 2 mod 3 = 2
+
 	g) (7 mod 5 mod 3)
+		R:   2    mod 3 = 2
+
 	h) ((12 + 3) div 2) / (8 – (5 + 1))
+		R:(  15    div 2) / (8 - 6)
+							7       / 2
+										3.5
+
 	i) 12 / 2 * 3
-	j) raiz2(cuadrado(4)
+		R: 6 * 3 = 18
+
+	j) raiz2(cuadrado(4))
+		R: raiz2(16) = 4
+
 	k) cuadrado (raiz2(4))
-	l) trunc(815) + redondeo(815)
+		R: cuadrado( 2 ) = 4
+
+	l) trunc(81.5) + redondeo(81.5)
+		R:    81     +      82         = 163
 
 11 Se desea calcular independiente la suma de los números
 pares e impares comprendidos entre 1 y 200.
