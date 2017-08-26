@@ -31,15 +31,15 @@ inicio
 
 	salarioBruto = horas * precioHora
 	impuestos = salarioBruto * 0.2
-	salario_neto = salarioBruto - impuestos
+	salarioNeto = salarioBruto - impuestos
 
 	escribir nombre, salarioBruto, salarioNeto
 fin
 
 03 Si la ecuación es ax + b = 0, a y b son los datos, y las posibles soluciones son:
-• a <> 0 x = -b/a
-• a = 0 b <> 0 entonces "solución imposible"
-• a = 0 b = 0 entonces "solución indeterminada"
+• a <> 0       	x = -b/a
+• a = 0 				b <> 0 entonces "solución imposible"
+• a = 0 				b = 0 entonces "solución indeterminada"
 
 inicio 
 	decimal a, b, x
@@ -47,7 +47,7 @@ inicio
 	leer a
 	leer b
 
-	si != 0 entonces
+	si a != 0 entonces
 		x = -b / a
 		escribir "La solución es: " + x
 	sino
@@ -70,19 +70,20 @@ En el problema se supondrá la entrada de datos por el teclado hasta que se intr
 
 inicio
 	entero n = 0
+	entero contador = 0
 	entero s = 0
 	decimal media
 
 	hacer
 		leer n
 		si n > 0 entonces
+			contador = contador + 1
 			s = s + n
-			n = n + 1
 		finsi
 	mientras n != -99
 
-	si n > 0 entonces
-		media = s / n
+	si contador > 0 entonces
+		media = s / contador
 		escribir media
 	else
 		escribir "No se ingresaron números válidos!"
