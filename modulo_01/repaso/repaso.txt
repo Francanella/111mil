@@ -1,0 +1,37 @@
+repaso.txt
+Repaso del módulo: 1
+Técnicas de programación
+---------------------------------------------------------------------
+01 Indique, al menos, 5 unidades de memoria con sus respectivas
+	 equivalencias.
+
+02 Cuales son las diferencias entre un lenguaje de programación de
+	 bajo nivel y uno de alto nivel.
+
+03 Que entiende por sistema informático?
+
+04 Indique 4 actividades fundamentales comunes a todos los procesos
+	 de software
+
+05 Que entiende por algoritmo? Cuales son sus principales 
+	 características?
+
+06 Comente, al menos, dos técnicas de especificación de algoritmos
+
+07 Cuales son los pasos para la construcción de un programa?
+	 Describirlos.
+
+08 Explique el concepto de variable.
+
+09 Explique el concepto de constante.
+
+10 Describa los operadores mas comunes.
+
+11 Que entiende por rutina?  De algún ejemplo.
+
+12 Cuales son las tres tipos de estructuras necesarios para 
+	 construir un programa?
+
+13 amas a beti???
+
+14 página 32  
