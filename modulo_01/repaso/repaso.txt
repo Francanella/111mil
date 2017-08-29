@@ -32,4 +32,41 @@ Técnicas de programación
 12 Cuales son las tres tipos de estructuras necesarios para 
 	 construir un programa?
 
-13 página 32  
+13 Describa el funcionamiento de la estructura alternativa SI, 
+	 simple y doble
+
+14 Que entiende por estructura secuencial?
+
+15 Describa el funcionamiento de la estructura alternativa de 
+	 decisión múltiple SEGUN_SEA
+
+16 Describa el funcionamiento de la estructura repetitiva MIENTRAS .. HACER
+
+17 Describa el funcionamiento de la estructura repetitiva HACER .. MIENTRAS
+
+18 Describa el funcionamiento de la estructura repetitiva PARA 
+
+19 Que entiende por recursividad?  De un ejemplo de algoritmo recursivo, 
+	 defínalo.
+
+20 Defina brevemente la estructura de datos: LISTA.  Indique sus operaciones
+	 básicas.
+
+21 Defina brevemente la estructura de datos: PILA.  Indique sus operaciones
+	 básicas.
+
+22 Defina brevemente la estructura de datos: COLAS. Indique sus operaciones
+	 básicas.
+
+23 Defina brevemente la estructura de datos: ARBOL. Grafique un ejemplo.
+	 Detalle los componentes que conforman un árbol.
+
+24 Explique en forma escrita y gráfica el algoritmo de ordenación por 
+	 inserción.  Escriba el código correspondiente en Java.
+
+25 Explique en forma escrita y gráfica el algoritmo de ordenación por
+	 selección.  Escriba el código correspondiente en Java.
+
+26 Explique en forma escrita y gráfica el algoritmo de ordenación de la
+	 burbuja.  Escriba el código correspondiente en Java.
+	 
