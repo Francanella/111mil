@@ -69,4 +69,9 @@ Técnicas de programación
 
 26 Explique en forma escrita y gráfica el algoritmo de ordenación de la
 	 burbuja.  Escriba el código correspondiente en Java.
-	 
+
+27 Explique en forma escrita el algoritmo de ordenación Quick Sort
+
+28 Explique en forma escrita el algoritmo de búsqueda secuencial.
+	 Escriba el código correspondiente en Java.
+
