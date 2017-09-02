@@ -58,31 +58,109 @@ Técnicas de programación
 		tienen un tipo
 
 10 Describa los operadores mas comunes.
+	 + 				suma
+	 - 				resta
+	 * 				producto
+	 / 				división decimal
+	 \ o div 	división entera
+	 % 				módulo
+	 & o &&		and
+	 | o ||		or
+	 ~ 				not
+	 ==				igual
+	 !=				distinto
+	 <				menor que
+	 <=				menor o igual a
+	 >				mayor que
+	 >=				mayor o igual a 
 		
-11 Que entiende por rutina?  De algún ejemplo.
+no 11 Que entiende por rutina?  De algún ejemplo.
 
 12 Cuales son las tres tipos de estructuras necesarios para 
 	 construir un programa?
+	 Secuenciales
+	 Selectivas
+	 Repetitivas
 
 13 Describa el funcionamiento de la estructura alternativa SI, 
-	 simple y doble
+	 simple y doble:
+	 
+	 La respuesta es válida en pseudocódigo o en Java:
+	 
+	 si CONDICION entonces
+	 		sentencia/s
+	 finsi
+
+	 if(<condición>){
+	 		<sentencias>;
+	 }
+
+	 si CONDICION entonces
+	 		sentencia/s
+	 sino
+	 		sentencias/s
+	 finsi
+
+	 if(<condicion>){
+	 		<sentencias>;
+	 }else{
+	 		<sentencias>;
+	 }
 
 14 Que entiende por estructura secuencial?
+		Serie de instrucciones
+		Todas se ejecutan
+		Siempre en el mismo orden (del principio al final)
 
-15 Describa el funcionamiento de la estructura alternativa de 
+no 15 Describa el funcionamiento de la estructura alternativa de 
 	 decisión múltiple SEGUN_SEA
 
-16 Describa el funcionamiento de la estructura repetitiva MIENTRAS .. HACER
 
-17 Describa el funcionamiento de la estructura repetitiva HACER .. MIENTRAS
+	 pseudocódigo o Java
+16 Describa el funcionamiento de la estructura repetitiva MIENTRAS .. HACER
+		si la condición o expresión lógica es verdadera, las sentencias siguen
+		ejecutándose, por lo tanto, algo debe suceder en el cuerpo del bucle
+		(sentencias) para que, en algún momento, pase a ser falsa y, en 
+		consecuencia, se termine el bucle.
+
+		mientras CONDICION hacer
+				sentencias
+		finmientras
+
+		while(<condicion>){
+			<sentencias>;
+		}
+
+no 17 Describa el funcionamiento de la estructura repetitiva HACER .. MIENTRAS
 
 18 Describa el funcionamiento de la estructura repetitiva PARA 
+	 Esta estructura repetitiva utiliza una variable de control, la cual
+	 tiene un valor inicial, una condición que debe ser verdadera para que
+	 se ejecute el bucle y una actualización de la misma.
+
+	 for(vControl=vInicial; vControl<vFinal; vControl se actualiza)
+	 		<sentencia o bloque>;
+
 
 19 Que entiende por recursividad?  De un ejemplo de algoritmo recursivo, 
 	 defínalo.
+	 Son algoritmos que se definen en función de su propia definición.  Por
+	 ejemplo el algoritmo del factorial de N.
+	 El factorial de N es igual a N por el factorial de N-1 considerando que
+	 el factorial de 1 es igual a 1.
 
 20 Defina brevemente la estructura de datos: LISTA.  Indique sus operaciones
 	 básicas.
+	 La más común es el array
+	 Es una colección de datos referenciados por una variable.
+	 Los datos son del mismo tipo.
+	 Cada dato se referencia por el nombre de la variable y un índice.
+	 Tiene una longitud (que puede ser 0)
+
+	 Operaciones:
+	 		obtener un valor ( lista[indice])
+	 		modificar un valor ( lista[indice] = valor)
+	 		obtener su longitud (lista.longitud)
 
 21 Defina brevemente la estructura de datos: PILA.  Indique sus operaciones
 	 básicas.
@@ -120,8 +198,40 @@ Técnicas de programación
 26 Explique en forma escrita y gráfica el algoritmo de ordenación de la
 	 burbuja.  Escriba el código correspondiente en Java.
 
-* 27 Explique en forma escrita el algoritmo de ordenación Quick Sort
+	 Dado un array de N elementos, se recorre N-1 veces comparando de a 
+	 pares sus elementos e intercambiándolos en caso necesario, quedando
+	 en cada pasada el elemento en su ubicación correspondiente al final 
+	 del mismo.
+
+	int[] numeros = {8, 2, 7, 5, 3, 4, 6, 1};
+	int aux;
+	for(int i=0; i<numeros.length-1; i++){
+		for(int j=0; j<numeros.length-1-i; j++){
+			if(numeros[j] > numeros[j+1]){
+				aux = numeros[j];
+				numeros[j] = numeros[j+1];
+				numeros[j+1] = aux;
+			}
+		}
+	}
+
+no 27 Explique en forma escrita el algoritmo de ordenación Quick Sort
 
 28 Explique en forma escrita el algoritmo de búsqueda secuencial.
 	 Escriba el código correspondiente en Java.
 
+	boolean encontrado = false;
+  int i, buscado = 17;
+
+  for(i=0; i<numeros.length;i++){       
+      if(buscado == numeros[i]){
+          encontrado = true;
+          break;
+      }
+  }
+
+  if(encontrado){
+      System.out.println("Encontrado en la posicion: " + i);
+  }else{
+      System.out.println("Elemento no encontrado!!!");
+  }

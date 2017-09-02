@@ -25,8 +25,10 @@ class Binaria{
             }else{
                 if(buscado < numeros[centro]){
                     der = centro - 1;
-                }else{
+                }else if(buscado > numeros[centro]){
                     izq = centro + 1;
+                }else{
+                    
                 }
             }
         }
