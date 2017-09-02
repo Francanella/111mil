@@ -5,7 +5,7 @@
 class Secuencial{
 	public static void main(String[] args){
         // Inicializar el array
-		int[] numeros = {6,5,3,1,8,7,2,4};
+		int[] numeros = {6,5,3,1,8, 17,7,2,4};
 
         // Mostrar el array antes de buscar
         for(int i=0; i<numeros.length; i++)
