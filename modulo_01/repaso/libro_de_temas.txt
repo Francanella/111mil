@@ -1,0 +1,62 @@
+Libro de temas
+Modulo 01: Técnicas de programación
+
+---------------------------------------------------------------------
+Mayo
+---------------------------------------------------------------------
+
+Presentación del curso y explicación de la modalidad
+Temario del módulo 1: Técnicas de programación
+Encuesta/intercambio con los alumnos
+
+El software: Debate, conclusiones
+La computadora: Debate, exposición, conclusión
+Tipos de computadoras
+Estructura interna de una computadora
+Estructura interna de un procesador
+
+Sistemas: Debate, exposición, conclusiones
+Análisis de diferentes sistemas
+Características de los sistemas
+Comunicación con un sistema y entre sistemas
+
+El proceso de construcción del software
+La necesidad de un proceso
+Etapas del proceso de desarrollo del software
+Paradigmas de la programación
+Lenguajes naturales y formales
+
+Representación de la información
+Numeros binarios
+Representación de números enteros positivos
+Representación de negativos con signo
+Representación en complemento a dos
+
+Representación de caracteres
+El código ASCII
+UNICODE
+Representación de imágenes de mapas de bits
+Representación del video y el audio
+
+Lenguajes de programación
+Lenguajes de bajo y alto nivel
+Ejemplos de lenguajes de programación
+Definición de un problema
+Concepto de algoritmo
+
+Características de un algoritmo
+Procesador
+Instrucciones/Declaraciones
+Concepto de constante o literal
+Tipos de datos
+Organización de la memoria
+Variables
+
+---------------------------------------------------------------------
+Junio
+---------------------------------------------------------------------
+
+Tipos
+
+Julio
+Agosto

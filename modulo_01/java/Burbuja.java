@@ -70,10 +70,11 @@ class Burbuja{
                     numeros[j+1] = aux;
                 }
             }
-            for(int k=0; k<numeros.length; k++)
-                System.out.print("[" + numeros[k] + "] ");
-            System.out.println();
         }
+
+        for(int k=0; k<numeros.length; k++)
+            System.out.print("[" + numeros[k] + "] ");
+        System.out.println();
 
 	}
 }

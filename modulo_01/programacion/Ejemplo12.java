@@ -1,8 +1,11 @@
 /*
 	Recursión
 	Algoritmos recursivos
+	
+	Es un algoritmo que, para su definición, se invoca
+	a si mismo.
 
-	Factorial:
+	Ejemplo: Factorial
 		El factorial de n, es igual a n por
 		el factorial de n-1.
 */
