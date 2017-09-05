@@ -238,3 +238,147 @@ de cien números naturales:
 • ¿Cuántos son mayores de 50?
 • ¿Cuántos están comprendidos entre 25 y 45?
 
+24 Escribir las sentencias if apropiadas para cada una de las siguientes condiciones:
+	a) 
+		Si un ángulo es igual a 90 grados, imprimir el mensaje "El ángulo es recto", sino imprimir el mensaje "El ángulo no es recto".
+	b)
+		Si la temperatura es superior a 100 grados, visualizar el mensaje "por encima del punto de ebullición del agua", sino visualizar el mensaje "por debajo del punto de ebullición del agua".
+	c)
+		Si el número es positivo, sumar el número a total de positivos, sino sumarlo al total de negativos.
+	d)
+		Si x es mayor que y, y z es menor que 20, leer un valor para p.
+	e)
+		Si distancia es mayor que 20 y menor que 35, leer un valor para tiempo.
+
+25 
+	Escribir un programa que solicite al usuario introducir dos números.  Si el primer número es mayor eque el segundo, el programa debe imprimir el mensaje "El primer número es el mayor", en caso contrario el programa debe imprimir el mensaje "El primer número es el más pequeño".
+	Luego considerar que ambos números sean iguales e imprimir el mensaje correspondiente.
+
+26
+	Dados tres números deducir cual es el central.
+
+27 
+	Calcular la raíz cuadrada de un número y escribir su resultado.  Considerar el caso en que el número sea negativo (no tiene solución).
+
+28 
+	Escribir los diferentes métodos para deducir si una variable o expresión numérica es par.
+
+29 
+	Diseñar un programa en el que a partir de una fecha introducida por teclado con el formato DIA, MES, AÑO se obtenga la fecha del día siguiente (año no bisiesto).
+
+30
+	Se desea realizar una estadística de los pesos de los alumnos de un colegio de acuerdo a la siguiente tabla:
+	-	Alumnos de menos de 40 kg.
+	- Alumnos entre 40 y 50 kg.
+	- Alumnos de más de 50 kg y menos de 60 kg.
+	- Alumnos de 60 o más kg.
+
+31 
+	Realizar un algoritmo que averigue si dados dos números introducidos por teclado uno es divisor del otro.
+
+32 
+	Un ángulo se considera agudo si es menor de 90 grados, obtuso si es mayor de 90 grados y recto si es igual a 90 grados.  Utilizando esta información escribir un algoritmo que acepte un ángulo en grados y visualice el tipo de ángulo correspondiente a los grados introducidos.
+
+33
+	El sistema de calificación americano se suele calcular de acuerdo al siguiente cuadro:
+
+	grado numérico 												grado en letra
+	Mayor o igual a 90										A
+	Menor de 90 pero mayor o igual a 80		B
+	Menor de 80 pero mayor o igual a 70		C
+	Menor de 70 pero mayor o igual a 69		D
+	Menor de 69														F
+
+	Utilizando esta información, escribir un algoritmo que acepte una calificación numérica del estutidante (0-100), convierta esta a su equivalente en letra y visualice la calificación correspondiente en letra.
+
+34 
+	Escribir un programa que seleccione la operación aritmética a ejecutar entre dos números dependiendo del valor de una variable denominada seleccionOp.
+
+35
+	Escribir un programa que acepte dos números reales de un usuario y un código de selección.  Si el código introducido de selección es 1, entonces el programa suma los dos números introducidos previamente y se visualiza el resultado; si el código de selección es 2, los números deben ser multiplicados y visualizado el resultado; y si el código de selección es 3, el primer número se debe dividir por el segundo número y visualizar el resultado.
+
+36
+	Escribir un algoritmo que visualice el siguiente doble mensaje:
+
+	Introduzca un mes (1 para Enero, 2 para Febrero, ...)
+	Introduzca un día del mes
+
+	El algoritmo acepta y almacena un número en la variable mes en respuesta a la primera pregunta y acepta y almacena un número en la variable día en respuesta a la segunda pregunta.  Si el mes introducido no está entre 1 y 12 inclusive, se debe visualizar un mensaje de información al usuario advirtiéndole de que el número introducido no es válido como mes; de igual forma se procede con el número que representa el día del mes si no está en el rango comprendido entre 1 y 31.
+	Modifique el algoritmo para prever que el usuario introduzca números con decimales.
+
+	Nota:  como los años bisiestos, febrero tiene 29 días, modifique el programa de modo que advierta al usuario si introduce un día de mes que no existe (por ejemplo: 30 o 31).  Considere también el hecho de que hay meses de 30 días y otros meses de 31 días, de modo que nunca se produzca error de introducción de datos o que en su defecto se visualice un mensaje al usuario advirtiéndole del error cometido.
+
+--------------------------------------------------------------------------------------
+Estructuras repetitivas
+--------------------------------------------------------------------------------------
+
+01
+	Determinar la media de una lista indefinida de númerospositivos, terminados con un número negativo.
+
+02
+	Dado el nombre de un mes y si el año es o no bisiesto, deducir el número de días del mes.
+
+03 
+	Sumar los números enteros de 1 a 100 mediante: a) estructura repetir; b) estructura mientras; c) estructura desde.
+
+04
+	Determinar la media de una lista de números positivos terminada con un número no positivo después del último número válido.
+
+05 
+	Imprimir todos los números primos entre 2 y 1.000 inclusive.
+
+06
+	Se desea leer las calificaciones de una clase de informática y contar el número total de aprobados (5 o mayor que 5).
+
+07
+	Leer las notas de una clase de informática y deducir todas aquellas que son NOTABLES (>= 7 y < 9).
+
+08 
+	Leer 100 números. Determinar la media de los números positivos y la media de los números negativos.
+
+09
+	Un comercio dispone de dos tipos de artículos en fichas correspondientes a diversas sucursales con los siguientes campos:
+	• código del artículo A o B,
+	• precio unitario del artículo,
+	• número de artículos.
+	La última ficha del archivo de artículos tiene un código de artículo, una letra X. Se pide:
+	• el número de artículos existentes de cada categoría,
+	• el importe total de los artículos de cada categoría.
+
+10
+	Una estación climática proporciona un par de temperaturas diarias (máxima, mínima) (no es posible que alguna o ambas temperaturas sea 9 grados). La pareja fin de temperaturas es 0,0. Se pide determinar el número de días, cuyas temperaturas se han proporcionado, las medias máxima y mínima, el número de errores —temperaturas de 9°— y el porcentaje que representaban.
+
+11
+	Calcular el enésimo término de la serie de Fibonacci definida por:
+		A1 = 1 
+		A2 = 2 
+		A3 = 1 + 2 = A1 + A2
+		An = An – 1 + An – 2 (n >= 3)
+
+12
+	Se pretende leer todos los empleados de una empresa —situados en un archivo EMPRESA— y a la terminación de la lectura del archivo se debe visualizar un mensaje «existen trabajadores mayores de 65 años en un número de ...» y el número de trabajadores mayores de 65 años.
+
+13
+	Un capital C está situado a un tipo de interés R. ¿Al término de cuántos años se doblará?
+
+14
+	Se desea conocer una serie de datos de una empresa con 50 empleados: a) ¿Cuántos empleados ganan más de 30.000 pesos al mes (salarios altos); b) entre 10.000 y 30.000 pesos (salarios medios); y c) menos de 10.000 pesos (salarios bajos y empleados a tiempo parcial)?
+
+15
+	Imprimir una tabla de multiplicar como
+			1		2 	3 	4 	... 	15
+	** 	** 	** 	** 	** 	... 	**
+	1* 	1 	2 	3 	4 	... 	15
+	2* 	2 	4 	6 	8 	... 	30
+	3* 	3 	6 	9 	12 	... 	45
+	4* 	4 	8 	12 	16 	... 	60
+	.
+	.
+	.
+	n*	...
+
+	Donde n, sea un valor introducido por teclado.
+
+16
+	Dado un entero positivo n (> 1), comprobar si es primo o compuesto
+

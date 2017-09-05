@@ -56,7 +56,137 @@ Variables
 Junio
 ---------------------------------------------------------------------
 
-Tipos
+Tipos de datos: fundamentos (porque)
+Enteros, Decimales, diferentes tamaños, booleanos
+Caracteres y Cadena de caracteres.
 
+Variables: identificadores, tipo, valor, referencias
+Operadores: aritméticos, lógicos, relacionales, de cadena
+Expresiones: aritméticas, lógicas, relacionales, de cadena
+
+Sentencias/instrucciones
+Asignación
+Declaraciones
+Entrada/Salida
+
+Herramientas para la representación de los algoritmos
+Diagramas de flujo
+Pseudocódigo
+
+Estructuras fundamentales de la programación estructurada
+Secuenciales
+Selectivas
+Repetitivas
+
+Práctica intensa con estructuras secuenciales
+Análisis de enunciados (detectar entrada-proceso-salida).
+Prueba de escritorio
+El proceso de edición/compilación/ejecución/prueba en Java
+
+Práctica intensa con estructuras selectivas
+Estructuras selectivas en Java
+Entrada de datos en Java
+if, if/else, if anidados, switch
+Análisis con pruebas de escritorio
+
+Práctica intensa con estructuras repetitivas
+Estructuras repetitivas en Java
+contadores, sumadores, flags
+while, do/while, for
+salidas del bucle: break
+
+---------------------------------------------------------------------
 Julio
+---------------------------------------------------------------------
+
+Estructuras repetitivas anidadas
+Análisis con prueba de escritorio
+Ejercicios aplicados
+
+Introducción a los arreglos (arrays)
+Análisis de la estructura
+declaración
+inicialización
+Obtención de valores de los elementos
+
+recorrido
+Asignación de valores
+Búsqueda secuencial
+Crear arrays con elementos aleatorios en Java
+
+Análisis de los elementos de un array
+Ordenación por burbuja: fundamentos
+Implementación en Java
+análisis del algoritmo
+variantes/optimizaciones/eficiencia
+
+Ordenación por inserción: fundamentos
+Implementación en java
+Análisis de la eficiencia del algoritmo
+Ejercicios de práctica
+
+Ordenación por selección: fundamentos
+Implementación en Java
+Análisis de la eficiencia del algoritmo
+Ejercicios de práctica
+
+Introducción a los procedimientos/funciones
+Implementación en Java
+Introducción al ámbito de las variables
+Invocación de un procedimiento
+Práctica con procedimientos simples
+
+Parámetros y argumentos: concepto
+Paso por valor y por referencia: concepto
+Práctica con procedimientos simples que retornan valores
+
+---------------------------------------------------------------------
 Agosto
+---------------------------------------------------------------------
+Ampliación del concepto de ámbito
+Práctica intensiva con procedimientos
+Arreglos como parámetros
+Implementación de los algoritmos de ordenación como procedimientos
+
+Recursividad: concepto
+ventajas y desventajas frente a los algoritmos iterativos regulares
+El algoritmo de cálculo del factorial recursivo
+análisis y comparación con la versión iterativa
+
+Estructuras de datos: Listas
+El array como lista
+Procedimientos básicos con listas
+Cuando emplear una lista
+Listas de listas
+Recorrido
+
+Estructuras de datos: Pilas
+Análisis de casos que requieren de pilas
+Implementación básica de una pila con un arreglo
+Procedimientos fundamentales
+Ejercicios
+
+Estructuras de datos: Colas
+Análisis de casos que requieran de colas
+Implementación básica de una cola con un arreglo
+Procedimientos fundamentales
+Ejercicios
+
+Algoritmos fundamentales
+Búsqueda binaria
+El algoritmo QuickSort
+Análisis con respecto a los algoritmos básicos
+
+Práctica intensiva con estructuras de datos
+Ejercicios con pilas
+Ejercicios con colas
+Ejercicios con estructuras combinadas
+
+Estructuras de datos no lineales: árboles
+El arbol binario
+Componentes del árbol
+Procedimientos fundamentales con árboles
+
+Repaso para el exámen del módulo
+
+Exámen final del módulo

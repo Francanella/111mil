@@ -103,13 +103,17 @@ inicio
 	decimal tarifaHora, salarioBruto, salarioNeto, impuestos
 	cadena nombre
 
-	leer nombre, horasTrabajadas, tarifaHora
+	leer nombre 
+	leer horasTrabajadas
+	leer tarifaHora
+
 	si horasTrabajadas <= 35 entonces
 		salarioBruto = horasTrabajadas * tarifaHora
 	sino
 		salarioBruto = 35 * tarifaHora + (horasTrabajadas - 35) * 
 						tarifaHora * 1.5
 	finsi
+
 	si salarioBruto <= 2000 entonces
 		impuestos = 0
 	sino
@@ -119,7 +123,9 @@ inicio
 			impuestos = 220 * 0.2 + (salarioBruto - 2220) * 0.3
 		finsi
 	finsi
+
 	salarioNeto = salarioBruto - impuestos
+
 	escribir nombre
 	escribir salarioBruto
 	escribir impuestos
@@ -139,6 +145,12 @@ inicio
 	finsi
 
 fin
+-------------------------------------------------------------------------
+	if((n % 1) == 0)
+
+
+
+-------------------------------------------------------------------------
 
 07 Estructura selectiva para averiguar si un año leído de teclado es o no bisiesto.
 
@@ -232,3 +244,1164 @@ inicio
 
 fin
 
+11 Se desea leer por teclado un número comprendido entre 1 y 10 (inclusive) y se desea visualizar si el número es par o impar.
+Se deberá detectar si el número está comprendido en el rango válido (1 a 10), si el número es 1, 3, 5, 7, 9, escribir un mensaje de “impar” y si es 2, 4, 6, 8, 10, escribir un mensaje de “par”.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int n;
+
+		System.out.print("Ingrese un número comprendido entre 1 y 10 (inclusive): ");
+		n = sc.nextInt();
+
+		switch(n){
+			case 1:
+			case 3:
+			case 5:
+			case 7:
+			case 9:
+				System.out.println("Impar");
+				break;
+			case 2:
+			case 4:
+			case 6:
+			case 8:
+			case 10:
+				System.out.println("Par");
+				break;
+			default:
+				System.out.println("Número en rango no válido!");
+		}
+	}
+}
+
+12 Leída una fecha, decir el día de la semana, suponiendo que el día 1 de dicho mes fue lunes.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int dia;
+
+		System.out.print("Ingrese el día del mes: ");
+		dia = sc.nextInt();
+
+		switch(dia % 7){
+			case 0: 
+				System.out.println("Domingo!");
+				break;
+			case 1:
+				System.out.println("Lunes!");
+				break;
+			case 2:
+				System.out.println("Martes!");
+				break;
+			case 3:
+				System.out.println("Miércoles!");
+				break;
+			case 4:
+				System.out.println("Jueves!");
+				break;
+			case 5:
+				System.out.println("Viernes!");
+				break;
+			case 6:
+				System.out.println("Sábado!");
+		}
+	}
+}
+
+13 Preguntar qué día de la semana fue el día 1 del mes actual y calcular que día de la semana es hoy.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int primero, dia;
+
+		System.out.print("Que día de la semana fue el 1 del mes actual (0:Lunes, 1:Martes, etc: ");
+		primero = sc.nextInt();
+		System.out.print("Ingrese el día del mes: ");
+		dia = sc.nextInt();
+
+
+		switch((primero + dia) % 7){
+			case 0:
+				System.out.println("Domingo!");
+				break;
+			case 1:
+				System.out.println("Lunes!");
+				break;
+			case 2:
+				System.out.println("Martes!");
+				break;
+			case 3:
+				System.out.println("Miércoles!");
+				break;
+			case 4:
+				System.out.println("Jueves!");
+				break;
+			case 5:
+				System.out.println("Viernes!");
+				break;
+			case 6:
+				System.out.println("Sábado!");
+		}
+	}
+}
+
+14 Algoritmo que nos indique si un número entero, leído de teclado, tiene 1, 2, 3 o más de 3 dígitos. Considerar los negativos.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int n;
+
+		System.out.print("Ingrese un número: ");
+		n = sc.nextInt();
+
+		if(n < 0)
+			n *= -1;
+		
+		if(n / 100 >= 1)
+			System.out.println("tiene 3 o más cifras!");
+		else if(n / 10 >= 1)
+			System.out.println("tiene 2 cifras!");
+		else
+			System.out.println("tiene 1 cifra!");
+	}
+}
+
+15 Diseñar un algoritmo que lea tres números A, B, C y visualice en pantalla el valor del más grande. Se supone que los tres valores son diferentes.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int a, b, c, mayor;
+
+		System.out.println("Ingrese tres números");
+		System.out.print("A: ");
+		a = sc.nextInt();
+		System.out.print("B: ");
+		b = sc.nextInt();
+		System.out.print("C: ");
+		c = sc.nextInt();
+
+		if(a > b)
+			if(a > c)
+				mayor = a;
+			else
+				mayor = c;
+		else
+			if(b > c)
+				mayor = b;
+			else
+				mayor = c;
+
+		System.out.println("El mayor es " + mayor);
+	}
+}
+
+16 El siguiente algoritmo lee tres números diferentes, A, B, C, e imprime los valores máximo y mínimo. El procedimiento consistirá en comparaciones sucesivas de parejas de números.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int a, b, c, mayor;
+
+		System.out.println("Ingrese tres números");
+		System.out.print("A: ");
+		a = sc.nextInt();
+		System.out.print("B: ");
+		b = sc.nextInt();
+		System.out.print("C: ");
+		c = sc.nextInt();
+
+		if(a > b)
+			if(a > c)
+				if(b > c)
+					System.out.println("Mayor: "+a+" Menor: "+c);
+				else
+					System.out.println("Mayor: "+a+" Menor: "+b);
+			else
+				System.out.println("Mayor: "+c+" Menor: "+b);
+		else
+			if(b > c)
+				if(a > c)
+					System.out.println("Mayor: "+b+" Menor: "+c);
+				else
+					System.out.println("Mayor: "+b+" Menor: "+a);
+			else
+				System.out.println("Mayor: "+c+" Menor: "+a);
+	}
+}
+
+17 Algoritmo al que le damos la hora HH, MM, SS y nos calcule la hora dentro de un segundo. Leeremos las horas minutos y segundos como números enteros.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int h, m, s;
+
+		System.out.print("Ingrese la hora: ");
+		h = sc.nextInt();
+		System.out.print("Ingrese los minutos: ");
+		m = sc.nextInt();
+		System.out.print("Ingrese los segundos: ");
+		s = sc.nextInt();
+
+		s++;
+		if(s == 60){
+			s = 0;
+			m++;
+			if(m == 60){
+				m = 0;
+				h++;
+				if(h == 24){
+					h = 0;
+				}
+			}
+		}
+
+		System.out.println("Pasado un segundo la hora sería: "+h+":"+m+":"+s);
+
+	}
+}
+
+
+18 Leer dos números y deducir si están en orden creciente.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int m, n;
+
+		System.out.print("Ingrese un número: ");
+		m = sc.nextInt();
+		System.out.print("Ingrese otro número: ");
+		n = sc.nextInt();
+
+		if(n >= m)
+			System.out.println("Estan en orden creciente!");
+		else
+			System.out.println("No estan en orden creciente!");
+
+	}
+}
+
+
+19 Determinar el precio del billete de ida y vuelta en avión, conociendo la distancia a recorrer y sabiendo que si el número de días de estadía es superior a 7 y la distancia superior a 800 km el billete tiene una reducción del 30 por 100. El precio por km es de 2,5 pesos.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int distancia, estadia;
+		double tarifa;
+
+		System.out.print("Ingrese la distancia: ");
+		distancia = sc.nextInt();
+		System.out.print("Ingrese los días de estadía: ");
+		estadia = sc.nextInt();
+
+		tarifa = distancia * 2.5;
+
+		if(distancia > 800 && estadia > 7)
+			tarifa *= 0.7;
+
+		System.out.println("La tarifa final es de: " + tarifa);
+	}
+}
+
+
+20 Los empleados de una fábrica trabajan en dos turnos: diurno y nocturno. Se desea calcular el jornal diario de acuerdo con los siguientes puntos:
+1. la tarifa de las horas diurnas es de 5 pesos,
+2. la tarifa de las horas nocturnas es de 8 pesos,
+3. caso de ser domingo, la tarifa se incrementará en 2 pesos el turno diurno y 3 pesos el turno nocturno.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int horas;
+		String dia, turno;
+		double tarifa = 0;
+
+		System.out.print("Ingrese el día (use minúsculas): ");
+		dia = sc.nextLine();
+		System.out.print("Ingrese el turno (d/n): ");
+		turno = sc.nextLine();
+		System.out.print("Ingrese las horas trabajadas: ");
+		horas = sc.nextInt();
+
+		if(dia.equals("domingo")){
+			if(turno.equals("n"))
+				tarifa = (8 + 3) * horas;
+			else if(turno.equals("d"))
+				tarifa = (5 + 2) * horas;
+			else
+				System.out.println("Turno incorrecto!");
+		}else{
+			if(turno.equals("n"))
+				tarifa = 8 * horas;
+			else if(turno.equals("d"))
+				tarifa = 5 * horas;
+			else
+				System.out.println("Turno incorrecto!");
+		}
+
+		System.out.println("El jornal fue de: " + tarifa);
+	}
+}
+
+
+21 Construir un algoritmo que escriba los nombres de los días de la semana, en función de la entrada correspondiente a la variable DIA (siendo LUNES igual a 1).
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int dia;
+
+		System.out.print("Ingrese el número de día: ");
+		dia = sc.nextInt();
+
+		if(dia == 1)
+			System.out.println("LUNES");
+		else if(dia == 2)
+			System.out.println("MARTES");
+		else if(dia == 3)
+			System.out.println("MIERCOLES");
+		else if(dia == 4)
+			System.out.println("JUEVES");
+		else if(dia == 5)
+			System.out.println("VIERNES");
+		else if(dia == 6)
+			System.out.println("SABADO");
+		else if(dia == 7)
+			System.out.println("DOMINGO");
+		else
+			System.out.println("DIA INCORRECTO!");
+	}
+}
+
+
+22 
+	Leer por teclado un número que represente una cantidad de números que a su vez se leerán también por teclado.  Calcular la suma de todos esos números.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int n, cuantos, suma, i;
+
+		System.out.print("Cuantos números va a sumar: ");
+		cuantos = sc.nextInt();
+
+		suma = 0;
+		i = 0;
+		while(i < cuantos){
+			System.out.print("> ");
+			n = sc.nextInt();
+			suma = suma + n;
+			i = i + 1;
+		}
+
+		System.out.println("La suma es: " + suma);
+	}
+}
+
+
+23 
+	Contar los números enteros positivos introducidos por teclado.  Se consideran dos variables enteras numero y contador (contará el número de enteros positivos).  Se supone que se leen números positivos y se detiene el bucle cuando se lee un número negativo o cero.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int numero, contador = 0;
+
+		do{
+			System.out.print("Ingrese un número: ");
+			numero = sc.nextInt();
+			if(numero > 0)
+				contador++;
+		}while(numero > 0);
+
+		System.out.println("Se ingresaron "+contador+" números positivos.");
+	}
+}
+
+
+24
+	Considere los siguientes programas.  Que visualizarán y cuantas veces se ejecuta el bucle?
+
+	i = 0;
+	while(i < 6){
+		System.out.println(i);
+		i++;
+	}
+
+	-------------------------------
+
+	i = 0;
+	while(i < 6){
+		i++;
+		System.out.println(i);
+	}
+
+
+25
+	Calcule la media de un conjunto de notas de alumnos.  Pondremos un valor centinela de -99 que detecte el fin del bucle.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int nota, cantidad, suma, media;
+
+		suma = 0;
+		cantidad = 0;
+		do{
+			System.out.print("Ingrese una nota: ");
+			nota = sc.nextInt();
+			if(nota != -99){
+				suma = suma + nota;
+				cantidad++;
+			}
+		}while(nota != -99);
+
+		media = suma / cantidad;
+
+		System.out.println("El promedio es: " + media);
+	}
+}
+
+
+26
+	Usando el operador módulo haga un programa que lea un número y obtenga el número inverso (por ejemplo: 198 - 891).
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int numero, inverso, aux;
+
+		System.out.print("Ingrese un número: ");
+		numero = sc.nextInt();
+
+		inverso = 0;
+		while(numero > 9){
+			aux = numero % 10;
+			inverso = inverso * 10 + aux;
+			numero = numero / 10;
+		}
+		inverso = inverso * 10 + numero;
+		System.out.println("Inverso: " + inverso);
+	}
+}
+
+
+27
+	Desarrollar el algoritmo necesario para calcular el factorial de un número N que responda a la fórmula:
+
+		n! = n * (n-1) * (n-2) * ... * 3 * 2 * 1
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int n, factorial;
+
+		System.out.print("Ingrese un número: ");
+		n = sc.nextInt();
+
+		factorial = 1;
+
+		do{
+			factorial = factorial * n;
+			n--;
+		}while(n > 0); 
+/*
+		while(n > 1){
+			factorial = factorial * n;
+			n = n - 1;
+		}
+*/
+		System.out.println("El factorial es: "+factorial);
+	}
+}
+
+
+28
+	Encontrar el número positivo más pequeño (num) para el cual la suma 1 + 2 + ... + num es menor o igual que otro número llamado límite.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int num, suma, limite;
+
+		System.out.print("Ingrese el límite: ");
+		limite = sc.nextInt();
+
+		num = 0;
+		suma = 0;
+
+		do{
+			suma += num;
+			num++;
+		}while(num + suma <= limite);
+
+		System.out.println("La suma es: " + suma);
+		System.out.println("El número buscado es: " + --num);
+	}
+}
+
+
+21
+	Escribir los números del 1 al 100.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int i=1;
+
+		while(i<=100){
+			System.out.print(i+" ");
+			i++;
+		}
+		System.out.println();
+	}
+}
+
+
+22
+	Es muy frecuente tener que realizar validación de entrada de datos en la mayoría de las aplicaciones.  Este ejemplo detecta cualquier entrada comprendida entre 1 y 12, rechazando las restantes ya que se trata de leer los números correspondientes a los meses del año.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int mes;
+
+		do{
+			System.out.print("Ingrese el número de mes: ");
+			mes = sc.nextInt();
+		}while(mes < 1 || mes > 12);
+
+		System.out.println("El mes correcto es: " + mes);
+	}
+}
+
+
+23
+	Imprimir y mostrar el doble de 10 números introducidos por teclado. Se puede finalizar antes si se ingresa -99.  Use la instrucción break.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int n, i;
+
+		for(i=0; i<10; i++){
+			System.out.print("Ingrese un número: ");
+			n = sc.nextInt();
+			if(n == -99)
+				break;
+			System.out.println("El doble es: " + n*2);
+		}
+		System.out.println("Fin");
+	}
+}
+
+
+24
+	Mostrar los números del 1 al 100 excepto aquellos divisibles por 3 o por 5.  Use la instrucción continue.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int i;
+
+		for(i=0; i<=100; i++){
+			if(i % 3 == 0 || i % 5 == 0)
+				continue;
+			System.out.print(i+" ");
+		}
+		System.out.println();
+	}
+}
+
+
+25
+	Calcular el factorial de n números leídos desde el teclado.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int n, i, num, f, factorial;
+
+		System.out.print("Cuántos números: ");
+		n = sc.nextInt();
+
+		for(i=0; i<n; i++){
+			System.out.print("Calcular el factorial de: ");
+			num = sc.nextInt();
+			factorial = 1;
+			for(f=1; f<=num; f++)
+				factorial *= f;
+			System.out.println("El factorial es: " +  factorial);
+		}
+	}
+}
+
+
+26
+	Indicar si un número leído desde el teclado es primo.  Usar Math.sqrt().
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int n, i;
+		boolean primo;
+
+		System.out.print("Ingrese un número: ");
+		n = sc.nextInt();
+
+		primo = true;
+		for(i=2; i<=Math.sqrt(n);i++){
+			if(n % i == 0){
+				primo = false;
+				break;
+			}
+		}
+
+		if(primo)
+			System.out.println("Es primo!");
+		else
+			System.out.println("No es primo!");
+	}
+}
+
+
+27
+	Imprimir todos los números primos entre 2 y 100 inclusive.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int n, i, j;
+		boolean primo;
+
+		for(i=2; i<=100; i++){
+			primo = true;
+			for(j=2; j<=Math.sqrt(i); j++){
+				if(i % j == 0){
+					primo = false;
+					break;
+				}
+			}
+			if(primo)
+				System.out.print(i+" ");
+		}
+		System.out.println();
+	}
+}
+
+
+28
+	Confeccionar una tabla de multiplicación de n por m, ambos valores introducidos por teclado.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int m, n;
+
+		System.out.print("Ingrese m: ");
+		m = sc.nextInt();
+		System.out.print("Ingrese n: ");
+		n = sc.nextInt();
+
+		for(int i=0; i<n; i++)
+			System.out.print("\t["+i+"]");
+		System.out.println();
+
+		for(int i=0; i<m; i++){
+			System.out.print("["+i+"]: \t");
+			for(int j=0; j<n; j++){
+				System.out.print(i*j+"\t");
+			}
+			System.out.println();
+		}
+	}
+}
+
+
+29 
+	Confeccionar un programa que realice una tabla como la siguiente:
+            *
+          * * *
+        * * * * * 
+      * * * * * * *
+	  * * * * * * * * *
+	* * * * * * * * * * *
+
+	Donde la cantidad de niveles sea un número ingresado por teclado (en el ejemplo 6).
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int n, asteriscos;
+
+		System.out.print("Ingrese un número: ");
+		n = sc.nextInt();
+
+		asteriscos = 1;
+		for(int i=0; i<n; i++){
+			for(int j=0; j<n-1-i; j++){
+				System.out.print("  ");
+			}
+			for(int k=0; k<asteriscos; k++){
+				System.out.print("* ");
+			}
+			asteriscos += 2;
+			System.out.println();
+		}
+	}
+}
+
+
+30
+	Calcular el factorial de un número N utiliando la estructura for.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int i, n, factorial;
+
+		System.out.print("Ingrese un número: ");
+		n = sc.nextInt();
+
+		factorial = n;
+		for(i=1; i<n; i++){
+			factorial *= i;
+		}
+
+		System.out.println("El factorial es: " + factorial);
+	}
+}
+
+
+31
+	Escribir las treinta primeras potencias de 4, es decir 4 elevado a 1, 4 elevado a 2, etc.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int i, j;
+		long pot;
+
+		for(i=1; i<30; i++){
+			pot = 4;
+			for(j=1; j<i; j++){
+				pot *= 4;
+			}
+			System.out.println(pot);
+		}
+		System.out.println();
+	}
+}
+
+
+32
+	Calcular la suma de los n primeros números enteros utilizando la estructura for.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int i, n, suma;
+
+		System.out.print("Ingrese un número: ");
+		n = sc.nextInt();
+
+		suma = 0;
+		for(i=0; i<n; i++){
+			suma += i;
+		}
+
+		System.out.println("La suma es: " + suma);
+	}
+}
+
+
+33
+	Diseñar un algoritmo para imprimir la suma de los números impares menores o iguales que n.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int i, n, suma;
+
+		System.out.print("Ingrese un número: ");
+		n = sc.nextInt();
+
+		suma = 0;
+		for(i=1; i<=n; i+=2){
+			suma += i;
+		}
+
+		System.out.println("La suma de los impares menores es: " + suma);
+	}
+}
+
+
+34
+	Dados dos números enteros, sin usar el operador de división, confeccionar un algoritmo que calcule el cociente y el resto entre ambos.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int m, n, cociente;
+
+		System.out.print("Ingrese m: ");
+		m = sc.nextInt();
+		System.out.print("Ingrese n: ");
+		n = sc.nextInt();
+
+		cociente = 0;
+		while(m >= n){
+			m = m - n;
+			cociente++;
+		}
+		System.out.println("El cociente es: " + cociente);
+		System.out.println("El resto es:    " + m);
+	}
+}
+
+
+35
+	Realizar el algoritmo para obtener la suma de los números pares hasta 1000 inclusive.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int i, suma;
+
+		suma = 0;
+		for(i=2; i<=1000; i+=2)
+			suma += i;
+
+		System.out.println("La suma de los pares menores o iguales a 1000 es: " + suma);
+	}
+}
+
+
+36
+	Se desea leer de una consola una serie de números hasta obtener un número inferior a 100.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int n;
+
+		do{
+			System.out.print("Ingrese un número: ");
+			n = sc.nextInt();
+		}while(n >= 100);
+
+		System.out.println("Fin");
+	}
+}
+
+
+37
+	Escribir un programa que permita escribir en una pantalla la frase "Desea continuar? S/N" hasta que la respuesta sea "S" o "N".
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		String respuesta;
+
+		do{
+			System.out.print("Desea continuar? S/N ");
+			respuesta = sc.next();
+		}while(respuesta.equals("S") != true && respuesta.equals("N") != true);
+
+		System.out.println("Ingresó: " + respuesta);
+	}
+}
+
+
+38
+	Leer sucesivamente números del teclado hasta que se ingrese un número comprendido entre 1 y 5, ambos inclusive.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int n;
+
+		do{
+			System.out.print("Ingrese un número: ");
+			n = sc.nextInt();
+		}while(n < 1 || n > 5);
+
+		System.out.println("Opción: " + n);
+	}
+}
+
+
+39
+	Calcular el valor máximo de una serie de 100 números.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int i, n, mayor;
+
+		System.out.print("Ingrese un número: ");
+		mayor = sc.nextInt();
+		
+		for(i=1; i<100; i++){
+			System.out.print("Ingrese un número: ");
+			n = sc.nextInt();
+			if(n > mayor)
+				mayor = n;
+		}
+		System.out.println("El mayor fue: " + mayor);
+	}
+}
+
+
+40
+	Calcular el mayor de una serie de n números.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int i, num, n, mayor;
+
+		System.out.print("Cuantos números se ingresarán: ");
+		n = sc.nextInt();
+
+		if(n > 0){
+			System.out.print("Ingrese un número: ");
+			mayor = sc.nextInt();
+
+			for(i=1; i<n; i++){
+				System.out.print("Ingrese un número: ");
+				num = sc.nextInt();
+				if(num > mayor)
+					mayor = num;
+			}
+			System.out.println("El mayor fue: " + mayor);
+		}
+	}
+}
+
+
+41
+	Determinar simultáneamente los valores máximo y mínimo de una lista de 100 números.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int i, n, maximo, minimo;
+
+		System.out.println("Ingrese 100 números");
+		System.out.print("> ");
+		n = sc.nextInt();
+		maximo = n;
+		minimo = n;
+		for(i=1; i<100; i++){
+			System.out.print("> ");
+			n = sc.nextInt();
+			if(n < minimo)
+				minimo = n;
+			else
+				maximo = n;
+		}
+		System.out.println("El máximo es: " + maximo);
+		System.out.println("El mínimo es: " + minimo);
+	}
+}
+
+
+42
+	Se dispone de un cierto número de valores de los cuales el último es el 999 y se desea determinar el valor máximo de las medias de las parejas de valores sucesivos.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int n, m, mediaMax;
+
+		System.out.println("Ingrese números (finalizar con 999) ");
+		System.out.print("> ");
+		m = sc.nextInt();
+		if(m != 999){
+			System.out.print("> ");		
+			n = sc.nextInt();
+			mediaMax = (n + m) / 2;
+			while(n != 999){
+				System.out.print("> ");
+				n = sc.nextInt();
+				if(n != 999){
+					if(mediaMax < (m+n)/2)
+						mediaMax = (m+n)/2;
+				}
+				m = n;
+			}
+			System.out.println("Media máxima: " + mediaMax);
+		}
+	}
+}
+
+
+43
+	Detección de entradas numéricas —enteros— erróneas.  Realizará la comparación de N y parte entera de N:
+	• si son iguales, N es entero,
+	• si son diferentes, N no es entero.
+	Un método para calcular la parte entera es utilizar la función estándar ent (int)
+	Existente en muchos lenguajes deprogramación.  En Java (int)n, devuelve la parte entera de n.
+
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		double n; 
+
+		System.out.println("Ingrese un número entero ");
+		
+		do{
+			System.out.print("> ");
+			n = sc.nextDouble();
+			if(n != (int)n)
+				System.out.println("Entrada errónea, vuelva a intentar!");
+		}while(n != (int)n);
+
+		System.out.println("Entero: " + (int)n);
+	}
+}
+
+
+44
+	Se tienen las calificaciones de los alumnos de un curso de informática correspondiente a las asignaturas BASIC, Pascal, FORTRAN. Diseñar un algoritmo que calcule la media de cada alumno.
+	Se leerá el nombre de cada alumno y sus tres notas.  Para finalizar el algoritmo se ingresará un nombre igual a "***".
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		double a, b, c, media;
+		String nombre;
+
+		do{
+			System.out.print("Ingrese el nombre: ");
+			nombre = sc.next();
+			if(!nombre.equals("***")){
+				System.out.print("Nota en Basic: ");
+				a = sc.nextDouble();
+				System.out.print("Nota en Pascal: ");
+				b = sc.nextDouble();
+				System.out.print("Nota en FORTRAN: ");
+				c = sc.nextDouble();
+				media = (a + b + c) / 3;
+				System.out.println("Alumno:   " + nombre);
+				System.out.println("Promedio: " + media);
+			}
+		}while(!nombre.equals("***"));
+
+		System.out.println("FIN");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+111 Ordene el array [6 5 3 1 8 7 2 4] por el método de la burbuja
+
+inicio
+	entero[] numeros = {6 5 3 1 8 7 2 4}
+	entero 
+
+	for(i=0; i<numeros.length-1; i++){
+		for(j=0; )
+	}
