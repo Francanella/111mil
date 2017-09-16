@@ -113,11 +113,102 @@ Fecha: Sábado 16 de septiembre
 
 -----------------------------------------------------------
 	Variables
+		Se refiere a un lugar en la memoria de la computadora.
+		Sirven para almacenar o conocer un valor almacenado.
+		Una variable permite manejar un solo valor a la vez.
+		Si se almacena un valor se pierde el anterior.
+		Las variables tienen un nombre:
+			ese nombre debe comenzar con una letra
+				a
+				i
+			puede tener uno o más caracteres
+				nombre
+				valor1			
+			no se pueden usar espacios en blanco
+				direccion postal    ---> no es un nombre correcto
+			Se pueden usar símbolos
+				direccion_postal
+			Se aconseja no usar caracteres extendidos
+				(á é í ñ Ñ)
+				mejor: anio
+				peor: año
+			se aconseja que el primer caracter sea una letra
+				minúscula
+
+				direccionPostal
+				lugarDeNacimiento
+				salarioNeto
+
+		Las variables tienen un tipo de datos
+			pueden ser enteras, decimales, caracter, cadena de caracteres, lógicas
+
+-----------------------------------------------------------
+	Pseudocódigo
+		Es un lenguaje similar a los lenguajes de programación
+		Se utiliza para aprender a programar
+		También se utiliza para diseñar una solución que luego se implementará en algún lenguaje de programación.
+		Emplea tipos de datos simples.
+		Consta de palabras reservadas, normalmente, en castellano.
+		Es una de las principales herramientas empleadas para formalizar algoritmos (resolver problemas lógicos).
+
 	Formalización del pseudocódigo
 		Inicio
+			indica el inicio del algoritmo representado en pseudocódigo.
 		Fin
+			indica el final.
+
+
 	Estructuras secuenciales
+		Es un conjunto de instrucciones.
+		Se ejecutan en orden desde la primera a la última.
+		Se ejecutan todas.
+
+	Declaraciones
+		Son instrucciones donde se "declara" algo
+		Por ejemplo:
+			Inicio declara el inicio del programa
+			Fin declara el fin del programa
+			Entero edad  		declara que se va a usar una
+											variable llamada edad y que
+											va a contener un valor entero
+			Decimal salario
+											declara que se va a usar una
+											variable llamada salario y que
+											va a contener un valor decimal
+											
+
+
 	Asignación
+		Es la operación en la cual se "asigna" o carga un valor a la posición de la memoria referida por una variable.
+		El símbolo de la asignación es el igual =
+		Ejemplo:
+			a = 10
+
+			asigna el valor 10 a la posición de la memoria a la que se refiere la variable a
+
+			a la izquierda del signo igual siempre debe haber una variable
+
+			a la derecha debe haber una expresión de un tipo de datos compatible.
+
+			pi = 3.14
+			nombre = "Cristian"
+			direccion = "San Martín 999"
+			ciudad = "Azul"
+			letra = 'a'
+			casado = verdadero
+			mentiroso = falso
+
+
+
+
+
+
+
+
+
+
+
+
 	Leer
 	Escribir
 	
