@@ -1,0 +1,56 @@
+111mil
+Técnicas de programación
+Contenido de las clases
+
+Clase 01: Presentación
+Fecha: Lunes 11 de septiembre
+Computadoras
+Software
+Sistemas
+Algoritmos
+
+Clase 02: Fundamentos
+Fecha: Miércoles 13 de septiembre
+Que es una computadora?
+Que es un programa?
+Que significa programar?
+Que es un lenguaje de programación?
+Abstracción de la información
+	El porqué de la representación binaria
+	Representación binaria de
+		Números enteros positivos
+		Números enteros negativos
+		Números decimales (reales)
+		Caracteres
+			ASCII
+			ASCII Extendido
+			UNICODE
+		Imágenes
+			Monocromo
+			VGA
+			24 Bits
+
+
+Clase 03: Introducción a los algoritmos
+Fecha: Sábado 16 de septiembre
+	Pseudocódigo
+
+	Tipos de datos fundamentales:
+		Enteros
+		Decimales
+		Lógicos
+		Caracteres
+		Cadenas de caracteres
+
+	Constantes o literales
+	Operadores
+	Variables
+	Formalización del pseudocódigo
+		Inicio
+		Fin
+	Estructuras secuenciales
+	Asignación
+	Leer
+	Escribir
+	
+

@@ -1,0 +1,22 @@
+Clase 03: Introducción a los algoritmos
+Fecha: Sábado 16 de septiembre
+	Pseudocódigo
+
+	Tipos de datos fundamentales:
+		Enteros
+		Decimales
+		Lógicos
+		Caracteres
+		Cadenas de caracteres
+
+	Constantes o literales
+	Operadores
+	Variables
+	Formalización del pseudocódigo
+		Inicio
+		Fin
+	Estructuras secuenciales
+	Asignación
+	Leer
+	Escribir
+	
