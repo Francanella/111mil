@@ -1,27 +1,27 @@
 import java.util.Scanner;
 
-class Ejemplo {
-	public static void main(String args[]) {
+class Ejemplo{
+
+	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
-		double a, b, c, media;
-		String nombre;
+		int i, contador;
 
-		do{
-			System.out.print("Ingrese el nombre: ");
-			nombre = sc.next();
-			if(!nombre.equals("***")){
-				System.out.print("Nota en Basic: ");
-				a = sc.nextDouble();
-				System.out.print("Nota en Pascal: ");
-				b = sc.nextDouble();
-				System.out.print("Nota en FORTRAN: ");
-				c = sc.nextDouble();
-				media = (a + b + c) / 3;
-				System.out.println("Alumno:   " + nombre);
-				System.out.println("Promedio: " + media);
+		System.out.print("Ingrese un número: ");
+		int n = sc.nextInt();
+
+		contador = 0;
+		for(i=1; i<=n; i++){
+			if(n % i == 0){
+				contador++;
 			}
-		}while(!nombre.equals("***"));
+		}
 
-		System.out.println("FIN");
+		if(contador <= 2){
+			System.out.println("Es primo");
+		}else{
+			System.out.println("No es primo");
+		}
+		
+		System.out.println("Es divisible por: " + contador + " numeros");
 	}
 }

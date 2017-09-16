@@ -17,16 +17,16 @@ Técnicas de programación
 	 	El de alto nivel requiere más procesamiento para convertirse en
 	 		el lenguaje de la máquina
 
-03 Que entiende por sistema informático?
+no 03 Que entiende por sistema informático?
 		
-04 Indique 4 actividades fundamentales comunes a todos los procesos
+no 04 Indique 4 actividades fundamentales comunes a todos los procesos
 	 de software
 	 	especificación
 	 	desarrollo
 	 	validación
 	 	evolución del software
 
-05 Que entiende por algoritmo? Cuales son sus principales 
+no 05 Que entiende por algoritmo? Cuales son sus principales 
 	 características?
 	 	- preciso: orden lógico de los pasos
 	 	- definido: el resultado siempre debe ser el esperado

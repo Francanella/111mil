@@ -1385,14 +1385,195 @@ class Ejemplo {
 }
 
 
+-------------------------------------------------------------------------------
+Subalgoritmos
+-------------------------------------------------------------------------------
+
+01
+	Crear un subalgoritmo para calcular el factorial de un número y probarlo.
+
+	static int factorial(int x){
+		int i = x, f = 1;
+
+		while(i > 1){
+			f *= i;
+			i--;
+		}
+		return f;
+
+02 
+	Crear un subalgoritmo para calcular el cubo de un número.
+
+	static int cubo(int x){
+		int c = 1;
+
+		for(int i=0; i<3; i++)
+			c *= x;
+
+		return c;
+	}	
 
 
+03 
+	Crear un algoritmo que cree el MCD entre dos números m y n
+
+	static int mcd(int x, int y){
+		int r;
+		r = x % y;
+		while(r > 0){
+			x = y;
+			y = r;
+			r = x % y;
+		}
+		return y;
+	}
 
 
+04 
+	Definir la función potencia(n, x) para calcular la potencia x de n.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		double n;
+		int i, j;
+
+		System.out.println("Cálculo de potencias");
+		for(i=0; i<10; i++){
+			System.out.println("Potencias de "+i);
+			for(j=0; j<4; j++){
+				System.out.println(i+" a la "+j+" es igual a "+potencia(i, j));
+			}
+		}
+
+		System.out.println("FIN");
+	}
+
+	static double potencia(int n, int m){
+		double p = 1;
+		int i = 0;
+
+		while(i<m){
+			p = p * n;
+			i++;
+		}
+		return p;
+	}
+}
 
 
+05
+	Confeccionar un procedimiento que, dados dos números, calcule el dividendo y el divisor entre los mismos
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int m;
+		int[] r;
+
+		System.out.print("Ingrese un número: ");
+		m = sc.nextInt();
+
+		r = dobleYTriple(m);
+
+		System.out.println("Resultado: " + r[0] + " - " + r[1]);
+	}
+
+	static int[] dobleYTriple(int x){
+		int[] m = new int[2];
+		m[0] = x * 2;
+		m[1] = x * 3;
+		return m;
+	}
+}
 
 
+06
+	Confeccionar un algoritmo para convertir números arábigos a numeración romana
+	Debe funcionar con números menores o iguales a 3000.
+
+import java.util.Scanner;
+
+class Ejemplo {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		int m;
+		String r;
+
+		System.out.print("Ingrese un número: ");
+		m = sc.nextInt();
+
+		r = romanos(m);
+
+		System.out.println("Resultado: " + r);
+	}
+
+	static String romanos(int x){
+		String aux = "";
+		while(x>=1000){
+			aux += "M";
+			x -= 1000;
+		}
+		if(x>=900){
+			aux += "CM";
+			x -= 900;
+		}
+		if(x >= 500){
+			aux += "D";
+			x -= 500;
+		}
+		if(x >= 400){
+			aux += "CD";
+			x -= 400;
+		}
+		while(x >=100){
+			aux += "C";
+			x -= 100;
+		}
+		if(x>=90){
+			aux += "XC";
+			x -= 90;
+		}
+		if(x >= 50){
+			aux += "L";
+			x -= 50;
+		}
+		if(x >= 40){
+			aux += "XL";
+			x -= 40;
+		}
+		while(x >= 10){
+			aux += "X";
+			x -= 10;
+		}
+		if(x==9){
+			aux += "IX";
+			x -= 9;
+		}
+		if(x>=5){
+			aux += "V";
+			x -= 5;
+		}
+		if(x==4){
+			aux += "IV";
+			x -= 4;
+		}
+		while(x>=1){
+			aux += "I";
+			x--;
+		}
+		return aux;
+	}
+
+}
+
+
+07
+	
 
 
 
