@@ -1,5 +1,7 @@
+---------------------------------------------------------------------
 Clase 03: Introducción a los algoritmos
 Fecha: Sábado 16 de septiembre
+---------------------------------------------------------------------
 	Pseudocódigo
 
 	Tipos de datos fundamentales:
@@ -199,16 +201,4 @@ Fecha: Sábado 16 de septiembre
 			mentiroso = falso
 
 
-
-
-
-
-
-
-
-
-
-
-	Leer
-	Escribir
 	

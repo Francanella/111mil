@@ -2,15 +2,19 @@
 Técnicas de programación
 Contenido de las clases
 
+---------------------------------------------------------------------
 Clase 01: Presentación
 Fecha: Lunes 11 de septiembre
+---------------------------------------------------------------------
 Computadoras
 Software
 Sistemas
 Algoritmos
 
+---------------------------------------------------------------------
 Clase 02: Fundamentos
 Fecha: Miércoles 13 de septiembre
+---------------------------------------------------------------------
 Que es una computadora?
 Que es un programa?
 Que significa programar?
@@ -31,26 +35,215 @@ Abstracción de la información
 			24 Bits
 
 
+---------------------------------------------------------------------
 Clase 03: Introducción a los algoritmos
 Fecha: Sábado 16 de septiembre
+---------------------------------------------------------------------
 	Pseudocódigo
 
 	Tipos de datos fundamentales:
 		Enteros
+			1
+			123
+			1231231231231
+			-2323
+			0
 		Decimales
+			1.5
+			1.0
+			123.0
+			-2323.0
 		Lógicos
+			verdadero - true
+			falso - false
 		Caracteres
+			'A'
+			'a'
+			'0'
+			'3'
+			'*'
 		Cadenas de caracteres
-
+			"hola"
+			"bettina"
+			"claudio altamiranda"
+			"   "
+			""
+			"A"
+-----------------------------------------------------------
 	Constantes o literales
+		Son los datos.
+		Tienen un valor constante.
+		Corresponden a un tipo de datos determinado.
+		1
+		"hola"
+		"Hola"
+		'a'
+		true
+		verdadero
+		false
+		falso
+		3.14
+-----------------------------------------------------------
 	Operadores
+		Representan las operaciones que se pueden realizar con los distintos tipos de datos.
+		Permiten crear expresiones.
+		Las expresiones tienen un valor (resultado).
+
+		+ operador mas: es el operador que representa la suma
+			1 + 2    --->  3
+			5.0 + 10.5 ---> 15.5
+			10 + 2.5 ---> 12.5
+			"hola" + "mundo"  ---> "holamundo"
+			"hola " + "mundo"
+			"hola" + " " + "mundo"
+		- operador menos: resta
+			1 - 2  ---> -1
+			10.5 - 0.5  ---> 10.0
+			10 - 2.5  ---> 7.5
+		* operador multiplicación: producto
+			10 * 2
+			10.5 * 3.0
+			10.5 * 2
+		/ operador división: cociente
+			10 / 2  ---> 5
+			10 / 3  ---> 3
+			15.0 / 3.0  ---> 5.0
+			10 / 3.0  ---> 3.3333
+		% operador módulo: resto de la división entera
+			10 % 2  ---> 0
+			10 % 3  ---> 1
+			11 % 3  ---> 2
+		== igualdad: comparación
+			10 == 3  ---> falso
+			3 == 3  ---> verdadero
+			4 == 2 + 2  ---> verdadero
+		!= distinto - diferente <>
+			10 != 3  ---> verdadero
+			3 != 3  ---> falso
+			4 != 2 + 2  ---> falso
+			"hoLa" != "Hola"  ---> verdadero
+		< operador "menor que" 
+			10 < 3   ---> falso
+			3 < 10   ---> verdadero
+			3 < 3    ---> falso
+			'a' < 'b'  ---> verdadero
+			'z' < 'A'  ---> falso  "ABCDE...Zabcde...z"
+									'A' ---> 65
+									'a' ---> 97
+			"hola" < "mundo"   ---> verdadero
+		> operador "mayor que"
+			10 > 3  ---> verdadero
+			3 > 10  ---> falso
+			3 > 3   ---> falso
+		<= operador "menor o igual a"
+		>= operador "mayor o igual a"
+
+		& operador "y" o "and" (lógico)
+			verdadero & verdadero  ---> verdadero
+			falso & verdadero  ---> falso
+			verdadero & falso  ---> falso
+			falso & falso  ---> falso
+
+		| operador "o" o "or" (lógico)
+			verdadero | verdadero  ---> verdadero
+			verdadero | falso  ---> verdadero
+			falso | verdadero  ---> verdadero
+			falso | falso  ---> falso
+
+-----------------------------------------------------------
 	Variables
+		Se refiere a un lugar en la memoria de la computadora.
+		Sirven para almacenar o conocer un valor almacenado.
+		Una variable permite manejar un solo valor a la vez.
+		Si se almacena un valor se pierde el anterior.
+		Las variables tienen un nombre:
+			ese nombre debe comenzar con una letra
+				a
+				i
+			puede tener uno o más caracteres
+				nombre
+				valor1			
+			no se pueden usar espacios en blanco
+				direccion postal    ---> no es un nombre correcto
+			Se pueden usar símbolos
+				direccion_postal
+			Se aconseja no usar caracteres extendidos
+				(á é í ñ Ñ)
+				mejor: anio
+				peor: año
+			se aconseja que el primer caracter sea una letra
+				minúscula
+
+				direccionPostal
+				lugarDeNacimiento
+				salarioNeto
+
+		Las variables tienen un tipo de datos
+			pueden ser enteras, decimales, caracter, cadena de caracteres, lógicas
+
+-----------------------------------------------------------
+	Pseudocódigo
+		Es un lenguaje similar a los lenguajes de programación
+		Se utiliza para aprender a programar
+		También se utiliza para diseñar una solución que luego se implementará en algún lenguaje de programación.
+		Emplea tipos de datos simples.
+		Consta de palabras reservadas, normalmente, en castellano.
+		Es una de las principales herramientas empleadas para formalizar algoritmos (resolver problemas lógicos).
+
 	Formalización del pseudocódigo
 		Inicio
+			indica el inicio del algoritmo representado en pseudocódigo.
 		Fin
+			indica el final.
+
+
 	Estructuras secuenciales
+		Es un conjunto de instrucciones.
+		Se ejecutan en orden desde la primera a la última.
+		Se ejecutan todas.
+
+	Declaraciones
+		Son instrucciones donde se "declara" algo
+		Por ejemplo:
+			Inicio declara el inicio del programa
+			Fin declara el fin del programa
+			Entero edad  		declara que se va a usar una
+											variable llamada edad y que
+											va a contener un valor entero
+			Decimal salario
+											declara que se va a usar una
+											variable llamada salario y que
+											va a contener un valor decimal
+											
+
+
 	Asignación
+		Es la operación en la cual se "asigna" o carga un valor a la posición de la memoria referida por una variable.
+		El símbolo de la asignación es el igual =
+		Ejemplo:
+			a = 10
+
+			asigna el valor 10 a la posición de la memoria a la que se refiere la variable a
+
+			a la izquierda del signo igual siempre debe haber una variable
+
+			a la derecha debe haber una expresión de un tipo de datos compatible.
+
+			pi = 3.14
+			nombre = "Cristian"
+			direccion = "San Martín 999"
+			ciudad = "Azul"
+			letra = 'a'
+			casado = verdadero
+			mentiroso = falso
+
+
+	
+
+---------------------------------------------------------------------
+Clase 04: 
+Fecha: Lunes 18 de septiembre
+---------------------------------------------------------------------
 	Leer
 	Escribir
-	
 
