@@ -6,7 +6,7 @@ Ejercicios para hacer
 	c) R2D2 
 	d) X
 	e) 45 
-	f ) N14
+	f) N14
 	g) ZZZZ 
 	h) 3μ
 02 ¿Cuáles de las siguientes constantes no son válidas?
@@ -97,9 +97,6 @@ expresiones algorítmicas:
 06 Escribir las siguientes expresiones algorítmicas como
 expresiones algebraicas:
 	a) b ^ 2 – 4 * a * c
-
-
-
 	b) 3 * X ^ 4 – 5 * X ^ 3 + X 12 – 17
 	c) (b + d) / (c + 4)
 	d) (x ^ 2 + y ^ 2) ^ (1 / 2)
