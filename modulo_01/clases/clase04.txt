@@ -267,19 +267,3 @@ Escribir
 
 
 
-
-
----------------------------------------------------------------------
-Estructura básica (patrón) de un algoritmo secuencial
-  Inicio
-    Declaraciones
-    Entradas
-    Procesos/cálculos
-    Salidas
-  Fin
-
----------------------------------------------------------------------
-Enunciados de algoritmos
-
----------------------------------------------------------------------
-Práctica: Pseudocódigo
