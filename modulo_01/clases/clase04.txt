@@ -6,11 +6,11 @@ Práctica: Tipos de datos
 Cuantos de los siguientes valores pertenecen a cada tipo de datos (enteros, decimales, lógicos, caracteres, cadenas de caracteres) y cuantos son erróneos?
 	123							E     	CADENA:   6
 	"argentina"			S 			ENTERO:   4
-	18							E 			DECIMAL:  4
+	18							E 		  DECIMAL:  4
 	'a'							C 		 	CARACTER: 3
 	8.88801					D 			LOGICO:   2
 	"12345"					S 			ERROR:    9
-	true						L
+	true						L 
 	""							S
 	880							E
 	'X'							C
