@@ -1,0 +1,166 @@
+---------------------------------------------------------------------
+Clase 05
+Fecha: Miércoles
+---------------------------------------------------------------------
+Estructura básica (patrón) de un algoritmo secuencial
+  Inicio
+    Declaraciones
+  	Entradas
+    Procesos/cálculos
+    Salidas
+  Fin
+
+Indentación: 
+	sangrías, espacios en blanco, representa una dependencia
+	Cuando se quiere desarrollar un algoritmo que consta de uno o mas 
+	bloques, cada uno de los cuales, con un fin determinado, la indentación
+	sirve para indicar visualmente la pertenecia de las instrucciones a cada
+	uno de los bloques.
+	Es importante para la legibilidad.
+
+Declaraciones:
+	Es la sección del algoritmo donde se indican los nombres y tipos de 
+	variables que se utilizaran.
+
+	Ej:
+		Entero sueldoBruto
+		Entero impuestos
+		Decimal descuento
+		Cadena nombre
+		Cadena domicilioLaboral
+		Logico estadoCivil
+		Carácter codigo
+
+Entradas
+	leer a
+
+		Significa que el programa cesa de ejecutarse hasta que el usuario
+		ingresa a través del teclado un valor el cual se asigna a la 
+		variable a cuando este presione la tecla <ENTER>
+
+	leer "Ingrese su nombre: " nombre
+
+Procesos/cálculos
+	asignaciones
+	Ej: 
+		sueldoBruto = horasTrabajadas * precioHora
+
+Salidas:
+	Es la parte del programa donde se visualiza la información que, 
+	en definitiva, requiere el usuario.
+
+
+---------------------------------------------------------------------
+Práctica: Pseudocódigo
+
+Ejemplos completos:
+	El siguiente algoritmo realiza la suma de dos números enteros
+	ingresados por el usuario y muestra el resultado de la misma.
+
+	Inicio
+		Entero a
+		Entero b
+		Entero suma
+
+		leer a
+		leer b
+
+		suma = a + b
+
+		escribir suma
+	Fin
+
+
+	El siguiente algoritmo realiza la suma, resta, multiplicación y
+	división entre dos números enteros ingresados por teclado. A 
+	continuación muestra los resultados de dichas operaciones en 
+	formato decimal.
+
+	Inicio
+		Entero a
+		Entero b
+		Decimal suma
+		Decimal resta
+		Decimal multipicacion
+		Decimal division
+
+		leer a
+		leer b
+
+		suma = a + b
+		resta = a - b
+		multiplicacion = a * b
+		division = a / b
+
+		escribir suma
+		escribir resta
+		escribir multiplicacion
+		escribir division
+	Fin
+
+	Inicio
+		Entero a
+		Entero b
+		Decimal resultado
+
+		leer a
+		leer b
+
+		resultado = a + b
+		escribir resultado
+
+		resultado = a - b
+		escribir resultado
+
+		resultado = a * b
+		escribir resultado
+
+		resultado = a / b
+		escribir resultado
+	Fin
+
+
+---------------------------------------------------------------------
+Conceptos generales de computación
+---------------------------------------------------------------------
+Sistemas operativos
+	El sistema operativo original de las PC se llamaba MS DOS este sistema
+	operativo no constaba de interfaz gráfica
+
+Concepto
+	Es un conjunto de programas que sirven para ocultar la complejidad del
+	hardware.
+
+Estructura
+	Shell o interfaz de usuario
+		Lo que ve el usuario, es la parte visible del sistema operativo
+		Existen interfaces
+			Gráficas
+			Solo texto
+	Núcleo o kernel
+		es la parte central y es lo que algunos consideran el "verdadero"
+		sistema operativo
+	Controladores de dispositivos o drivers
+		Son programas que sirven para que el sistema operativo reconozca
+		cada tipo específico de dispositivos.
+
+
+	
+
+
+
+
+---------------------------------------------------------------------
+Repaso de la clase 4
+---------------------------------------------------------------------
+
+Tipos de datos
+	
+
+
+
+---------------------------------------------------------------------
+Enunciados de algoritmos
+
+
+
