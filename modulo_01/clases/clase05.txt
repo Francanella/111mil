@@ -1,21 +1,18 @@
 ---------------------------------------------------------------------
 Clase 05
-Fecha: Miércoles
+Fecha: Miércoles 20 de septiembre
 ---------------------------------------------------------------------
+
 Estructura básica (patrón) de un algoritmo secuencial
   Inicio
     Declaraciones
-  	Entradas
+    Entradas
     Procesos/cálculos
     Salidas
   Fin
 
 Indentación: 
 	sangrías, espacios en blanco, representa una dependencia
-	Cuando se quiere desarrollar un algoritmo que consta de uno o mas 
-	bloques, cada uno de los cuales, con un fin determinado, la indentación
-	sirve para indicar visualmente la pertenecia de las instrucciones a cada
-	uno de los bloques.
 	Es importante para la legibilidad.
 
 Declaraciones:
@@ -163,4 +160,9 @@ Tipos de datos
 Enunciados de algoritmos
 
 
+---------------------------------------------------------------------
+Enunciados de algoritmos
+
+---------------------------------------------------------------------
+Práctica: Pseudocódigo
 

@@ -246,6 +246,7 @@ Fecha: Lunes 18 de septiembre
 ---------------------------------------------------------------------
 Práctica: Tipos de datos
 Cuantos de los siguientes valores pertenecen a cada tipo de datos (enteros, decimales, lógicos, caracteres, cadenas de caracteres) y cuantos son erróneos?
+<<<<<<< HEAD
 	123							E     	CADENA:   6
 	"argentina"			S 			ENTERO:   4
 	18							E 			DECIMAL:  4
@@ -524,4 +525,270 @@ Enunciados de algoritmos
 
 ---------------------------------------------------------------------
 Práctica: Pseudocódigo
+=======
+  123             E       CADENA:   6
+  "argentina"     S       ENTERO:   4
+  18              E       DECIMAL:  4
+  'a'             C       CARACTER: 3
+  8.88801         D       LOGICO:   2
+  "12345"         S       ERROR:    9
+  true            L
+  ""              S
+  880             E
+  'X'             C
+  8.000 1         ERR
+  '1100'          ERR
+  "canción"       S
+  1,234,567.98    ERR
+  0.1             D
+  '1'             C
+  '17'            ERR
+  ''              ERR
+  "precio         ERR
+  3.14            D
+  0.00001         D
+  'buenos aires'  ERR
+  0 03            ERR
+  "d'artagnan"    S
+  false           L
+  4,45            ERR
+  1200            E
+  "ahora"         S
+>>>>>>> f9ab20ccc60cbd144eba37d3bbdaeb78993499ad
 
+---------------------------------------------------------------------
+Práctica: Operadores
+  Suma            +
+  Resta           -
+  Producto        *
+  División        /
+  Módulo          %
+  And             &
+  Or              |
+
+---------------------------------------------------------------------
+Operadores (2da parte)
+  Potencia
+    2^3   -->  2 al cubo  --> 2 * 2 * 2  --> 8
+    2^4   -->  2 a la cuarta --> 2 * 2 * 2 * 2 --> 16
+    2^5   -->  32
+    3^2   -->  3 al cuadrado --> 3 * 3 --> 9
+    3^4   -->  3 a la cuarta --> 3 * 3 * 3 * 3 --> 81 
+
+  Orden de precedencia de los operadores aritméticos
+    2 * 2 + 2
+      4   + 2
+          6
+
+    2 + 2 * 2
+    2 +   4
+      6
+
+    La multiplicación tiene precedencia sobre la suma
+    y la resta
+
+    3 * 3 - 3
+      9   - 3
+          6
+
+    3 - 3 * 3
+    3 -   9
+      -6
+
+    La división, también, tiene precedencia sobre la
+    suma y la resta
+
+  Paréntesis
+    Los paréntesis () permiten alterar el orden de
+    precedencia de los operadores.
+
+    2 + 2 * 2 
+    2 +   4
+      6
+
+    (2 + 2) * 2
+       4    * 2
+            8
+
+    Anidar paréntesis
+    ((4 + 2) * 2) - 2
+    (   6    * 2) - 2
+            12    - 2
+                 10
+
+---------------------------------------------------------------------
+Práctica: Variables 
+  Cuales están ok y cuales son recomendables?
+  XRayo     ok        no
+  X_Rayo    ok        no
+  R2D2      ok        no
+  X         ok        no
+  45        mal 
+  N14       ok        no
+  ZZZZ      ok        no
+  3μ        mal  
+  nombre    ok        si
+  suma      ok        si
+  monto     ok        si
+  i         ok        si
+  n1        ok        si
+  n2        ok        si
+  3n        mal
+
+---------------------------------------------------------------------
+Variables (2da parte)
+  Nombres (recomendación): CamelCase o notación húngara
+
+  montoTotal
+  importeNeto
+  nombreCompleto
+  
+  (UpperCase: mayúsculas)
+  (LowerCase: minúsculas)
+
+
+
+---------------------------------------------------------------------
+Práctica: Asignación        a   b   c   d
+  a = 1                     1
+  b = 2                     1   2
+  c = a                     1   2   1
+  d = a + c                 1   2   1   2
+  d = b                     1   2   1   2
+  Valor final de b? 2
+
+                      a     b
+  a = 1               1     -
+  b = 2               1     2
+  a = b               2     2
+  b = a               2     2
+  Valor final de a y de b? ambos valen 2
+
+                      a     b     aux
+  a = 1               1     -     -
+  b = 2               1     2     -
+  aux = a             1     2     1
+  a = b               2     2     1
+  b = aux             2     1     1
+  Valor final de a y de b? a: 2 y b: 1
+
+  horasTrabajadas = 10
+  precioPorHora = 100
+  descuento = 0.10
+  sueldoBruto = horasTrabajadas * precioPorHora
+                      10        *     100
+                              1000
+  obraSocial = sueldoBruto * descuento
+                  1000     *    0.1
+                          100
+  sueldoNeto = sueldoBruto - obraSocial
+                  1000     -    100
+                          900
+  Calcular sueldoNeto: 
+    sueldoBruto = 1000
+    obraSocial = 100
+    sueldoNeto = 900
+
+
+  n = 100
+  m = 101
+  n = "hola"
+  Valor final de n?   Error: porque cada variable
+                      puede tener valores de un
+                      solo tipo de datos
+
+---------------------------------------------------------------------
+Asignación (2da parte)
+  Sintáxis
+    a = 1
+    Quiere decir: almacenar en la memoria "apuntada" por a, el valor 1.  Siempre y cuando la variable a sea de tipo entero.
+
+    En la práctica, se puede decir, "a toma el valor de 1"
+
+    Si, la variable a, tenía un valor anterior, el mismo se pierde.
+
+  Valor inicial
+    Una posición de la memoria, siempre tiene un valor.  El mismo, puede no ser significativo.
+    Por lo tanto, es conveniente, dar un valor inicial a toda variable.
+
+    A la operación de dar un valor inicial se la denomina "inicialización".
+
+  Tipos de datos compatibles
+    Ejemplo: todos los enteros pueden almacenarse en una variable de tipo decimal.
+
+    Decimal a
+    a = 3.14
+    a = 10        --> 10.0
+
+    Ejemplo: los caracteres se pueden almacenar en una variable de tipo cadena de caracteres.
+
+    Cadena nombre
+    nombre = 'a'  --> "a"
+
+---------------------------------------------------------------------
+Conceptos a revisar: 
+  Algoritmo
+    Método: 
+      método lógico que sirve para indicar como resolver un problema.
+    Necesidad:
+      necesidad de resolver tareas complejas o que se presten a ambigüedades (que se puedan malinterpretar).
+
+    Características
+      finito: cantidad de pasos
+      preciso: siempre arroja el mismo resultado
+      no puede ser ambiguo (malinterpretado)
+      ordenado: de comienzo al final
+      no depende de lenguajes de programación o arquitecturas (tipos de computadoras)
+
+    Ejemplos
+      multiplicación
+      procesos de fabricación
+
+  Pseudocódigo
+    Es un lenguaje, parecido a los lenguajes de programación, que sirve para formular algoritmos.
+    Es muy fácil, traducir un programa en pseudocódigo a un lenguaje de programación.
+
+  Estructura secuencial
+    Se sigue un orden de principio a final
+    No se saltean instrucciones
+
+---------------------------------------------------------------------
+Leer
+  Es un tipo especial de asignación, que almacena en una variable, un valor tomado desde el teclado.
+  Por ejemplo:
+    leer a
+
+  Quiere decir: 
+    que el programa se detiene hasta que el usuario ingrese un valor, a través del teclado, y presione la tecla ENTER. Inmediatamente, ese valor, se asigna a la variable indicada (en el ejemplo a)
+
+
+---------------------------------------------------------------------
+Escribir
+  Significa mostrar el valor o expresión deseada en la pantalla.
+  Por ejemplo:
+    escribir 10
+
+  Mostraría el número 10 en la pantalla
+
+    escribir "hola"
+
+  Mostraría la palabra hola, sin comillas en la pantalla.
+
+    escribir 2 * 8
+
+  Mostraría el valor 16 en la pantalla
+
+                    a   b   aux   pantalla
+  leer a           10   -   -     10 <ENTER>
+  leer b           10   5   -     5 <ENTER>
+  aux = a          10   5   10
+  a = b             5   5   10
+  b = aux           5  10   10            
+  escribir a        5  10   10    5
+  escribir b        5  10   10    10
+
+
+
+
+
+clase 4
