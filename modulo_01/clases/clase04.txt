@@ -6,41 +6,41 @@ Práctica: Tipos de datos
 Cuantos de los siguientes valores pertenecen a cada tipo de datos (enteros, decimales, lógicos, caracteres, cadenas de caracteres) y cuantos son erróneos?
   123              E       CADENA:   6
   "argentina"      S       ENTERO:   4
-  18              E       DECIMAL:  4
-  'a'              C        CARACTER: 3
+  18               E       DECIMAL:  4
+  'a'              C       CARACTER: 3
   8.88801          D       LOGICO:   2
   "12345"          S       ERROR:    9
-  true            L 
-  ""              S
+  true             L 
+  ""               S
   880              E
   'X'              C
   8.000 1          ERR
-  '1100'          ERR
+  '1100'           ERR
   "canción"        S
-  1,234,567.98    ERR
+  1,234,567.98     ERR
   0.1              D
   '1'              C
-  '17'            ERR
-  ''              ERR
-  "precio         ERR
+  '17'             ERR
+  ''               ERR
+  "precio          ERR
   3.14             D
   0.00001          D
-  'buenos aires'  ERR
+  'buenos aires'   ERR
   0 03             ERR
   "d'artagnan"     S
-  false           L
+  false            L
   4,45             ERR
   1200             E
-  "ahora"         S
+  "ahora"          S
 
 ---------------------------------------------------------------------
 Práctica: Operadores
-  Suma            +
-  Resta           -
+  Suma             +
+  Resta            -
   Producto         *
   División         /
   Módulo           %
-  And             &
+  And              &
   Or               |
 
 ---------------------------------------------------------------------
@@ -50,7 +50,7 @@ Operadores (2da parte)
     2^4   -->  2 a la cuarta --> 2 * 2 * 2 * 2 --> 16
     2^5   -->  32
     3^2   -->  3 al cuadrado --> 3 * 3 --> 9
-    3^4    -->  3 a la cuarta --> 3 * 3 * 3 * 3 --> 81 
+    3^4   -->  3 a la cuarta --> 3 * 3 * 3 * 3 --> 81 
 
   Orden de precedencia de los operadores aritméticos
     2 * 2 + 2
@@ -96,18 +96,18 @@ Operadores (2da parte)
 ---------------------------------------------------------------------
 Práctica: Variables 
   Cuales están ok y cuales son recomendables?
-  XRayo     ok         no
+  XRayo      ok         no
   X_Rayo     ok         no
   R2D2       ok         no
-  X         ok         no
+  X          ok         no
   45         mal 
-  N14       ok         no
-  ZZZZ      ok         no
+  N14        ok         no
+  ZZZZ       ok         no
   3μ         mal  
   nombre     ok         si
   suma       ok         si
-  monto     ok         si
-  i         ok         si
+  monto      ok         si
+  i          ok         si
   n1         ok         si
   n2         ok         si
   3n         mal
