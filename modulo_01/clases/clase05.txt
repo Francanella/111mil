@@ -119,6 +119,7 @@ Ejemplos completos:
 
 ---------------------------------------------------------------------
 Conceptos generales de computación
+Sistemas operativos
 ---------------------------------------------------------------------
 Sistemas operativos
   El sistema operativo original de las PC se llamaba MS DOS este sistema
