@@ -7,57 +7,57 @@ Fecha:  Lunes 25 de septiembre
 1. Cuales son las cuatro partes principales de un algoritmo secuencial?
 2. Dado un pseudocódigo determinar su salida con diferentes entradas.  
 
-		Inicio
-			Entero a
-			Entero b
-			Entero c
-			
-			leer a
-			leer b
-			leer c
-			
-			resultado = a * (b + c)
-			
-			escribir resultado
-		Fin
-		
+    Inicio
+      Entero a
+      Entero b
+      Entero c
+      
+      leer a
+      leer b
+      leer c
+      
+      resultado = a * (b + c)
+      
+      escribir resultado
+    Fin
+    
 3. Dado un pseudocódigo determinar sus cuatro partes principales.
 
-		Inicio
-			Entero horasTrabajadas
-			Entero precioHora
-			Decimal salarioBruto
-			Decimal impuestos
-			Decimal salarioNeto
-			
-			leer horasTrabajadas
-			leer precioHora
-			
-			salarioBruto = horasTrabajadas * precioHora
-			impuestos = salarioBruto * 0.01
-			salarioNeto = salarioBruto - impuestos
-			
-			escribir salarioBruto
-			escribir impuestos
-			escribir salarioNeto
-		Fin
-		
+    Inicio
+      Entero horasTrabajadas
+      Entero precioHora
+      Decimal salarioBruto
+      Decimal impuestos
+      Decimal salarioNeto
+      
+      leer horasTrabajadas
+      leer precioHora
+      
+      salarioBruto = horasTrabajadas * precioHora
+      impuestos = salarioBruto * 0.01
+      salarioNeto = salarioBruto - impuestos
+      
+      escribir salarioBruto
+      escribir impuestos
+      escribir salarioNeto
+    Fin
+    
 4. Dado un pseudocódigo encontrar un error en el mismo.   
 
-		Inicio
-			leer a
-			leer b
-		
-			suma = a + b
-		
-			escribir suma
-		Fin
+    Inicio
+      leer a
+      leer b
+    
+      suma = a + b
+    
+      escribir suma
+    Fin
 
 5. Dada la expresión a + (b * c) calcular su salida para diferentes grupos de valores:
-	6. 3, 6, 9
-	7. 2, 8, 10
-	8. 20, 3, 40
-	9. 10, 14, 2
+  6. 3, 6, 9
+  7. 2, 8, 10
+  8. 20, 3, 40
+  9. 10, 14, 2
 
 ## Repaso de aritmética
 1. Entre la suma y la multiplicación, que operación tiene mayor prioridad?
