@@ -1202,7 +1202,187 @@ Estructura
 
 
 
-clase 6
+---------------------------------------------------------------------
+Clase 06
+Fecha: Sábado 23 de septiembre
+---------------------------------------------------------------------
+
+# Nivelación de aritmética
+## Números naturales
+### Suma de números naturales
+#### Propiedad de clausura
+#### Propiedad conmutativa de la suma
+#### Propiedad asociativa de la suma
+### Multiplicación en los números naturales
+#### Propiedad de clausura
+#### Propiedad conmutativa
+#### Propiedad asociativa
+#### Propiedad distributiva respecto de la suma
+### Precedencia de los operadores
+### La resta en los números naturales
+### División con y sin resto
+### El neutro aditivo
+## Los números enteros
+## Los números racionales
+### Fracciones
+#### Fracciones equivalentes
+## Los números irracionales
+### Pi π y Raiz cuadrada de 2
+## Los números reales
+## Operación de inclusión
+### La suma de enteros 
+#### Suma de enteros con igual signo
+#### Suma de enteros con signo diferente
+### El producto en los números reales
+#### Regla de los signos
+#### Uso de los paréntesis para alterar el orden de precedencia
+#### Fracciones de igual denominador
+#### Fracciones con diferente denominador
+Común denominador
+  Por producto
+  Por factores comunes
+
+
+---------------------------------------------------------------------
+Enunciados de algoritmos
+
+01 
+  Escriba el pseudocódigo para resolver la suma y el producto de dos números ingresados por teclado. Al finalizar se debe mostrar ambos resultados.
+
+  Inicio
+    Entero a
+    Entero b
+    Entero suma
+    Entero producto
+
+    leer a
+    leer b
+
+    suma = a + b
+    producto = a * b
+
+    escribir suma
+    escribir producto
+  Fin
+
+02
+  Teniendo en cuenta el patrón que sigue un algoritmo secuencial (tal como se ve en el ejercicio anterior), escribir un pseudocódigo para mostrar el doble y el triple de un número entero ingresado por teclado.
+
+  Inicio
+    Entero a
+    Entero doble
+    Entero triple
+
+    leer a
+
+    doble = a * 2
+    triple = a * 3
+
+    escribir doble
+    escribir triple
+  Fin
+
+---------------------------------------------------------------------
+Algoritmos secuencial (en pseudocódigo)
+---------------------------------------------------------------------
+  Inicio
+    Declaraciones
+    Entradas
+    Proceso/Cálculo
+    Salidas
+  Fin
+---------------------------------------------------------------------
+
+03
+  Escribir en pseudocódigo un algoritmo que permita calcular el perímetro y la superficie de un rectángulo cuyos lados se ingresen por teclado.  Recuerde que el perímetro de un rectángulo es igual al doble de la suma de dos lados diferentes (ancho y alto) y la superficie es igual al producto de dichos lados.
+
+  Inicio
+    Entero base
+    Entero altura
+    Entero perimetro
+    Entero superficie
+
+    leer base
+    leer altura
+
+    perimetro = (base + altura) * 2
+    superficie = base * altura
+
+    escribir perimetro
+    escribir superficie
+  Fin
+
+04
+  Escribir el pseudocódigo para calcular una distancia, supuestamente en centímetros, ingresada por teclado y expresar la salida en pulgadas.  Considerando que una pulgada es igual a 2.54 centímetros.
+
+  Inicio
+    Entero distanciaEnCm
+    Decimal distanciaEnPulgadas
+
+    leer distanciaEnCm
+
+    distanciaEnPulgadas = distanciaEnCm / 2.54
+
+    escribir distanciaEnPulgadas
+  Fin
+
+05
+  Escribir el pseudocódigo para calcular un monto en dólares americanos dada una entrada en pesos argentinos expresada en forma decimal y otra entrada que indica el valor del dolar con respecto al peso.
+  El calculo se debe mostrar en pantalla.
+
+  Inicio
+    Decimal pesosArgentinos
+    Decimal cotizacionDolar
+    Decimal dolares
+
+    leer pesosArgentinos
+    leer cotizacionDolar
+
+    dolares = pesosArgentinos / cotizacionDolar
+
+    escribir dolares
+  Fin
+
+---------------------------------------------------------------------
+Conceptos generales de computación
+Hardware - computadoras
+---------------------------------------------------------------------
+
+Dispositivos
+  Componentes electrónicos periféricos que hacen de interfaz con el usuario.  Los dispositivos se dividen, a su vez, en dos categorías:
+    Entrada
+    Salida
+Procesador
+  Es el componente encargado de hacer el control y los cálculos de la computadora en funcion de las entradas y de enviar los resultados a la salida (a través de los dispositivos correspondientes).  El procesador, para esta tarea es auxiliado por algunos componentes, el más importante de ellos, es la memoria principal o memoria de trabajo.
+
+Ejemplos de dispositivos de entrada:
+  Teclado
+  Mouse
+  Lector biométrico de huellas digitales
+  Joystick 
+  Touchpad
+  Lápiz óptico
+  Tableta digitalizadora
+  Scanner
+  Disco rígido (memoria auxiliar)
+  Unidades ópticas (DVD)
+  Pen Drive
+
+Ejemplos de dispositivos de salida: 
+  Monitor/Proyector
+  Impresora
+  Disco rígido (memoria auxiliar)
+  Unidades ópticas (DVD)
+  Pen Drive
+
+Procesador (CPU: unidad central de proceso)
+  ALU: Unidad de aritmética y lógica
+  CU: Unidad de control
+  Registros: 
+    Son memorias muy pequeñas, ultra rápidas, se utilizan para realizar los cálculos de la ALU.
+  Memoria cache interna:
+    Son memorias que permiten acelerar los procesos
+
 
 
 

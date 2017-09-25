@@ -1,4 +1,3 @@
-
 ---------------------------------------------------------------------
 Clase 06
 Fecha: Sábado 23 de septiembre
@@ -179,15 +178,6 @@ Procesador (CPU: unidad central de proceso)
     Son memorias muy pequeñas, ultra rápidas, se utilizan para realizar los cálculos de la ALU.
   Memoria cache interna:
     Son memorias que permiten acelerar los procesos
-
-
-
-
-
-
-
-
-
 
 
 

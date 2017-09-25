@@ -1,0 +1,98 @@
+---------------------------------------------------------------------
+Clase 06  
+Fecha:  Lunes 25 de septiembre      
+---------------------------------------------------------------------
+## Repaso de pseudocódigo
+
+1. Cuales son las cuatro partes principales de un algoritmo secuencial?
+2. Dado un pseudocódigo determinar su salida con diferentes entradas.  
+
+		Inicio
+			Entero a
+			Entero b
+			Entero c
+			
+			leer a
+			leer b
+			leer c
+			
+			resultado = a * (b + c)
+			
+			escribir resultado
+		Fin
+		
+3. Dado un pseudocódigo determinar sus cuatro partes principales.
+
+		Inicio
+			Entero horasTrabajadas
+			Entero precioHora
+			Decimal salarioBruto
+			Decimal impuestos
+			Decimal salarioNeto
+			
+			leer horasTrabajadas
+			leer precioHora
+			
+			salarioBruto = horasTrabajadas * precioHora
+			impuestos = salarioBruto * 0.01
+			salarioNeto = salarioBruto - impuestos
+			
+			escribir salarioBruto
+			escribir impuestos
+			escribir salarioNeto
+		Fin
+		
+4. Dado un pseudocódigo encontrar un error en el mismo.   
+
+		Inicio
+			leer a
+			leer b
+		
+			suma = a + b
+		
+			escribir suma
+		Fin
+
+5. Dada la expresión a + (b * c) calcular su salida para diferentes grupos de valores:
+	6. 3, 6, 9
+	7. 2, 8, 10
+	8. 20, 3, 40
+	9. 10, 14, 2
+
+## Repaso de aritmética
+1. Entre la suma y la multiplicación, que operación tiene mayor prioridad?
+2. Es cierto que la suma de dos números naturales tiene como resultado otro número natural?
+3. Como se llama la propiedad de los números naturales que dice que si se invierten los operandos no se altera el resultado?
+4. En que consiste la propiedad asociativa de la suma?
+5. Cual es el elemento neutro en la suma?
+6. Cual es la diferencia entre los números enteros y los números naturales?
+7. Que es un número racional? De donde surgen?
+8. Que es una fracción equivalente?
+9. De dos ejemplos de números irracionales.
+10. Como se suman dos enteros de diferente signo?
+
+## Conceptos generales de computación
+### La PC, sus componentes, características y diseño
+> Fuente: Upgrading and repairing PCs (Scot Mueller)  
+
+#### Que es una PC?  
+El término **Computadora Personal o PC** hace referencia a un tipo de computadora
+#### software de la PC  
+#### El hardware de la PC  
+#### Sistemas compatibles  
+#### Procesadores: bus de datos y tamaño de los registros  
+#### Componentes del sistema  
+
+* Placa madre  
+* Procesador
+* Memoria principal
+* Gabinete
+* Fuente
+* Disco rígido
+* Unidad óptica
+* Teclado
+* Mouse
+* Adaptador de video
+* Monitor
+* Adaptador de audio
+* Adaptador de red
