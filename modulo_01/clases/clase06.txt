@@ -78,6 +78,27 @@ Enunciados de algoritmos
     escribir triple
   Fin
 
+
+import java.util.Scanner;
+
+class Ejemplo{
+  public static void main(String[] args){
+    int a;
+    int doble;
+    int triple;
+    Scanner sc = new Scanner(System.in);
+
+    a = sc.nextInt();
+
+    doble = a * 2;
+    triple = a * 3;
+
+    System.out.println(doble);
+    System.out.println(triple);
+  }
+}
+
+
 ---------------------------------------------------------------------
 Algoritmos secuencial (en pseudocódigo)
 ---------------------------------------------------------------------

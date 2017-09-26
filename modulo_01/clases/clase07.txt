@@ -1,16 +1,25 @@
 ---------------------------------------------------------------------
-Clase 06  
+Clase 07
 Fecha:  Lunes 25 de septiembre      
 ---------------------------------------------------------------------
 ## Repaso de pseudocódigo
 
 1. Cuales son las cuatro partes principales de un algoritmo secuencial?
+  declaraciones
+  entradas
+  procesos
+  salidas
+
 2. Dado un pseudocódigo determinar su salida con diferentes entradas.  
+    2, 3, 4
+    12, 5, 3
+    123424324, 1234124232432, 534354
 
     Inicio
       Entero a
       Entero b
       Entero c
+      Entero resultado
       
       leer a
       leer b
@@ -45,6 +54,10 @@ Fecha:  Lunes 25 de septiembre
 4. Dado un pseudocódigo encontrar un error en el mismo.   
 
     Inicio
+      Entero a
+      Entero b
+      Entero suma
+
       leer a
       leer b
     
@@ -54,22 +67,44 @@ Fecha:  Lunes 25 de septiembre
     Fin
 
 5. Dada la expresión a + (b * c) calcular su salida para diferentes grupos de valores:
-  6. 3, 6, 9
-  7. 2, 8, 10
-  8. 20, 3, 40
-  9. 10, 14, 2
+  a. 3, 6, 9 => 57 
+  b. 2, 8, 10 => 82
+  c. 20, 3, 40 => 140
+  d. 10, 14, 2 => 38
 
 ## Repaso de aritmética
 1. Entre la suma y la multiplicación, que operación tiene mayor prioridad?
+  La multiplicación
+    a + b * c
+
 2. Es cierto que la suma de dos números naturales tiene como resultado otro número natural?
+  Si (es la propiedad de clausura de la suma en los naturales)
+
 3. Como se llama la propiedad de los números naturales que dice que si se invierten los operandos no se altera el resultado?
+  Conmutativa
+
 4. En que consiste la propiedad asociativa de la suma?
+  a + (b + c) = (a + b) + c = (a + c) + b
+ 
 5. Cual es el elemento neutro en la suma?
+  El cero
+
 6. Cual es la diferencia entre los números enteros y los números naturales?
+  Los enteros son los naturales mas los negativos
+
 7. Que es un número racional? De donde surgen?
+  Surgen de la división o fracción entre dos enteros
+
 8. Que es una fracción equivalente?
+  Una fracción es equivalente a otra si existe un número el cual multiplicado al numerador y al denominador da como resultado la fracción original.
+  Ej:
+    2/3   ---> 4/6   ---> 8/12 
+
 9. De dos ejemplos de números irracionales.
+  Pi y raíz cuadrada de 2
+
 10. Como se suman dos enteros de diferente signo?
+  se hace una resta entre ambos y el signo es similar al de mayor valor absoluto.
 
 ## Conceptos generales de computación
 ### La PC, sus componentes, características y diseño
@@ -77,22 +112,36 @@ Fecha:  Lunes 25 de septiembre
 
 #### Que es una PC?  
 El término **Computadora Personal o PC** hace referencia a un tipo de computadora
-#### software de la PC  
-#### El hardware de la PC  
-#### Sistemas compatibles  
-#### Procesadores: bus de datos y tamaño de los registros  
-#### Componentes del sistema  
+  Personal Computer --> Computadora personal
+  La PC, proviene de una computadora diseñada y fabricada por una empresa llamada IBM, que, originalmente, se llamaba IBM-PC.
 
-* Placa madre  
-* Procesador
-* Memoria principal
-* Gabinete
-* Fuente
-* Disco rígido
-* Unidad óptica
-* Teclado
-* Mouse
-* Adaptador de video
-* Monitor
-* Adaptador de audio
-* Adaptador de red
+  IBM-PC
+    Intel: es el fabricante del procesador (8088)
+    Microsoft: fue el fabricante del sistema operativo (IBM-DOS, PC-DOS, DOS).
+
+  Una PC es un equipo derivado de la IBM-PC
+
+  Apple
+    Motorola
+
+  Smartphones, Tablets, etc
+    ARM
+
+#### software de la PC 
+  Microsoft
+    MS-DOS, Windows
+    MS-Office
+
+#### El hardware de la PC 
+  Intel
+    8088
+    8086
+    80286
+    80386
+    80486
+    Pentium
+    Pentium II
+    Pentium III
+    Pentium IV
+
+  Overclocking
