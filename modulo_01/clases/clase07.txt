@@ -2,6 +2,49 @@
 Clase 07
 Fecha:  Lunes 25 de septiembre      
 ---------------------------------------------------------------------
+					Aritmética
+---------------------------------------------------------------------
+Se hizo un repaso de todo el módulo de Aritmética del curso nivelatorio. 
+
+Práctica:
+
+1. Entre la suma y la multiplicación, que operación tiene mayor prioridad?
+  La multiplicación
+    a + b * c
+
+2. Es cierto que la suma de dos números naturales tiene como resultado otro número natural?
+  Si (es la propiedad de clausura de la suma en los naturales)
+
+3. Como se llama la propiedad de los números naturales que dice que si se invierten los operandos no se altera el resultado?
+  Conmutativa
+
+4. En que consiste la propiedad asociativa de la suma?
+  a + (b + c) = (a + b) + c = (a + c) + b
+ 
+5. Cual es el elemento neutro en la suma?
+  El cero
+
+6. Cual es la diferencia entre los números enteros y los números naturales?
+  Los enteros son los naturales mas los negativos
+
+7. Que es un número racional? De donde surgen?
+  Surgen de la división o fracción entre dos enteros
+
+8. Que es una fracción equivalente?
+  Una fracción es equivalente a otra si existe un número el cual multiplicado al numerador y al denominador da como resultado la fracción original.
+  Ej:
+    2/3   ---> 4/6   ---> 8/12 
+
+9. De dos ejemplos de números irracionales.
+  Pi y raíz cuadrada de 2
+
+10. Como se suman dos enteros de diferente signo?
+  se hace una resta entre ambos y el signo es similar al de mayor valor absoluto.
+
+
+---------------------------------------------------------------------
+					Algoritmos
+---------------------------------------------------------------------
 ## Repaso de pseudocódigo
 
 1. Cuales son las cuatro partes principales de un algoritmo secuencial?
@@ -72,40 +115,9 @@ Fecha:  Lunes 25 de septiembre
   c. 20, 3, 40 => 140
   d. 10, 14, 2 => 38
 
-## Repaso de aritmética
-1. Entre la suma y la multiplicación, que operación tiene mayor prioridad?
-  La multiplicación
-    a + b * c
-
-2. Es cierto que la suma de dos números naturales tiene como resultado otro número natural?
-  Si (es la propiedad de clausura de la suma en los naturales)
-
-3. Como se llama la propiedad de los números naturales que dice que si se invierten los operandos no se altera el resultado?
-  Conmutativa
-
-4. En que consiste la propiedad asociativa de la suma?
-  a + (b + c) = (a + b) + c = (a + c) + b
- 
-5. Cual es el elemento neutro en la suma?
-  El cero
-
-6. Cual es la diferencia entre los números enteros y los números naturales?
-  Los enteros son los naturales mas los negativos
-
-7. Que es un número racional? De donde surgen?
-  Surgen de la división o fracción entre dos enteros
-
-8. Que es una fracción equivalente?
-  Una fracción es equivalente a otra si existe un número el cual multiplicado al numerador y al denominador da como resultado la fracción original.
-  Ej:
-    2/3   ---> 4/6   ---> 8/12 
-
-9. De dos ejemplos de números irracionales.
-  Pi y raíz cuadrada de 2
-
-10. Como se suman dos enteros de diferente signo?
-  se hace una resta entre ambos y el signo es similar al de mayor valor absoluto.
-
+---------------------------------------------------------------------
+					Hardware
+---------------------------------------------------------------------
 ## Conceptos generales de computación
 ### La PC, sus componentes, características y diseño
 > Fuente: Upgrading and repairing PCs (Scot Mueller)  
