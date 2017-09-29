@@ -1,8 +1,166 @@
 ---------------------------------------------------------------------
 Clases del módulo de bases de datos
----------------------------------------------------------------------
+-------------------------------------------------------------------------------
 
----------------------------------------------------------------------
+-------------------------------------------------------------------------------
 Clase 02
 Fecha: jueves 28 de septiembre
----------------------------------------------------------------------
+-------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------
+Modelo Entidad Relación
+Caso de estudio: Sistema de Gestión de Ventas y reservas de Entradas para un 
+Complejo de Cines.
+-------------------------------------------------------------------------------
+- Varios cines
+- Salas
+- Programación semanal
+  pueden quedar sin uso
+  cantidad de butacas diferente por sala
+  películas
+  horarios de la función
+  tipo de función
+    pre-estreno
+    estreno
+    normal
+  comprobante de venta
+    nro de venta
+    fecha de venta
+    número de función
+    sala
+    nombre de la película
+    fecha y hora de la función
+    precio
+    tipo de entrada
+      mayor
+      menor
+      jubilado
+    calificación de la película (Ley de cine 17741)
+    Es válida solo para la fecha, hora y función indicadas
+    precio determinado por
+      tipo de entrada
+      dia
+      horario
+      puede ser diferente en cada cine
+    venta determinada por
+      tipo de entrada
+      calificación de la película
+
+-------------------------------------------------------------------------------
+Entidades
+-------------------------------------------------------------------------------
+Entidad
+  elemento con existencia física
+    persona
+    coche
+    casa
+    empleado
+  existencia conceptual
+    venta
+    trabajo
+    curso
+  es una abstracción de un conjunto de cosas
+    que tienen el mismo comportamiento
+    estan sujetas y conformes a las mismas reglas
+
+  objetos
+    cosas tangibles
+      artículo
+      repuesto
+      rodado
+    roles
+      cliente
+      proveedor
+      personal
+    incidentes
+      siniestros
+      viajes
+    interacciones
+      compra
+      pedido
+      venta
+      pago
+
+-------------------------------------------------------------------------------
+Atributos
+-------------------------------------------------------------------------------
+Características
+  completos
+  elaborados (cada atributo captura un aspecto separado de la entidad)
+  mutuamente independientes
+
+Ejemplo:
+  Entidad: Película
+  Atributos: nombre, título original, año de estreno, disponible, duración, fecha de ingreso.
+
+  Diagrama:
+
+      Pelicula
+      --------------
+      anio_estreno
+      disponible
+      duracion
+      fecha_ingreso
+      nombre
+      titulo_original
+
+Instancias:
+Película 1: {2013,true,143,11/07/2013,"El Gran Gatsby","The Great Grasby"}
+Película 2: {2014,true,122,01/08/2014,"Relatos Salvajes","Relatos Salvajes"}
+
+Clasificación
+  Atributos identificatorios
+    unicidad
+    minimidad
+  Atributos descriptivos
+  Atributos referenciales
+    si es compuesto
+      nulo completamente
+      no nulo completamente
+    cada valor del referencial es idéntico a un identificatorio de la entidad a la que se refiere.  Ej.
+
+      Pelicula                            PaisDeOrigen
+      --------------                      ---------------
+      @anio_estreno           +-------||- @id_pais_de_origen
+       disponible             |            idioma
+       duracion               |            nombre
+       fecha_ingreso          |
+       nombre                 |
+       titulo_original        |
+      #id_pais_de_origen >----+
+
+País de origen 1: {1,"Español","Argentina"}
+País de origen 2: {2,"Inglés","Estados Unidos"}
+País de origen 3: {3,"Francés","Francia"}
+
+-------------------------------------------------------------------------------
+Reglas de integridad
+-------------------------------------------------------------------------------
+1. Integridad de entidades: ningún identificador nulo
+2. Integridad referencial: ningun referencial que no corresponda a un id del referenciado
+
+-------------------------------------------------------------------------------
+Relaciones
+-------------------------------------------------------------------------------
+- Es la abstracción de las asociaciones que existen entre dos entidades.
+- Tienen sentido bidireccional
+- Tienen sentido y existencia en aspectos del mundo real
+
+Cardinalidad y opcionalidad
+  1 a 1
+    1..0    EmpleadoUsuario
+    -||-------|o
+    Un empleado puede tener opcionalmente un único usuario o no tener usuario asociado.  Un usuario está asociado obligatoriamente a un único empleado.
+  1 a n     GeneroPelicula
+    1..n
+    -||--------<
+    Un género puede estar asignado a muchas películas, pero una película tiene un único género.
+  n a 1     FuncionPelicula
+    n..1
+    >--------||-
+    Una función tiene una sola película asociada y una película puede estar asociada a múltiples funciones.
+  n a n     PersonajeDePelicula
+    -||-------< Entidad Asociativa >---------||-
+                #id_personaje
+                #id_pelicula
+
