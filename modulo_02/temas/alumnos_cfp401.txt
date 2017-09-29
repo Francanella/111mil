@@ -1,0 +1,88 @@
+Sistema de gestión de alumnos del CFP 401
+
+Interesados
+---------------------------------------------------
+id    apellido     nombres    
+---------------------------------------------------
+1      Perez        Juan
+2      Tartara      Ariel
+
+InteresadosFamiliasProfesionales
+---------------------------------------------------
+id_interesado       id_familias_profesionales
+1                   1
+1                   3
+2                   2
+
+FamiliasProfesionales
+---------------------------------------------------
+id     nombre
+1      informática
+2      construcción
+3      idiomas
+
+Alumnos
+---------------------------------------------------
+id    interesado
+---------------------------------------------------
+1     2
+
+
+AlumnosCursos
+---------------------------------------------------
+id_alumno       id_curso
+---------------------------------------------------
+1               1
+1               2
+2               3
+1               3
+
+Cursos
+---------------------------------------------------
+id     nombre
+---------------------------------------------------
+1      operador de PC
+2      reparador de ojotas
+3      pintador de bicicletas
+
+CursosInstructores
+---------------------------------------------------
+id_curso        id_instructor    desde
+---------------------------------------------------
+1               1                20170305
+1               2                20170801
+
+
+Instructores
+---------------------------------------------------
+id     apellido       nombres
+---------------------------------------------------
+1      González       Pedro 
+2      Rodríguez      Eutanasio
+
+Establecimiento
+---------------------------------------------------
+id          nombre
+---------------------------------------------------
+principal   1
+
+Sedes
+---------------------------------------------------
+id          nombre          domicilio
+---------------------------------------------------
+1           Burgos          Burgos 940
+2           Xxxxxx          Mitre 324
+
+Horarios
+---------------------------------------------------
+id      dia_semana      hora_inicio       hora_fin    curso
+1       Miercoles       14:30             17:30       1
+2       Jueves          14:30             17:30       1
+
+
+
+CREATE TABLE IF NOT EXISTS `prueba`.`alumnos` (
+  `idalumnos` INT NOT NULL,
+  `apellido` VARCHAR(45) NULL,
+  `nombres` VARCHAR(45) NULL)
+ENGINE = InnoDB

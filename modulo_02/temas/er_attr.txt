@@ -1,0 +1,37 @@
+
+Alumno
+-----------
+ CUIL
+ Documento
+ TipoDeDocumento
+ ApellidoYNombres
+ LugarNacimiento
+ FechaNacimiento
+ Sexo
+ Nacionalidad
+ LocalidadDomicilio
+ Domicilio
+ Telefono
+
+Curso
+------------
+ id_curso
+ Nombre
+ Horarios
+ Duracion
+ Instructor
+ LugarSede
+ FechaInicio
+ FechaFin
+ NroCurso
+
+Entidad 
+  es una colección de datos que se refieren a objetos de un mismo tipo
+Registro 
+  es un conjunto de datos que forma parte de una entidad y que describe a un objeto en particular.
+Atributo/s identificatorio
+  Es una propiedad de un registro que sirve para identificarlo
+  En la medida de lo posible conviene que sea un dato natural
+  id
+Atributos descriptivos
+  Describen el objeto/registro.  Esta descripción esta condicionada por lo que se pretende del sistema.
