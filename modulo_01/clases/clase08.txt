@@ -268,34 +268,25 @@ Salidas:
   1 hora = 60 * 60 segundos = 3600 segundos
 
   Inicio
-    
+    Entero segundosIngresados                 3700 segIng
+    Entero segundos                           1 hora sobran 100 seg
+    Entero minutos                            100 segIng
+    Entero horas                              1 minuto sobran 40 seg
+
+    leer segundosIngresados
+
+    horas = segundosIngresados / 3600
+    segundosIngresados = segundosIngresados - horas * 3600
+
+    minutos = segundosIngresados / 60
+    segundos = segundosIngresados - minutos * 60
+
+    escribir horas
+    escribir minutos
+    escribir segundos
   Fin
 
 ---------------------------------------------------------------------
 Curiosidades:
   easter eggs
 
----------------------------------------------------------------------
-          Hardware
----------------------------------------------------------------------
-#### Sistemas compatibles  
-#### Procesadores: bus de datos y tamaño de los registros  
-#### Componentes del sistema  
-
-* Placa madre  
-* Procesador
-* Memoria principal
-* Gabinete
-* Fuente
-* Disco rígido
-* Unidad óptica
-* Teclado
-* Mouse
-* Adaptador de video
-* Monitor
-* Adaptador de audio
-* Adaptador de red
-
----------------------------------------------------------------------
-          Software
----------------------------------------------------------------------
