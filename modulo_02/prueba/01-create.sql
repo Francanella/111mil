@@ -1,0 +1,3 @@
+#ALTER USER root IDENTIFIED BY 'l12asup';
+CREATE DATABASE alumnos;
+USE alumnos;

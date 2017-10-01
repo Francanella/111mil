@@ -2,8 +2,27 @@
 Clase 09
 Fecha:  viernes 30 de septiembre      
 ---------------------------------------------------------------------
-          Lógica/Aritmética
+          Conjuntos
 ---------------------------------------------------------------------
+Comprensión:
+A = { x|x >= 0 y x < 10}
+Extensión:
+A = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+Conjunto nulo:
+ø = {}
+A = {x|x son mayores que 10 y menores 5 }
+B = {x|x son vendedores de pizza y ponen 8 aceitunas }
+C = {x|x es conductor de azul y respeta las rotondas }
+D = {x|x es jugador de fútbol y solo juega en su equipo }
+
+{ø} no es un conjunto vacío
+
+U = {números naturales}
+U = {vendedores de pizza}
+U = {conductores de azul}
+U = {jugadores de fútbol }
+
 
 ---------------------------------------------------------------------
           Algoritmos
