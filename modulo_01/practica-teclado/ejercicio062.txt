@@ -1,0 +1,23 @@
+CONCEPTO:
+     Es el documento que certifica un aumento del importe
+que el comprador le debe al vendedor, ya sea por error, omi-
+sión u otros conceptos (fletes, intereses, sellados) a cargo
+deo comprador.
+
+REQUISITOS:
+      1.- Fecha
+      2.- Nombre y domicilio del vendedor
+      3.- Nombre y domicilio del comprador
+      4.- Número de factura a que corresponde la nota
+      5.- Concepto o importe del débito
+      6.- Número de orden del documento
+
+CANTIDAD DE EJEMPLARES:
+      Original: para el comprador.
+      Duplicado: para el vendedor.
+
+FUNCION:
+      Permite salvar errores y omisiones, o bien, cargar
+nuevos conceptos de operaciones, ajustándolas a la realidad.
+
+CAMOZZI - OLIVA

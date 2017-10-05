@@ -1,0 +1,27 @@
+CONCEPTO:
+     Documento comercial que el comprador le envía al ven-
+dedor, solicitando cierta cantidad de determinadas mercade-
+rias a un precio determinado.
+
+REQUISITOS:
+     1.- Fecha
+     2.- Nombre del comprador y domicilio (membrete)
+     3.- Nombre del proveedor y domicilio
+     4.- Especificación bien detallada de las mercaderías
+         solicitadas
+     5.- Condiciones de pago
+     6.- Lugar de entrega
+     7.- Firma del comprador o representante autorizado
+     8.- Número del orden del documento
+
+CANTIDAD DE EJEMPLARES:
+     Original: se envía al vendedor
+     Duplicado: queda para el comprador como constancia
+
+FUNCION:
+     Sirve al vendedor: para poder preparar el pedido.
+     Sirve al comprador: como constancia para saber a quién
+le solicitó las mercaderías y todos los demas datos de la 
+operación.
+
+                                          CAMOZZI - OLIVA

@@ -1,0 +1,219 @@
+---------------------------------------------------------------------
+Clase 11
+Fecha:  miércoles 4 de octubre
+---------------------------------------------------------------------
+          Conjuntos
+---------------------------------------------------------------------
+Denominación:
+  Letra mayúscula, por ej: A, B, C
+Conjuntos especiales:
+  U Conjunto universal
+  ø {} Conjunto vacío o nulo
+Elementos
+  Pertenencia €
+  No pertenencia
+
+Descripción o definición de un conjunto:
+  Extensión o enumeración
+    A = {a, e, i, o, u}
+    B = {0, 2, 4, 6, 8}
+  Comprensión
+    C = {x|x es alumno del curso}
+    D = {x|x es un país de sudamérica}
+  Diagrama de Venn
+
+Conjunto Universal
+  U = {x|x es un país}
+  U = {x|x es un alumno}
+
+Conjunto nulo o vacío:
+  E = {}
+  E = Ø
+  E = {x|x es un país de sudamérica cuyo idioma es el chino mandarín}
+
+Tipos de conjuntos:
+  De acuerdo a la cantidad de elementos
+    Finitos
+      F = {a,e,i,o,u}
+      G = {x|x es un número positivo par menor o igual a 20}
+    Infinitos
+      H = {x|x es un número par}
+      I = {0, 1, 2, 3, 4, 5, ...}
+      J = {0, 3, 6, 9, 12, ...}
+      K = {1, 1, 2, 3, 5, 8, 13, 21, ...} Serie de fibonacci
+      L = {1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, ...} potencias de 2
+      M = {azul, tandil, olavarría, la plata, junin, balcarce, bahía, ...}
+
+Conjuntos iguales
+  Dos conjuntos son iguales cuando tienen exactamente los mismos elementos
+    A = {1, 3, 5, 7, 9}
+    B = {x|x es un número impar menor que 10}
+    A = B
+    C = {1, 3, 5, 7, 9}
+    A = B = C
+  Desiguales
+    A = {1,2,3,4,5}
+    B = {1,2,4,5,6}
+    A ≠ B
+
+Conjuntos equivalentes
+  Son aquellos conjuntos que tienen la misma cantidad de elementos.
+    A = {1, 2, 3, 4, 5}
+    B = {2, 4, 6, 8, 10}
+    C = {x|x es un día hábil de la semana}
+
+Operaciones con conjuntos
+  Union (suma)
+    A = {1,3,5,7,9}
+    B = {2,3,4,5}
+    AUB = {1,2,3,4,5,7,9}
+  Intersección
+    AintB = {3,5}
+  Conjuntos disjuntos
+    A = {1,2,3,4,5}
+    B = {6,7,8}
+    A int B = {}
+    Se dice que A y B son conjuntos disjuntos
+  Complemento
+    Es un conjunto formado por todos los elementos del conjunto universal que no pertenecen a un conjunto dado
+
+      A = {a,e,u}
+      U = {a,e,i,o,u}
+      A' = {i,o}
+
+  Diferencia
+    A = {1,2,3,4,5,6}
+    B = {1,3,9}
+    A-B = {2,4,5,6}
+    B-A = {9}
+
+Ejercicios gráficos
+  AintB
+  A-B
+  A'
+  B'
+  (AUB)'
+
+Ejercicio:
+  Los alumnos del curso son 25
+  5 tienen auto
+  22 tienen computadora
+  4 son mujeres
+  2 son mujeres con auto
+  3 mujeres tienen computadora
+  3 tienen auto y computadora
+
+  a) Cuantos no tienen auto? 
+    20
+  b) Cuantos no tienen computadora?
+    3
+  c) Cuantos no son mujeres?
+    21
+  d) Cuantas mujeres no tienen auto?
+    2
+  e) Cuantos varones tienen computadora?
+    19
+  f) Cuantos varones no tienen computadora?
+    2
+  g) Cuantos tienen auto o computadora pero no las dos cosas?
+    22
+
+Cardinalidad
+  Cantidad de elementos
+    A = {a,e,i,o,u}
+    n(A) = 5
+
+    B = {1,3,5,7,9,11,13}
+    n(B) = 7
+
+    n(AUB) = 12
+
+    C = {1,2,3,4,5}
+
+    BUC = {1,2,3,4,5,7,9,11,13}
+    n(BUC) = 9
+
+    BintC = {1,3,5}
+    n(BintC) = 3
+
+Propiedades de los conjuntos
+  Identidad
+    A U Ø = A
+    A U U = U
+    A int U = A
+    A int Ø = Ø
+  Idempotencia
+    A U A = A
+    A int A = A
+  Complemento
+    A U A' = U
+    A int A' = ø
+  Asociativa
+    (A U B) U C = A U (B U C)
+    (A int B) int C = A int (B int C)
+  Conmutativa
+    A U B = B U A
+    A int B = B int A
+  Distributiva
+    A U (B int C) = (A U B) int (A U C)
+    A int (B U C) = (A int B) U (A int C)
+  1 De Morgan
+    (AUB)' = A' int B'
+  2 De Morgan
+    (AintB)' = A' U B'
+
+Producto cartesiano
+  Es un conjunto de pares de elementos en los cuales el primer elemento pertenece a un conjunto y el segundo a otro.
+  Por ejemplo:
+    A = {1,2,3,4}
+    B = {10,20}
+    AxB = {(1,10),(1,20),(2,10),(2,20),(3,10),(3,20),(4,10),(4,20)}
+
+Ejes cartesianos
+  Son dos rectas perpendiculares que dividen un plano en cuatro partes iguales.
+  Se suele llamar a estas rectas: x e y
+  x sería la horizontal
+  y sería la vertical
+  Para indicar un punto se lo hace con dos valores entre paréntesis y separados por una coma.  El primer elemento represente la posición del punto con respecto a el eje x y el segundo la posición con respecto al eje y
+  Tanto x como y pueden ser positivos o negativos (reales)
+
+  El plano se divide en 4 cuadrantes
+    1er: X positivo e Y positivo
+    2do: X negativo e Y positivo
+    3er: X negativo e Y negativo
+    4to: X positivo e Y negativo
+    
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------
+          Hardware
+---------------------------------------------------------------------
+#### Sistemas compatibles  
+#### Procesadores: bus de datos y tamaño de los registros  
+#### Componentes del sistema  
+
+* Placa madre  
+* Procesador
+* Memoria principal
+* Gabinete
+* Fuente
+* Disco rígido
+* Unidad óptica
+* Teclado
+* Mouse
+* Adaptador de video
+* Monitor
+* Adaptador de audio
+* Adaptador de red
+
+---------------------------------------------------------------------
+          Software
+---------------------------------------------------------------------

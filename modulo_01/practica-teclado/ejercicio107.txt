@@ -1,0 +1,64 @@
+      Se utiliza en los casos que se requiere un avance instantaneo
+del carro, varios espacios a la vez, ya sea para realizar sangrias,
+trabajos que deban ser encolumnados, etcetera.
+      Se emplean las piezas siguientes:
+
+      - Liberador del Tabulador o Tecla Destabuladora
+      Desconecta los tipos del tabulador.
+      - Fijador del tabulador
+      Fija automaticamente los topes en los diferentes puntos de
+      la escala.
+      - Barra o Tecla del Tabulador
+      Traslada el carro donde se han fijado los topes.
+
+
+UTILIZACION
+
+      Se liberan los topes del tabulador para lo cual se oprime la
+tecla correspondiente moviendo simultaneamente el carro de iz-
+quierda a derecha.  Si solo se quiere quitar un tope determinado, se
+traslada el carro al mismo y se oprime la tecla destabuladora.  En
+algunas maquinas, mediante un liberador de todos los topes, se des-
+conectan los mismos con un solo movimiento.
+      Para fijar los topes, el carro debe moverse (con la barra o te-
+cla del tabulador) hasta que el centro del guia-tipo coincida con el
+punto de la escala donde se desea fijar el primer tope; se oprime la
+tecla fijadora; y asi sucesivamente con los demas topes.
+      Hay dos tipos de tabuladores:
+
+Tabulador simple
+      Sirve para encolumnar en lineas finas perfectamente vertica-
+les y resulta util para sangrias, listas de palabras, etcetera.
+
+Tabulador decimal
+      En las maquinas que poseen tabulador decimal, la barra o te-
+cla para tabular ha sido sustituida por un conjunto de teclas que
+permiten ubicar el carro en el punto exacto de cada columna donde
+iran unidades, decenas, centenas, etcetera.  Es conveniente para los
+trabajos que requieran encolumnar cifras.
+      Para las cantidades los topes se fijaran en el espacio destina-
+do a la columna decimal y, para las palabras, en el espacio corres-
+pondiente a la segunda letra de cada palabra.
+      Para desplazar el carro se pulsa la tecla que indique el nume-
+ro de digitos enteros de la cifra por escribir.
+      Ejemplo: para escribir 384,80 se pulsa la tecla que senala los
+centesimos (100) y para las palabras se acciona la tecla correspon-
+diente a los decimales (10).
+
+6666666///666666
+
+PROVINCIAS		SUP. en			CAPITAL
+			Km2
+
+Buenos Aires		307.571			La Plata
+Catamarca		 99.571			Catamarca
+Cordoba			168.766			Cordoba
+Corrientes		 88.100			Corrientes
+Chaco			 99.633			Resistencia
+Chubut			224.686			Rawson
+Entre Rios		 76.216			Parana
+Formosa			 72.076			Formosa
+Jujuy			 53.219			San Salvador
+						de Jujuy
+La Pampa	        143.440			Santa Rosa
+ 

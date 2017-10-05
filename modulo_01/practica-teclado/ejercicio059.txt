@@ -1,0 +1,29 @@
+CONCEPTO:
+     Es el documento que confecciona el vendedor y lo envía
+al comprador acompañando las mercaderías.
+
+REQUISITOS:
+     1.- Fecha
+     2.- Nombre y domicilio del vendedor (membrete)
+     3.- Nombre y domicilio del comprador
+     4.- Cantidad y detalle de las mercaderías remitidas
+     5.- Medio por el que se envían las mercaderías
+     6.- Número de documento
+     7.- Firma del comprador (conforme)
+     8.- Lugar y fecha de entrega
+
+FUNCION:
+     Al comprador: le permite controlar las mercaderías que
+recibe.
+     Al vendedor: le permite tener una constancia de que el
+comprador recibió conforme las mercaderías.
+     Al transportista: le permite tener una constancia de
+que entregó las mercaderías.
+
+CANTIDAD DE EJEMPLARES:
+     Original: para el comprador
+     Duplicado: para el vendedor (firmado por el comprador)
+     Triplicado: para el transportista (firmado por el com-
+prador)
+
+CAMOZZI - OLIVA

@@ -1,0 +1,23 @@
+     Para la centralización de leyendas y títulos de-
+bemos seguir las siguientes instrucciones:
+     1.Establecer el campo mecanográfico.
+     2.contamos todos los espacios que ocupan el o
+los títulos incluyendo los espacios interdiccionales
+(espacios entre palabra y palabra).
+     3.Restamos a la capacidad del campo mecanográfi-
+co la cantidad de espacios que nos ocuparán el o los
+títulos.
+     4.El resultado de esta resta lo dividimos por
+dos; la cantidad obtenida son los espacios libres que
+deberemos dejar entre el margen izquierdo y la prime-
+ra letra del título.
+
+........./........./........./........./........./........./
+                BANCO DE LA NACION ARGENTINA
+           BANCO DE LA PRIVINCIA DE BUENOS AIRES
+                 BANCO HIPOTECARIO NACIONAL
+        MUNICIPALIDAD DE LA CIUDAD DE BUENOS AIRES
+               DIRECCION GENERAL IMPOSITIVA
+                   REPUBLICA ARGENTINA
+              CAJA NACIONAL DE AHORRO POSTAL
+                    CONGRESO NACIONAL

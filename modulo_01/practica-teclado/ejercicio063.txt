@@ -1,0 +1,23 @@
+CONCEPTO:
+     Es el documento que certifica una disminución del im-
+porte que el comprador le debe al vendedor, ya sea por
+error, omisión, u otros conceptos (descuentos, bonificación,
+etc.) a cargo del comprador.
+
+REQUISITOS:
+     1.- Fecha
+     2.- Nombre y domicilio del vendedor (membrete)
+     3.- Nombre y domicilio del comprador
+     4.- Número de factura a que corresponde la nota
+     5.- Concepto o importe del crédito
+     6.- Número de orden del documento
+
+CONTIDAD DE EJEMPLARES:
+     Original: para el comprador
+     Duplicado: para el vendedor
+
+FUNCION:
+     Permite salvar errores y omisiones, o bien descargar
+nuevos conceptos de operaciones, ajustándolas a la realidad.
+
+CAMOZZI - OLIVA

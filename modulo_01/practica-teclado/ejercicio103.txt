@@ -1,0 +1,116 @@
+Fichas secundarias: Su funcion es representar el libro en las dis-
+tintas partes del catalogo que se crea conveniente.
+      De acuerdo con el encabezamiento que se les asigne, se las
+denomina: Fichas secundarias de autor, de materia, de titulo o de
+serie.
+
+Las secundarias de autor pueden corresponder a: coautor, colabora-
+dor, traductor, compilador, ilustrador, prologuista, etcetera.
+Las secundarias en materia, cuando corresponden a un catalogo al-
+fabetico de materias estan encabezadas por un epigrafe (encabeza-
+miento de materia) y cuando integran un catalogo sistematico, es-
+tan encabezadas por un simbolo clasificador.
+
+El juego de fichas de una obra esta integrado por la ficha prin-
+cipal y las secundarias.
+      Ademas del juego de fichas destinadas a los catalogos para
+el publico, pueden prepararse fichas para uso interno de la bi-
+blioteca:
+
+Fichas Topograficas: Son exactamente iguales a la Principal, in-
+tegran el catalogo topografico, estan ordenadas por signatura, y
+no llevan indicado el trazado.
+
+Fichas Inventario: En algunas bibliotecas reemplazan al libro in-
+ventario.  Son iguales a la principal, sin trazado, y se encabe-
+zan por el numero de inventario.
+
+      Ademas de las fichas mencionadas, existen otros tipos de
+fichas, que llevan distinta informacion:
+
+Fichas de Identidad de Autor: Es la que redacta el catalogador pa-
+ra establecer el verdadero nombre del autor de una obra.  Integran
+el Catalogo de Identidad del Autor (o de Autoridad) y nos ocupare-
+mos de ellas en la Unidad 4.
+
+Fichas de Referencia: Se preparan para remitir al lector a un en-
+cabezamiento no utilizado en el catalogo a otro utilizado.  Exis-
+ten fichas de referencia de autor, que remiten, por ejemplo, de
+un seudonimo al nombre verdadero de un autor (o viceversa, cuando
+este es mas conocido por el nombre supuesto).
+      Tambien las referencias de materia remiten al lector al en-
+cabezamiento utilizado cuando orienta su busqueda por algun sino-
+nimo no empleado.
+
+      Fichas de Llamada: Relacionan encabezamientos usados
+en el catalogo con otros que representan temas que tienen afinidad
+o que pueden ser mas generales o mas especificos.
+      Veremos a lo largo de la carrera de Bibliotecnologia que tam-
+bien existen fichas de llamada de autor, en particular para en-
+tidades oficiales y privadas.
+
+      Fichas Analiticas: Son las que describen parte del conteni-
+do de un libro, o articulos contenidos en una publicacion.
+
+      Fichas de Resumen: Estan destinadas a dar informacion 
+sobre una serie o coleccion, o bien sobre el estado actualizado de vo-
+lumenes, numeros o titulos de una publicacion periodica.
+
+REDACCION DE LA FICHA PRINCIPAL 
+Y DE LAS SECUNDARIAS
+
+(Aplicacion de las Reglas de Catalogacion Angloamericanas, Segun-
+da edicion - RCA2 -).
+ 
+      Para redactar la Ficha principal del libro, que sera la base
+para el Juego de Fichas respectivo, debemos seguir las indicaciones
+de las RCA 2.
+
+Las areas de descripcion de las fichas son:
+
+      1. Titulo y mencion de responsabilidad
+      2. Edicion
+      3. Detalles especificos del material (se usa la descripcion
+         de los materiales cartograficos y de las publicaciones en
+         serie)
+      4. Publicacion, distribucion, etcetera
+      5. Descripcion fisica
+      6. Serie
+      7. Notas
+      8. Numero normalizado y condiciones de disponibilidad
+
+      Puntuacion: Notese la puntuacion que figura en el ejemplo.
+      En el encabezamiento de autor que comienza por el apellido,
+se separa este del o de los nombres mediante una coma (,).
+      Las areas detalladas mas arriba, van siempre precedidas por
+un punto, espacio, raya (dos guiones de maquina), espacio (.--).
+      Exceptuase la primera (titulo) y las que comienzan un nuevo
+parrafo (Descripcion fisica, Notas y Numero normalizado).
+
+      Area 1: Cuando hay subtitulo, va precedido de espacio, dos
+puntos, espacio ( : )
+      La mencion del autor, va precedida de espacio, barra, espacio
+( / )
+      Las menciones siguientes, van precedidas de espacio, punto y
+coma, espacio ( ; )
+
+      Area 2: Precedida por punto, espacio, raya, espacio (. - )
+      Area 3: No se utiliza para libros.
+      Area 4: Precedida por punto, espacio, raya, espacio (. - )
+              Editor precedido por espacio, dos puntos, espacio ( : )
+              Ano de publicacion precedido por coma, espacio (, )
+      Area 5: Cantidad de paginas para obras en un volumen y cantidad
+              de volumenes para obras en varios.
+              Comienza parrafo.
+              Ilustraciones precedida de espacio, dos puntos, espacio
+              ( : )
+              Dimensiones precedida por espacio, punto y coma, espacio
+              ( ; )
+      Area 6: Serie, entre parentesis, y precedida de punto, espacio, 
+              raya, espacio (. - )
+              Cuando se menciona al director, precedido de espacio, barra,
+              espacio ( / )
+              Cuando se coloca el numero, precedido de espacio, punto y
+              coma, espacio ( ; )
+      Area 7: Comienza parrafo.
+      Area 8: Comienza parrafo.

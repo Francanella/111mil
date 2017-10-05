@@ -1,0 +1,30 @@
+CONCEPTO:
+     Es el documento que el banco le entrega a sus clientes
+declarando haber recibido dinero, cheques u otros valores en
+calidad de depósito.
+
+REQUISITOS
+     1.- Lugar y fecha de la operación
+     2.- Nombre del banco
+     3.- Nombre, domicilio y número de cuenta del cliente
+     4.- Importe del depósito, expresado en letras y núme-
+         ros
+     5.- Detalle de los valores que se depositan e importe
+         total del depósito
+     6.- Firma del depositante
+     7.- Firma del cajero y sello del Banco
+
+CANTIDAD DE EJEMPLARES:
+     Actualmente, la generalidad de los bancos confeccionan
+sus libretas de notas de crédito o boletas de depósito, para
+ser completadas por el cliente, todas en original.  Siendo
+para el cliene, el talón de la izquierda y para el Banco el
+resto.
+
+FUNCION:
+     Al cliente:  le sirve de constancia de que entregó al
+                  Banco valores en calidad de depósito.
+     Al Banco:    le sirve para registrar en la cuenta del
+                  cliente el depósito efectuado.
+
+CAMOZZI - OLIVA

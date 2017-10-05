@@ -1,0 +1,31 @@
+      El Capitulo 2 de las RCA2 comprende la descripcion de li-
+bros, folletos y pliegos impresos, a los que involucra bajo la denomi-
+nacion comun de: monografias impresas.
+      La Fuente Principal de Informacion es la portada.  En caso de
+monografias publicadas sin portada, debera usarse la parte de la
+publicacion que proporcione la informacion mas completa, ya se 
+trate de la cubierta o de cualquier otra parte.
+
+Fuentes prescritas de informacion
+
+      Se indican a continuacion las Fuentes Prescritas de Informa-
+cion para cada una de las Areas, debiendo encerrarse entre corche-
+tes toda informacion que se tome de otra fuente que no sea la pres-
+crita para monografias.
+
+      Area                         Fuentes Prescritas de
+                                   Informacion
+
+   1. Titulo y mencion de          Portada
+      responsabilidad
+   2. Edicion                      Portada, otros preliminares
+                                   y colofon
+   3. (No se consigna en mono-
+      grafias impresas)
+   4. Publicacion, distribucion,   Portada, otros preliminares
+      etc                          y colofon
+   5. Descripcion fisica           Toda la publicacion
+   6. Serie                        Toda la publicacion
+   7. Notas                        Cualquier fuente
+   8. Numero normalizado           Cualquier fuente
+

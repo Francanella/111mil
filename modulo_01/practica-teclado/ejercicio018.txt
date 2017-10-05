@@ -1,0 +1,35 @@
+ABCDEFGHIJKLM nñopqrstuvwxyz   ABCDEFGHIJKLM nñopqrstuvwxyz
+ABCDEFGHIJKLM nñopqrstuvwxyz   ABCDEFGHIJKLM nñopqrstuvwxyz
+ABCDEFGHIJKLM nñopqrstuvwxyz   ABCDEFGHIJKLM nñopqrstuvwxyz
+ABCDEFGHIJKLM nñopqrstuvwxyz   ABCDEFGHIJKLM nñopqrstuvwxyz
+ABCDEFGHIJKLM nñopqrstuvwxyz   ABCDEFGHIJKLM nñopqrstuvwxyz
+
+La capital de AUSTRIA es VIENA
+La capital de BELGICA es BRUSELAS
+La capital de CHECOSLOVAQUIA es PRAGA
+La capital de DINAMARCA es COPENHAGUE
+
+La capital de ESPAÑA es MADRID
+La capital de FRANCIA es PARIS
+La capital de GRECIA es ATENAS
+La capital de HUNGRIA es BUDAPEST
+
+La capital de IRLANDA es DUBLIN
+La capital de JAPON es TOKIO
+La capital de LUXEMBURGO es LUXEMBURGO
+La capital de MONACO es MONACO
+
+La capital de NORUEGA es OSLO
+La capital de POLONIA es VARSOVIA
+La capital de RUMANIA es BUCAREST
+La capital de SUECIA es ESTOCOLMO
+
+La capital de THAILANDIA es BANGKOK
+La capital de la UNION SOVIETICA es MOSCU
+La capital de VENEZUELA es CARACAS
+La capital de YUGOSLAVIA es BELGRADO
+
+La capital de AFGANISTAN es KABUL
+La capital de BRASIL es BRASILIA
+La capital de CHILE es SANTIAGO
+La capital de EL SALVADOR es SAN SALVADOR

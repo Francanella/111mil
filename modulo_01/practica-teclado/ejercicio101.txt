@@ -1,0 +1,29 @@
+La moderna teoria de la catalogacion se basa en el empleo del Sis-
+tema de Fichas Unicas.
+      En este sistema, el juego de fichas contiene en todas ellas la
+misma informacion completa sobre el libro que describen.  Es decir
+que las Fichas Secundarias son una exacta reproduccion de la Fi-
+cha principal, con el agregado del encabezamiento que corresponda
+en cada caso.
+      Las ventajas de este sistema sobre el anterior, son evidentes:
+      1. Todas las fichas ofrecen al lector informacion completa.
+      2. El costo de reproduccion es inferior por el empleo generali-
+zado de medios mecanicos.
+      3. La posibilidad de errores al transcribirlas desaparece.
+      4. Teniendo un medio de reproduccion adecuado, puede im-
+primirse la cantidad de fichas necesarias para el catalogo general,
+para catalogos especiales y tambien para el caso de catalogacion
+centralizada en las redes de bibliotecas.
+      5. Es ventajoso tambien para la preparacion de fichas anali-
+ticas.
+
+Ficha principal: Es la primera ficha que se elabora de un libro, que
+contiene toda la informacion sobre el mismo que el catalogador consi-
+dera conveniente y que sirve de modelo para reproducir la cantidad de
+fichas secundarias que sean necesarias.  Se encabeza por autor, aun-
+que ya veremos algunos casos en que puede ser encabezada de distinta
+forma (Ejemplo: titulo cuando los autores son mas de tres, o la obra
+es anonima).
+      A diferencia de las secundarias, esta ficha principal lleva in-
+dicado el trazado, o sea que detalla las fichas que deben hacerse pa-
+ra completar el juego.

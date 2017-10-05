@@ -1,0 +1,40 @@
+CONCEPTO:
+     Es el documento que el vendedor le entrega al compra-
+dor especificando el tipo de mercadería, y detallando canti-
+dad, precio parcial y total de las mercaderías que le vendió
+y cobró al contado.  A veces la boleta es reemplazada por un
+ticket, emitido por una máquina registradora.
+
+REQUISITOS:
+     1.- Fecha
+     2.- Nombre y domicilio del comprador y vendedor
+     3.- Cantidad, detalle, precio unitario y total de la
+         mercadería vendida
+     4.- Número de orden del documento
+     5.- C.U.I.T. del vendedor y comprador
+
+CANTIDAD DE EJEMPLARES:
+     Original: para el comprador
+     Duplicado: para el vendedor
+
+FUNCION:
+     1.- Es imprescindible por razones de control
+     2.- Permite evitar errores, pues en la sección empa-
+         que se controlan: cantidad, calidad, precio, así
+         cómo los cálculos y sumas
+     3.- Es un comprobante para la Caja de lo que se debe co-
+         brar
+     4.- Sirve para calcular las comisiones de los vende-
+         dores
+     5.- Para llevar un registro de existencias de cada
+         artículo
+
+TICKET
+     La Dirección General Impositiva, exige para los comer-
+ciantes que no confeccionen boletas de venta al contado, en-
+treguen a sus clientes "tickets" emitidos por máquinas re-
+gistradoras, con los siguientes datos: Fecha de operación,
+Nombre del vendedor, C.U.I.T., importe total de la merca-
+dería vendida.
+
+CAMOZZI - OLIVA

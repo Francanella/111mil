@@ -1,0 +1,24 @@
+      Existen distintos sistemas de clasificacion, entre ellos el deci-
+mal Dewey y el numerico duplex.
+      En estos sistemas se agrupan las fichas por asuntos principa-
+les, subdividiendose las veces que sea necesario a fin de facilitar su
+hallazgo.
+      En una empresa puede clasificarse el material de fichaje en
+un numero reducido de secciones principales y cada una de ellas a 
+su vez, subdividirse en 10 grupos.
+      En caso necesario, los subgrupos podran subdividirse y, si los
+temas lo requieren, podrian utilizarse numeros de mas de dos ci-
+fras.
+
+Ejemplo:
+
+      1. Esquizofrenia
+         1. 0. Simple
+         1. 1. Hebefrenica
+         1. 2. Catatonica
+         1. 3. Paranoide
+
+      1. Esquizofrenia
+         1. 2. Catatonica
+               1.2.0. Asimetica
+               1.2.1. Hipersimetica

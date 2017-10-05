@@ -1,0 +1,29 @@
+Hay distintos tipos de sobres:
+
+a) Mensajero: Se utiliza para introducir hojas pequenas y tarjetas.
+b) Comercial: Llamado tambien cuadrilongo por su tipo semicuadrado, 
+              comunmente utilizado en el comercio.
+c) Ingles:    Fue ideado en Inglaterra, se utiliza para el envio de
+              impresos con tarifa reducida.  Tiene una abertura en 
+              uno de los extremos.
+d) Ventana:   Se utiliza para la remision de facturas, estados de
+              cuenta, etcetera; ya que en su frente hay una parte
+              rectangular, de material transparente, que permite
+              leer la direccion del destinatario impresa en el pliego
+e) Americano: Se usa habitualmente en la correspondencia oficial y en 
+              el comercio cuando es necesario introducir varios
+              documentos.
+f) Via aerea: Se utiliza para el envio de cartas via aerea, confec
+              cionado en papel de seda, liviano, especial para que 
+              su peso sea menor.
+
+     De acuerdo con los requisitos dados a conocer por ENCOTEL
+relacionados con la imposicion de cartas y tarjetas postales de
+hasta 20 gramos y a los efectos de su tratamiento por la linea de
+Clasificacion Automatica de Correspondencia (procesamiento mecani-
+zado), seran considerados envios maquinables, las cartas y tarjetas
+que reunen las caracteristicas fijadas en las normas IRAM vigentes.
+
+     Los modelos de los ejercicios posteriores se ajustan a las 
+medidas y normas de construccion recomendados por la Empresa Nacio-
+nal de Correos y Telecomunicaciones (ENCOTEL).

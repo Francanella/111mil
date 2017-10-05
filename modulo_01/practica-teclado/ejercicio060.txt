@@ -1,0 +1,34 @@
+CONCEPTO:
+     Es el documento que confecciona el vendedor y por me-
+dio del cual le comunica al comprador el importe que éste le
+debe por las mercaderías compradas.
+
+REQUISITOS:
+     1.- Fecha
+     2.- Nombre y domicilio del comprador
+     3.- Nombre y domicilio del vendedor (membrete)
+     4.- Detalle de las mercaderías vendidas
+     5.- Precio unitario y total de las mercaderías vendi-
+         das
+     6.- Condiciones de pago
+     7.- C.U.I.T. (Código Unico de Identificación Tributa-
+         ria)
+     8.- Número de orden de documento
+
+CANTIDAD DE EJEMPLARES:
+     Original: para el comprador
+     Duplicado: para el vendedor
+
+FUNCION:
+     Comprador o Vendedor pueden conocer:
+     a.- La fecha de la operación
+     b.- A quién se vendió y a quién se compró}
+     c.- Bajo qué condiciones se realizó la compra-venta
+     d.- Qué clase y cantidad de mercaderías salieron de
+         un negocio o se incorporaron al mismo
+     e.- El precio de las mercaderías (que para el vende-
+         dor es el de venta, y para el comprador es el de
+         compra)
+
+
+CAMOZZI - OLIVA

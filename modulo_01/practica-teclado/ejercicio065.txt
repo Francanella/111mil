@@ -1,0 +1,100 @@
+CONCEPTO:
+     Es un documento o promesa escrita pura y simple, por
+la cual una persona debe abonar a otra una suma de dinero
+determinada, en un plazo también determinado.
+
+REQUISITOS:
+     1.- Lugar y fecha de emisión
+     2.- Lugar y fecha de pago
+     3.- Nombre de la persona a quien se pagará
+     4.- Nombre de la persona que pagará
+     5.- El importe en letras y números
+     6.- Motivo por el cual se pagará
+     7.- Firma de la persona que pagará
+     8.- El sellado correspondiente
+     9.- La cláusula "o a su orden" para ser considerado
+         comercial
+
+PERSONAS QUE INTERVIENEN:
+     Librador, firmante o deudor: es la persona que prome-
+                                  tió pagar.
+     Beneficiario: es la persona que cobrará el documento.
+     Tenedor: es la persona a quien se le ha transferido el
+              documento y que debe cobrarlo.
+     Endosante: es la persona que media entre el beneficia-
+                rio original y el último tenedor.
+
+IMPORTANCIA:
+     Junto con el cheque, el pagaré es el documento de ma-
+yor importancia en la vida de los negocios.
+
+     Ofrece seguridad para su cobro.
+     
+     Posibilita su negociación antes de su vencimiento.
+
+
+FUNCION:
+     Permite realizar compras, sin contar con el dinero en
+el momento de efectuarse la operación.
+     Facilita los préstamos de dinero.
+
+PAGO:
+     En la práctica comercial los pagos de documentos se
+hacen con cheques, salvo excepciones en que se hacen en 
+efectivo.
+
+VENCIMIENTO:
+     A la vista:
+     Se paga de inmediato, ante la presentación del docu-
+     mento.
+  
+     A tantos días o meses vista:
+     El vencimiento se fija a partir de la presentación al
+     firmante, quién le pondrá el "visto", la fecha y la
+     firma.  Para establecer la fecha, se cuentan los días o
+     meses desde la presentación.
+
+     A tantos días o meses fecha:
+     La cantidad de días o meses indicados para el venci-
+     miento se cuentan a partir de la fecha en que se firmó
+     el pagaré.
+
+     A día fijo o determinado:
+     Se indica directamente el día del vencimiento.
+
+PROTESTO:
+     Cuando el pagaré no es pagado a su vencimiento, se
+procede al día siguiente a efectuar un trámite llamado pro-
+testo.  El protesto lo efectúa el escribano público, acompa-
+ñado de dos testigos, quienes concurrirán al domicilio del 
+firmante para requerirle el pago.
+
+     Si el escribano no encontrase al deudor deberá recla-
+mar ante quien encuentre, y dejarle una copia del acta de
+protesto (documento escrito, donde se hace constar el recla-
+mo y la falta de pago).   De no encontrar a nadie, esto se co-
+municará al secretario municipal de la jurisdicción.
+
+     El escribano deberá conservar en su poder el pagaré y
+el acta de protesto, y esperará hasta 24 horas a que se pre-
+sente el deudor o cualquier otra persona a pagar su importe,
+más los gastos de protesto.  Si pasado el día el pagaré no es
+pagado, el tenedor concurrirá con el documento protestado y 
+el acta de protesto para iniciar un juicio ejecutivo, me-
+diante el cual puede pedir el embargo de los bienes del deu-
+dor que considerenecesario, y o su posterior remate.
+
+ENDOSO:
+
+CONCEPTO:
+     Es el acto por el cual una persona transmite a otra un
+documento y los derechos que sobre el posee.
+
+FORMA:
+     En blanco: Es cuando el beneficiario coloca su firma
+al dorso.
+     Completo: Además de la firma del beneficiario lleva,
+lugar y fecha del acto, nombre del nuevo beneficiario (endo-
+satario).
+
+CAMOZZI - OLIVA

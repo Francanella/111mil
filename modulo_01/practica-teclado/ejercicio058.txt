@@ -1,0 +1,24 @@
+CONCEPTO:
+     Documento comercial que confecciona el vendedor (co-
+rredor), al aceptar el pedido formulado por el comprador.
+
+REQUISITOS:
+     1.- Fecha
+     2.- Nombre y domicilio del vendedor (membrete)
+     3.- Nombre y domicilio del comprador
+     4.- Especificación bien detallada de las mercaderías
+         vendidas.
+     5.- Lugar y fecha de entrega
+     6.- Condiciones de pago
+     7.- Firma del comprador y del vendedor
+     8.- Número de orden de documento
+
+CANTIDAD DE EJEMPLARES:
+     Original: para el comprador
+     Duplicado: para el vendedor
+
+FUNCION:
+     Determinar con exactitud todos los detalles de la
+venta.
+
+                                      CAMUZZI - OLIVA

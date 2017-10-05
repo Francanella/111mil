@@ -1,0 +1,38 @@
+DEFINICION:
+     El cheque es una orden de pago, librada contra un banco
+en el cual el librador tiene fondos depositados a su orden en
+cuenta corriente o autorización para girar en descubierto.
+
+REQUISITOS:
+     1.- La denominación "cheque" impresa en su texto.
+     2.- Número de orden impreso en el cuerpo del cheque y
+         en los talones si los tuviese.
+     3.- Lugar y fecha de emisión.
+     4.- Nombre y domicilio del Banco contra el cual se
+         libra el cheque.
+     5.- Especificación de si es al portador, a la orden,
+         o no a la orden.
+     6.- La cantidad expresada en letras y números y la
+         especie de moneda.
+     7.- Firma del librador.
+
+PARTES QUE LO COMPONEN:
+     La matriz es la parte que queda adherida al cuaderno o
+talonario.  En algunas libretas de cheques, ha sido reempla-
+zada por hojas de rayado equivalente, ubicadas en la parte 
+anterior de dicha libreta, cumpliendo la misma finalidad.
+     El cuerpo o cheque propiamente dicho.
+     El talón para control del pago en ventanilla.
+PERSONAS QUE INTERVIENEN:
+     Librador o firmante: es el que ordena el pago con su
+                          firma.
+     Girado o librado: es el Banco que paga.
+     Beneficiario: es el que cobra el cheque.
+
+FUNCION:
+     Evita los riesgos (robos, pérdidas, etcétera) que im-
+plica manejar dinero en efectivo.  Sirve como prueba de pago,
+ya que queda registrado en el Banco.  El plazo para su cobro
+es de 30 días corridos a partir de la fecha de su emisión.
+
+CAMOZZI - OLIVA

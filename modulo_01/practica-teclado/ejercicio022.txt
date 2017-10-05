@@ -1,0 +1,29 @@
+(abc) (def) (ghi) (jkl) (mnñ) (opq) (rst) (uvw) (xyz) (abc)
+(abc) (def) (ghi) (jkl) (mnñ) (opq) (rst) (uvw) (xyz) (abc)
+(abc) (def) (ghi) (jkl) (mnñ) (opq) (rst) (uvw) (xyz) (abc)
+(abc) (def) (ghi) (jkl) (mnñ) (opq) (rst) (uvw) (xyz) (abc)
+
+"abc" "def" "ghi" "jkl" "mnñ" "opq" "rst" "uvw" "xyz" "abc"
+"abc" "def" "ghi" "jkl" "mnñ" "opq" "rst" "uvw" "xyz" "abc"
+"abc" "def" "ghi" "jkl" "mnñ" "opq" "rst" "uvw" "xyz" "abc"
+"abc" "def" "ghi" "jkl" "mnñ" "opq" "rst" "uvw" "xyz" "abc"
+
+"Eres responsable de tu rosa ..." (Antoine de Saint-Exupéry).
+"Eres responsable de tu rosa ..." (Antoine de Saint-Exupéry).
+"Eres responsable de tu rosa ..." (Antoine de Saint-Exupéry).
+"Eres responsable de tu rosa ..." (Antoine de Saint-Exupéry).
+
+Es "folklore" (de "folk": pueblo y "lore": saber popular) sí.
+Es "folklore" (de "folk": pueblo y "lore": saber popular) sí.
+Es "folklore" (de "folk": pueblo y "lore": saber popular) sí.
+Es "folklore" (de "folk": pueblo y "lore": saber popular) sí.
+
+Le decían "Quincho" porque tenía pelo rojizo y raya al medio.
+Le decían "Quincho" porque tenía pelo rojizo y raya al medio.
+Le decían "Quincho" porque tenía pelo rojizo y raya al medio.
+Le decían "Quincho" porque tenía pelo rojizo y raya al medio.
+
+El último periplo (España y Africa) navegó con flota fenicia.
+El último periplo (España y Africa) navegó con flota fenicia.
+El último periplo (ESpaña y Africa) navegó con flota fenicia.
+El último periplo (España y Africa) navegó con flota fenicia.

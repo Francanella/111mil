@@ -1,0 +1,28 @@
+CONCEPTO:
+     Es una constancia escrita por la cual una persona de-
+clara que en cierta fecha, recibió una suma determinada de
+dinero u otros valores por un motivo también determinado.
+
+REQUISITOS:
+     1.- Lugar y fecha de la operación
+     2.- Nombre del pagador y del beneficiario o cobrador
+     3.- Cantidad recibida, expresada en letras y números
+     4.- Motivo del pago
+     5.- Firma del beneficiario
+
+CANTIDAD DE EJEMPLARES:
+     Original: para el pagador
+     Duplicado: para el beneficiario
+
+PERSONAS QUE INTERVIENEN:
+     Pagador: Es la persona que paga el dinero o valores.
+     Beneficiario: Es la persona que cobra y a la vez la
+                   que firma el documento.
+
+FUNCION:
+     Para el pagador: constituye una constancia o medio de
+                      prueba de que pagó.
+     Para el beneficiario: le sirve como medio para conocer
+                           los detalles del cobro.
+
+CAMOZZI - OLIVA

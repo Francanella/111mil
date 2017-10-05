@@ -1,0 +1,73 @@
+Termino			Abreviatura	Termino			Abreviatura
+
+and others		et al.		introduccion		introd.
+antes de Cristo		a. C.		junior			jr.
+Antiguo Testamento	A. T.		kilometro, -s		km.
+apendice		ap.		lamina, -s		lam., -s
+arreglada		arr.		libreria		libr.
+articulo		art.		limitada		Ltda.
+aumentado,-a		aum.		litografia		litogr.
+autor			aut.		manuscrito,-s		ms., ms.
+bibliografia		bibliog.	milimetro,-s		mm.
+blanco y negro		byn		minuto,-s		min.
+boletin			bol.		miscelanea		misc.
+capitulo		cap.		monoaural		mono.
+centimetro,-s		cm.		murio			m.
+color			col.		musica			mus.
+Compania		Cia.		nacio			n.
+compilador		comp.		nota del traductor	N. del T.
+copyright		(C)		nueva serie		n. s.
+corregido,-a		corr.		numero			no.
+departamento		dept.		opus			op.
+Designacion General			pagina,-s		p.
+del Material		DGM		parte,-s		pt., pts.
+despues de Cristo	d. C.		plegado,-s		preg., plegs.
+diagrama,-s		diagr.,diagrs.	portada,-s		port., ports.
+dibujo			dib.		prefacio		pref.
+director		dir.		preliminar		prelim.
+doctor			Dr.		prologo			prol.
+documento		doc.		reimpresion		reimpr.
+edicion,-es		ed., eds.	retrato,-s		retr.,retrs.
+editado			edit.		revisado,-a		rev.
+editor			ed.		revisor			rev.
+editorial		edit.		revista			rev.
+ejemplar		ej.		revoluciones por
+establecimiento				minuto
+tipografico		estab.tip.	segundo,-s		seg.
+estereofonico		estereo.	senor,-es		Sr., Sres.
+etcetera		etc.		serie,-s		ser.
+facsimil,-es		facsim.,facsims.seudonimo		seud.
+fasciculo		fasc.		Siglo			S.
+folio			fol.		signatura		sig.
+folleto			foll.		siguiente,-s		sigte.,
+fotografia,-s		fot.					sigtes.
+frontispicio		front.		sin editor		s. n.
+gobierno		gob.		sin lugar		s. l.
+grabado,-s		grab.		sonora			son.
+Hermanos		Hnos.		suplemento		supl.
+hoja			h.		talleres graficos	tall. graf.
+ilustracion,-es		il.		television		TV
+ilustrador		il.		tipografia,tipografica	tip.
+imprenta		impr.		tomo,-s			t.
+incluyendo		incl.		traduccion		tr.
+Internacional				traductor		tr.
+Standard Book				volumen,-es		v.
+Description		ISBD		y otros			et. al.
+
+Abreviaturas de los nombres de los meses (espanol)
+
+enero	     ene.   mayo    mayo   setiembre	sept. (set.)
+febrero	     feb.   junio   jun.   octubre	oct.
+marzo	     mar.   julio   jul.   noviembre	nov.
+abril	     abr.   agosto  ago.   diciembre	dic.
+
+Numeros ordinales
+
+Ingles:		1st	2nd	3rd	4th
+Aleman:		1.	2.	3.	4.
+Espanol:	1a	2a	3a	4a	1o	2o	3o	4o
+Frances:	1ere	2e	3e	4e
+Italiano:	1a	2a	3a	4a	1o	2o	3o	4o
+
+Si no se puede averiguar el uso del idioma, se debe usar la forma:
+1.    2.    3.    4.

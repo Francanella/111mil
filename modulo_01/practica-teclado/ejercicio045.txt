@@ -1,0 +1,40 @@
+      Para aquellos trabjos de rayas horizontales se empleará el guión
+mayor pulsándolo repetidamente.
+      Si se desea doble raya, se desgrana el rodillo y se hace girar el papel
+el espacio que sea necesario.
+      Para subrayar palabras o títulos se retrocede el carro tantos espacios
+como ocurren éstos y sin hacer girar el rodillo se oprime en forma continuada
+el guión mayor.
+
+Ejemplos:
+
+
+-----------------------------------------------------------------------------
+
+                         Rayado Horizontal
+
+=============================================================================
+      El rayado vertical se puede hacer por distintos procedimientos:
+      a) Utilizando el apóstrofo y girando el rodillo de impresión.
+      b) Colocando un bolígrafo del color de la cinta en el orificio tiralí-
+neas que se encuentra en la chapa guía para ajuste de renglón, haciendo girar
+el rodillo la cantidad de interlíneas deseadas.
+
+Ejemplo:
+
+                  |        |
+                  |        |
+                  |        |
+                  |        |
+                  |        |
+
+      El rayado insinuado se efectúa apretando el punto y deslizando el ca-
+rro a lo largo de su extensión, de este modo queda marcada suavemente la
+raya.  Ejemplo:
+
+                 _________________________________________
+
+      Espacios de apertura de párrafos o sangrías:  Al comenzar un escrito
+y al iniciar cada párrafo del mismo, se dejarán unos espacios libres, de 5 a
+10, que reciben el nombre de sangría.
+      La primera sangría fija el tamaño de las siguientes.
