@@ -182,15 +182,6 @@ Ejes cartesianos
     2do: X negativo e Y positivo
     3er: X negativo e Y negativo
     4to: X positivo e Y negativo
-    
-
-
-
-
-
-
-
-
 
 
 ---------------------------------------------------------------------
@@ -203,9 +194,28 @@ Ejes cartesianos
 * Placa madre  
 * Procesador
 * Memoria principal
+  Volátil: quiere decir que cuando se desconecta la computadora de la línea de tensión, la información se pierde.
+  DRAM
+  Auxiliar del procesador CPU y es donde se alojan datos y programas que se estan ejecutando en un momento dado.
 * Gabinete
+  Chasis, caja que responde a medidas normalizadas (factores de forma: ATX, ITX, etc).
+  Protejen los componentes
 * Fuente
+  Fuente de alimentación (power supply) PSU
+  Convierte la corriente alterna  (AC) en corriente continua (DC) AC/DC
+  Estabilizar la tensión
+  Tensiones internas:
+    5 Volts VDC - rojo
+    12 VDC - amarillo
+    3.3 VDC - naranja
+    -5 VDC
+    -12 VDC
+    -3.3 VDC
+    0 VDC - negros
+  Protege de cortocircuitos
+
 * Disco rígido
+  
 * Unidad óptica
 * Teclado
 * Mouse
