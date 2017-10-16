@@ -1,0 +1,35 @@
+---------------------------------------------------------------------
+Clase 15
+Fecha:  miercoles 18 de octubre
+---------------------------------------------------------------------
+          Lógica
+---------------------------------------------------------------------
+El bicondicional (o coimplicación)
+---------------------------------------------------------------------
+  El bicondicional significa que un enunciado p es condición necesaria y suficiente de otro enunciado q.  Se expresa como: p SI Y SOLO SI q
+
+  Aunque la implicación no sea conmutativa, se da que, que el recíproco, en ciertas ocasiones puede serlo.  Por ejemplo:
+    Si la tierra es cúbica entonces el sol es un planeta
+    p: la tierra es cúbica
+    q: el sol es un planeta
+
+    Como ambas son falsas, tanto p q, como q p, son verdaderas.  Con lo cual se quiere decir que cada enunciado es condición necesaria y suficiente para el otro.
+
+    Ejemplo:
+    Apruebo Filosofía si y solo si saco un 5 o mas en el examen de lógica
+    p: apruebo Filosofía
+    q: saco un 5 o mas en el examen de Lógica
+
+    Si y solo si, quiere decir que:
+    a) El primer SI se refiere al antecedente (aprobaré Filosofía si saco 5 o más en el examen de Lógica),
+    b) el segundo SOLO SI se refiere al consecuente queriendo significar que "si saco un 5 o mas en el examen de Lógica, entonces apruebo Filosofía", y
+    c) el conector Y (en SI Y SOLO SI), denota la conjunción, expresando la equivalencia entre p q y q p.
+
+     p q | q p | q=p
+    -----+-----+-----
+     V   | V   | V
+     V   | F   | F
+     F   | V   | F
+     F   | F   | V
+
+     

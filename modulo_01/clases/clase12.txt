@@ -1,0 +1,138 @@
+---------------------------------------------------------------------
+Clase 12
+Fecha:  sábado 7 de octubre
+---------------------------------------------------------------------
+          Lógica
+---------------------------------------------------------------------
+Proposiciones lógicas
+  Enunciados de los cuales puedo decir que son verdaderos o falsos.
+- El mate está caliente
+- La silla está rota
+- Estamos dormidos
+- Soy un ser humano
+- Esta frase es una proposición lógica
+- 15 * 3 = 4
+Expresiones no proposicionales (imperativa, interrogativa, exclamativa)
+- Agarrá la pala
+- Trajiste café para todos?
+- Aguante Rácing!!!
+Enunciados abiertos
+- a < 25
+- b = 20
+
+Ejercitación:
+- Escribir 3 proposiciones lógicas
+  La carpeta es nueva
+  Soy alumna del curso 111mil
+  El perro se llama Tommy
+- Escribir 3 expresiones no proposicionales
+  Arreglaron las PCs?
+  Comprá la carne
+  Como me cuestan los sábados!!!
+- Escribir 3 enunciados abiertos
+  x > 100
+  c es menor que 5
+  b es igual a 10
+
+Clasificación de las proposiciones
+- Simples y compuestas (conectores lógicos o - y)
+  Me gusta la película y tengo plata
+  El producto es bueno o barato
+
+Ejercitación:
+- Escribir 3 proposiciones compuestas
+  Me gusta el mate y no tengo yerba
+  Soy de River y de Estrellas
+  Juego al fútbol o estudio
+
+
+Conectores lógicos
+---------------------------------------------------------------------
+  Negación (No es un operador lógico que opera sobre una proposición - unario)
+   Símbolo de la negación: ¬
+
+   Dada una proposición con un valor lógico determinado el conector lógico ¬ invierte su valor.
+   Como sabemos que una proposición puede ser falsa o verdadera, entonces es fácil determinar como funciona (tabla de verdad)
+   Dada una proposición p
+
+   p              |  ¬ p
+   ---------------+---------------
+   Verdadero      |  Falso
+   Falso          |  Verdadero
+
+Ejercitación:
+- Escribir tres proposiciones negadas
+  No hice las proposiciones negadas
+  No me gusta esto
+  No quiero que me hagan hablar en público
+  No estoy muy despierta
+  No estoy de humor
+
+
+  ¬¬p doble negación
+  Si la negación invierte el valor de la proposición, aplicada dos veces
+  la vuelve a invertir, con lo cual, se anula
+  Es decir:
+    ¬¬p     equivale a      p
+
+
+---------------------------------------------------------------------
+  Conjunción (y) (^)
+  Opera sobre dos enunciados (proposición compuesta), la tabla de verdad correspondiente, si consideramos dos enunciados p y q, es la siguiente:
+
+  p          | q         | p ^ q
+  -----------+-----------+-------------
+  falso      | falso     |  falso
+  falso      | verdadero |  falso
+  verdadero  | falso     |  falso
+  verdadero  | verdadero |  verdadero
+
+Ejercitación:
+- Escribir tres conjunciones
+  Es barato y tengo dinero suficiente
+  Me gusta la película y dispongo de tiempo
+  Tengo poca imaginación y me gusta el cine
+
+---------------------------------------------------------------------
+  Disyunción (o) (v)
+  Opera sobre dos enunciados (proposición compuesta), la tabla de verdad correspondiente, si consideramos dos enunciados p y q, es la siguiente:
+
+  p          | q         |  p v q
+  -----------+-----------+--------------
+  falso      | falso     | falso
+  falso      | verdadero |  verdadero
+  verdadero  | falso     |  verdadero
+  verdadero  | verdadero |  verdadero 
+
+Ejemplos:
+  Me gusta la película o me regalan la entrada
+
+Ejercitación:
+- Escribir tres ejemplos de disyunciones
+  Escribo un ejemplo o espero a mis alumnos
+  Espero sentado o me voy a mi casa
+  Compro caramelos o gomitas
+
+
+  4 + 3 * 10
+  34
+
+  70 
+voy a jugar al fútbol o trabajar y estudiar
+
+---------------------------------------------------------------------
+          Software
+---------------------------------------------------------------------
+* Disco rígido
+  
+* Unidad óptica
+* Teclado
+* Mouse
+* Adaptador de video
+* Monitor
+* Adaptador de audio
+* Adaptador de red
+
+---------------------------------------------------------------------
+          Software
+---------------------------------------------------------------------

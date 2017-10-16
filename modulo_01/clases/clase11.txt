@@ -214,16 +214,3 @@ Ejes cartesianos
     0 VDC - negros
   Protege de cortocircuitos
 
-* Disco rígido
-  
-* Unidad óptica
-* Teclado
-* Mouse
-* Adaptador de video
-* Monitor
-* Adaptador de audio
-* Adaptador de red
-
----------------------------------------------------------------------
-          Software
----------------------------------------------------------------------

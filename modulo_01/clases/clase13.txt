@@ -1,0 +1,139 @@
+---------------------------------------------------------------------
+Clase 13
+Fecha:  miércoles 11 de octubre
+---------------------------------------------------------------------
+          Lógica
+---------------------------------------------------------------------
+
+Negación   --> no           -
+Conjunción --> y            *
+Disyunción --> o            +
+
+
+P           Q         P y Q
+V           V         V
+V           F         F
+F           F         F
+F           V         F
+
+                      P o Q
+F           F         F
+F           V         V
+V           F         V
+V           V         V
+
+P   Q   R           P y Q y R
+F   F   F           F
+F   V   F           F
+
+                    P y Q o R
+F   F   F           F
+F   V   V           V
+V   V   F           V
+
+                    P o Q y R           (P o ((¬Q) y R))
+F   F   F           F                           V  y F
+                                                   F
+                                         F
+                                           F
+
+F   F   V           F                           V  y V
+                                                   V
+                                         F
+                                           V
+
+F   V   F           F                           F  y F
+                                                   F
+                                         F
+                                           F
+
+F   V   V           V                           F  y V
+                                                   F
+                                         F
+                                           F
+
+V   F   F           V                           V  y F
+                                                   F
+                                         V
+                                           V
+
+V   F   V           V                           V  y V
+                                                   V
+                                         V
+                                           V
+
+V   V   F           V                           F  y F
+                                                   F
+                                         V
+                                           V
+
+V   V   V           V                           F  y V
+                                                   F
+                                         V
+                                           V
+
+
+                    {[P y R] o [Q y (¬R)]}
+   P   Q   R                          
+1) F   F   F          (F y F)  o  (F y V)    --->  F  o  F   --->  F  
+2) F   F   V          (F y V)  o  (F y F)    --->  F  o  F   --->  F
+3) F   V   F          (F y F)  o  (V y V)    --->  F  o  V   --->  V
+4) F   V   V          (F y V)  o  (V y F)    --->  F  o  F   --->  F
+5) V   F   F          (V y F)  o  (F y V)    --->  F  o  F   --->  F
+6) V   F   V          (V y V)  o  (F y F)    --->  V  o  F   --->  V
+7) V   V   F          (V y F)  o  (V y V)    --->  F  o  V   --->  V
+8) V   V   V          (V y V)  o  (V y F)    --->  V  o  F   --->  V
+
+---------------------------------------------------------------------
+Implicación lógica
+---------------------------------------------------------------------
+ Si p entonces q
+ Si es verdadera la primera proposición, entonces la segunda también 
+
+ P Q
+
+ Ejercicio: (escribir tres ejemplos de implicaciones lógicas)
+ - SI el semáforo está en verde ENTONCES cruzo
+ - SI hoy es miércoles ENTONCES mañana será jueves
+ - SI termino la escuela ENTONCES me voy de viaje
+
+
+
+
+ ---------------------------------------------------------------------
+          Hardware
+---------------------------------------------------------------------
+* Disco rígido
+  Memoria de almacenamiento persistente (si se corta el suministro de electricidad
+  no se pierde la información almacenada).  También se las denomina memorias auxiliares.
+  Organización Física de un disco rígido:
+    Discos o platos
+    Cabezal de lecto-escritura
+    La velocidad de giro del disco se mide en revoluciones por minuto
+      normalmente 7200 RPM
+    Los platos constan de dos caras cada uno
+    Las caras constan de pistas
+    Las pistas se dividen lógicamente en sectores   
+    La intersección entre pistas y sectores se denomina unidad de alocación y es la porción más pequeña que se puede utilizar tanto para leer como para grabar información.
+
+    - Los discos se conectan al resto del sistema por un bus
+      SATA (bus serie)
+      IDE/PATA (paralelo)
+
+  Unidades de memoria:
+    bit (dígito binario)
+    byte (8 bits)
+    kilobyte (1024 bytes - 2 a la 10 potencia)
+    megabyte (1024 kilobytes)
+    gigabyte (1024 megabytes)
+    terabyte (1024 gigabytes)
+
+    
+* Unidad óptica
+* Teclado
+* Mouse
+* Adaptador de video
+* Monitor
+* Adaptador de audio
+* Adaptador de red
+

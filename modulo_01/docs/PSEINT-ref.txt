@@ -1,0 +1,97 @@
+# PSeInt
+	Algoritmo Título
+		...
+	FinAlgoritmo
+
+	Escribir <expr1>, <expr2>, ...
+
+	Borrar Pantalla
+	
+	Esperar Tecla
+	
+	Esperar 3 segundos
+	
+	Leer <variable1>, ..., <variableN>
+	
+	Definir <var1>, ..., <varN> Como [REAL|ENTERO|LOGICO|TEXTO|etc]
+	
+	Tipos numéricos:
+		NUMERO
+		NUMERICO
+		REAL
+		ENTERO
+		
+	Lógico:
+		LOGICO
+		VERDADERO|FALSO
+		
+	Texto (comillas simples o dobles)
+		CARACTER
+		TEXTO
+		CADENA
+		
+	Operadores:
+		=
+		+
+		-
+		*
+		/
+		^
+		% o MOD
+		
+	Si <condición> Entonces
+		<instrucciones>
+	Sino
+		<instrucciones>
+	FinSi
+	
+	Operadores condicionales
+		>
+		<
+		==
+		>=
+		<=
+		<>
+	
+	Operadores lógicos
+		& o Y  Conjunción
+		| u O  Disyunción
+		~ o NO Negación
+		
+	Segun <variable> Hacer
+		<número1>: <instrucciones>
+		<número2>, <número3>: <instrucciones>
+		<...>
+		De Otro Modo: <instrucciones>
+	Fin Segun
+	
+	Mientras <condición> Hacer
+		<instrucciones>
+	Fin Mientras
+	
+	Repetir 
+		<instrucciones>
+	Hasta Que <condicion>
+	
+	Para num=inicial Hasta final Con Paso inc Hacer
+		<instrucciones>
+	Fin Para
+	
+	Escribir Sin Saltar <expr1>
+	SubAlgoritmo o SubProceso
+	
+	SubAlgoritmo nombre_del_metodo
+		<instrucciones>
+	FinSubAlgoritmo
+	
+	SubAlgoritmo nombre_del_metodo(<lisParam>)
+		<instrucciones>
+	FinSubAlgoritmo
+	
+	SubAlgoritmo retorno = nombre_del_metodo(<lisParam>)
+		<instrucciones>
+	FinSubAlgoritmo
+	
+	varX = nombre_del_metodo(<argumentos>)
+	
+	

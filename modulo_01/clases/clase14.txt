@@ -1,0 +1,95 @@
+---------------------------------------------------------------------
+Clase 14
+Fecha:  sábado 14 de octubre
+---------------------------------------------------------------------
+          Lógica
+---------------------------------------------------------------------
+Implicación lógica
+---------------------------------------------------------------------
+La implicación lógica es una expresión compuesta donde existen dos proposiciones atómicas p q tal que la primera se denomina antecedente y la segunda consecuente y determina que la segunda sea verdadera.
+Se lee "p implica q" o "si p, entonces q"
+
+La tabla de verdad de la implicación lógica es la siguiente:
+
+p       | q      |  p q
+--------+--------+--------
+f       | f      | v
+f       | v      | v
+v       | f      | f
+v       | v      | v
+
+p es condición suficiente para q
+q es condición necesaria para p
+
+un tríangulo es equilatero entonces un triángulo es isósceles
+p: un triángulo es equilátero
+q: un triángulo es isósceles
+
+es suficiente que p sea equilátero para que sea isósceles
+es necesario que sea isósceles para que sea equilátero (pero no suficiente)
+
+un número es divisible por 6 entonces un número es divisible por 2 
+p: un número es divisible por 6
+q: un número es divisible por 2
+
+es suficiente con que un número sea divisible por 6
+es necesario que sea divisible por 2 (pero no suficiente)
+
+- Verdad implica verdad
+  por ejemplo:
+    la tierra es redonda entonces 3 * 5 = 15
+      p: la tierra es redonda
+      q: 3 * 5 = 15
+      aunque los enunciados no tengan que ver entre ellos lo que queremos decir es que si "la tierra es redonda entonces 3*5=15" es lógicamente verdadero.
+
+- Verdad no puede implicar falsedad
+  si p es verdadero y q es falso entonces pq es falso.
+  por ejemplo:
+    esta soleado entonces voy al monte
+    p: esta soleado
+    q: voy al monte
+
+    Como hay casos en los cuales p es verdadero y q es falso (no todos los días que esta soleado voy al monte), el enunciado, en estos casos es falso.
+
+- Falsedad implica cualquier cosa
+  si p es falso entonces no importa el valor de q para que p q sea verdadero.
+  por ejemplo:
+  la tierra es plana entonces he ganado el premio Nobel
+  p: la tierra es plana
+  q: he ganado el premio Nobel
+
+  el enunciado p q es verdadero sin importar el valor de q (si he ganado o no el premio Nobel)
+
+---------------------------------------------------------------------
+Propiedades de los enunciados condicionales
+---------------------------------------------------------------------
+- No es conmutativa
+  si p q es verdadera no determina que q p lo sea.  Por ejemplo:
+  esta lloviendo entonces el suelo esta mojado
+  p: está lloviendo
+  q: el suelo está mojado
+  Es decir, si llueve el suelo esta mojado y si no llueve el piso puede o no estar mojado para que la implicación sea verdadera.
+
+  En el caso inverso o recíproco, invirtiendo el enunciado:
+  el suelo esta mojado entonces está lloviendo
+  p: el suelo esta mojado
+  q: esta lloviendo
+
+
+- El contrarrecíproco (negación de cada uno de los enunciados del recíproco)
+  Implicación normal:
+    p entonces q
+  Recíproco:
+    q entonces p
+  Contrarrecíproco:
+    no q entonces no p
+
+  Ejemplo:
+    llueve entonces el suelo está mojado
+    p: llueve
+    q: el suelo está mojado
+
+  Contrarrecíproco:
+    el suelo no está mojado entonces no llueve
+
+
