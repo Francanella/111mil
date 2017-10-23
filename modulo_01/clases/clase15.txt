@@ -2,6 +2,100 @@
 Clase 15
 Fecha:  miercoles 18 de octubre
 ---------------------------------------------------------------------
+          Programación
+---------------------------------------------------------------------
+Etapas del desarrollo del software
+---------------------------------------------------------------------
+1 Definición del problema/programa
+    título y descripción relativamente breve del mismo
+2 Análisis (que)
+    Investigación, indagar, revisar, mirar, etc
+3 Diseño (como)
+    Plantearse como se resolvería el problema
+4 Codificación (programación)
+    Es la etapa donde se escribe el código necesario
+5 Prueba y depuración 
+
+---------------------------------------------------------------------
+Algoritmo suma_dos_numeros
+  Definir numero1 Como Entero
+  Definir numero2 Como Entero
+  Definir suma Como Entero
+  
+  Escribir "Ingrese dos números"
+  Escribir sin saltar "> "
+  Leer numero1
+  
+  Escribir Sin Saltar "> "
+  Leer numero2
+  
+  suma = numero1 + numero2
+  
+  Escribir Sin Saltar "El resultado de la suma de ", numero1," mas "
+  Escribir Sin Saltar numero2
+  Escribir Sin Saltar " es "
+  Escribir suma
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Estructuras de control
+  Secuenciales
+  Selectivas 
+  Repetitivas
+---------------------------------------------------------------------
+Algoritmo Pruebas
+  definir numero1 Como Entero
+  
+  Escribir "hola mundo"
+  
+  Esperar Tecla
+  
+  Borrar Pantalla
+  
+  Escribir "chau mundo"
+  
+  Esperar 5 segundos
+  
+  Borrar Pantalla
+  
+FinAlgoritmo
+---------------------------------------------------------------------
+Variables
+  Lugares de la memoria
+  Espacios donde se puede almacenar algo
+  Referencias
+  Características
+    Nombre
+      numero1
+      numero2
+      suma
+      nombre
+    Tipo
+      Entero
+      Real
+      Caracter
+  Como se "ingresa" un valor a una variable?
+    1) Asignación
+      numero1 = 100
+      nombre = "Pepe"
+    2) Entradas de usuario
+      Leer numero1
+      Leer nombre
+  Como indicamos el tipo de datos que corresponde a la variable?
+    Definir
+      Definir numero1 como Entero
+      Definir nombre como Caracter
+
+---------------------------------------------------------------------
+Operadores
+  Aritmeticos
+  Caracter
+  Lógicos
+  Relacionales
+
+
+
+---------------------------------------------------------------------
           Lógica
 ---------------------------------------------------------------------
 El bicondicional (o coimplicación)
