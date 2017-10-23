@@ -1,0 +1,14 @@
+Servidor de base de datos
+  Windows 32/64 bits
+  MSI
+  Edición comunitaria (libre)
+  Trabaja sobre redes TCP/IP
+  Sockets
+    192.168.0.250:3306
+
+Cliente
+  Un programa que accede a través y hace uso de los servicios del servidor.
+  Workbench
+
+Cliente
+  En modo texto viene incluído con el servidor.

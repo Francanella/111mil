@@ -4,3 +4,28 @@ Fecha:  lunes 2 de octubre
 ---------------------------------------------------------------------
           Conjuntos
 ---------------------------------------------------------------------
+a) AUB = {a,c,d,e,f,g,h,k,l,m,n}
+
+b) AintB = {a,g,k,l}
+
+c) A' = {b,c,f,i,j,m}
+
+d) B' = {b,d,e,h,i,j,n}
+
+e) A-B = {d,e,h,n}
+
+f) B-A = {c,f,m}
+
+g) A'UB = {a,b,c,f,g,i,k,l,m}
+
+h) A int B' = {d,e,h,n}
+
+i) A' int B' = {b,i,j}
+
+j) A' - B' = {c,f,m}
+
+k) (AUB)' =
+
+l) (A int B)' = 
+
+

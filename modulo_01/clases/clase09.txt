@@ -23,32 +23,13 @@ U = {vendedores de pizza}
 U = {conductores de azul}
 U = {jugadores de fútbol }
 
+F = {x|x € números naturales}
+G = { 2, 5, 7, 9}
+G inc en F
+F incluye a G
+
 
 ---------------------------------------------------------------------
           Algoritmos
 ---------------------------------------------------------------------
 
----------------------------------------------------------------------
-          Hardware
----------------------------------------------------------------------
-#### Sistemas compatibles  
-#### Procesadores: bus de datos y tamaño de los registros  
-#### Componentes del sistema  
-
-* Placa madre  
-* Procesador
-* Memoria principal
-* Gabinete
-* Fuente
-* Disco rígido
-* Unidad óptica
-* Teclado
-* Mouse
-* Adaptador de video
-* Monitor
-* Adaptador de audio
-* Adaptador de red
-
----------------------------------------------------------------------
-          Software
----------------------------------------------------------------------

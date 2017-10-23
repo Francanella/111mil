@@ -77,7 +77,7 @@ Ejercitación:
 
 
 ---------------------------------------------------------------------
-  Conjunción (y) (^)
+  Conjunción (y) (^) (AND)
   Opera sobre dos enunciados (proposición compuesta), la tabla de verdad correspondiente, si consideramos dos enunciados p y q, es la siguiente:
 
   p          | q         | p ^ q
@@ -94,12 +94,12 @@ Ejercitación:
   Tengo poca imaginación y me gusta el cine
 
 ---------------------------------------------------------------------
-  Disyunción (o) (v)
+  Disyunción (o) (v) (OR)
   Opera sobre dos enunciados (proposición compuesta), la tabla de verdad correspondiente, si consideramos dos enunciados p y q, es la siguiente:
 
   p          | q         |  p v q
   -----------+-----------+--------------
-  falso      | falso     | falso
+  falso      | falso     |  falso
   falso      | verdadero |  verdadero
   verdadero  | falso     |  verdadero
   verdadero  | verdadero |  verdadero 
@@ -111,7 +111,7 @@ Ejercitación:
 - Escribir tres ejemplos de disyunciones
   Escribo un ejemplo o espero a mis alumnos
   Espero sentado o me voy a mi casa
-  Compro caramelos o gomitas
+  Compro caramelos o compro gomitas
 
 
   4 + 3 * 10
@@ -121,7 +121,7 @@ Ejercitación:
 voy a jugar al fútbol o trabajar y estudiar
 
 ---------------------------------------------------------------------
-          Software
+          Hardware
 ---------------------------------------------------------------------
 * Disco rígido
   
