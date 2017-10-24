@@ -5,3 +5,56 @@ Fecha:  miercoles 23 de octubre
           Programación
 ---------------------------------------------------------------------
 Revisión de la clase anterior
+
+---------------------------------------------------------------------
+Algoritmo OperadorPotencia
+  Definir num Como Entero
+  Definir potencia Como Entero
+  
+  Leer num
+  Leer potencia
+  
+  Escribir num ^ potencia
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo OperadorModulo
+  Definir dividendo Como Entero
+  Definir divisor Como Entero
+  Definir resto Como Entero
+  
+  Leer dividendo
+  Leer divisor
+  
+  resto = dividendo mod divisor
+  
+  Escribir "El resto de la división es: ", resto
+  
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo InstruccionSi
+  Definir edad Como Entero
+  
+  Leer edad
+  
+  Si edad >= 18 Entonces
+    Escribir "Sos mayor de edad"
+  SiNo
+    Escribir "Sos menor de edad"
+  FinSi
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo InstruccionSiSimple
+  Definir edad Como Entero
+  
+  Leer edad
+  
+  Si edad >= 18 Entonces
+    Escribir "Ya sos mayor"
+  FinSi
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Llegamos hasta la diapositiva 33 de la "Clase 2. Selección"
