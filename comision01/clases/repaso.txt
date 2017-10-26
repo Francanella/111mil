@@ -1,21 +1,18 @@
 ---------------------------------------------------------------------
       Repaso
 ---------------------------------------------------------------------
-Algoritmo DiaDeLaSemana
-  Definir dia Como Entero
-  
-  Escribir Sin Saltar "Ingrese el número de día de la semana: "
-  Leer dia
-  
-  Segun dia hacer
-    1: Escribir "Lunes"
-    2: Escribir "Martes"
-    3: Escribir "Miércoles"
-    4: Escribir "Jueves"
-    5: Escribir "Viernes"
-    6: Escribir "Sábado"
-    7: Escribir "Domingo"
-    De Otro Modo:
-      Escribir "El número de día ingresado es incorrecto!"
-  FinSegun
+Algoritmo SubAlgoritmoGuiones
+  Escribir guiones(40)
+  Escribir guiones(10),"Pepe",guiones(10)
 FinAlgoritmo
+
+SubAlgoritmo retorno = guiones(cantidad)
+  Definir retorno Como Caracter
+  Definir i Como Entero
+  Para i = 1 Hasta cantidad Con Paso 1 Hacer
+    retorno = retorno + "-"
+  FinPara
+FinSubAlgoritmo
+
+
+---------------------------------------------------------------------
