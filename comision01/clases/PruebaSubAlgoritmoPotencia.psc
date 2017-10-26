@@ -1,9 +1,9 @@
 Algoritmo PruebaSubAlgoritmoPotencia
-	Escribir potencia(2,10)
-	Escribir potencia(3,6)
-	Escribir potencia(2,20)
-	Escribir potencia(2,30)
-	Escribir potencia(19,0)
+	Escribir potencia( 2,10)
+	Escribir potencia( 3, 6)
+	Escribir potencia( 2,20)
+	Escribir potencia( 2,30)
+	Escribir potencia(19, 0)
 FinAlgoritmo
 
 SubAlgoritmo resultado = potencia(base, exponente)
