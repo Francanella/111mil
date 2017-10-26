@@ -1,0 +1,129 @@
+---------------------------------------------------------------------
+Clase 17
+Fecha:  miércoles 25 de octubre
+---------------------------------------------------------------------
+          Programación
+---------------------------------------------------------------------
+Práctica:
+
+---------------------------------------------------------------------
+Algoritmo LeerMensaje
+  Definir mensaje Como Caracter
+  Escribir "Ingrese un texto: "
+  Leer mensaje
+  
+  Escribir "El texto fue: ", mensaje
+  Escribir "Presione una tecla para borrar la pantalla"
+  Esperar Tecla
+  Borrar Pantalla
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo PruebaPotencia
+  Definir base, potencia Como Entero
+  Escribir Sin Saltar "Ingrese la base: "
+  Leer base
+  Escribir Sin Saltar "Ingrese la potencia: "
+  Leer potencia
+  Escribir "El resultado es: "
+  Escribir base ^ potencia
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo SumaDosNumeros
+  Definir numero1 Como Entero
+  Definir numero2 Como Entero
+  Definir resultado Como Entero
+  
+  Escribir Sin Saltar "Ingrese el primer número: "
+  Leer numero1
+  Escribir Sin Saltar "Ingrese el segundo número: "
+  Leer numero2
+  
+  resultado = numero1 + numero2
+  
+  Escribir "El resultado de la suma es: ", resultado
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo SuperficieRectangulo
+  Definir base Como Real
+  Definir altura Como Real
+  Definir superficie Como Real
+  Definir perimetro Como Real
+  
+  Escribir Sin Saltar "Ingrese la base: "
+  Leer base
+  Escribir Sin Saltar "Ingrese altura: "
+  Leer altura
+  
+  superficie = base * altura
+  perimetro = (base + altura) * 2
+  
+  Escribir Sin Saltar "La superficie del rectángulo es de: "
+  Escribir Sin Saltar superficie
+  Escribir " cm cuadrados"
+  Escribir Sin Saltar "El perímetro del rectángulo es de: "
+  Escribir perimetro 
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo InstruccionSi
+  Definir num Como Entero
+  
+  Escribir Sin Saltar "Ingrese un número: "
+  Leer num
+  
+  Si num > 100 Entonces
+    Escribir Sin Saltar num
+    Escribir " Es un número grande!"
+  SiNo
+    Escribir num, " Es un número pequeño!"
+  FinSi
+  
+  Escribir "Fin del algoritmo"
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo NumerosPares
+  Definir num Como Entero
+  
+  Escribir Sin Saltar "Ingrese un número: "
+  Leer num
+  
+  Si (num mod 2) = 0 Entonces
+    Escribir num, " es un número par!"
+  SiNo
+    Escribir num, " es un número impar!"
+  FinSi
+  
+  Escribir "Fin del algoritmo!"
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo IngresarAltura
+  Definir altura Como Entero
+  
+  Escribir Sin Saltar "Ingrese su altura en cm: "
+  Leer altura
+  
+  Si altura >= 150 Entonces
+    Escribir "Puede pasar"
+  FinSi
+  
+  Escribir "Fin del algoritmo!"
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo NumeroAlAzar
+  Definir num Como Entero
+  
+  num = 10
+  
+  Si Azar(num) = 4 Entonces
+    Escribir "Ganaste un premio!"
+  SiNo
+    Escribir "Segui participando!"
+  FinSi
+FinAlgoritmo
+
