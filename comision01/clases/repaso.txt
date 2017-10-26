@@ -38,16 +38,18 @@ FinSubAlgoritmo
 
 ---------------------------------------------------------------------
 Algoritmo PruebaSubAlgoritmoPotencia
-  Definir base Como Entero
-  Definir potencia Como Entero
-  Definir i Como Entero
-  
-  base = 2
-  potencia = 10
-  
-  Para i = 2 Hasta potencia Hacer
-    base = base * 2
-  FinPara
-  Escribir base
-  
+  Escribir potencia(2,10)
+  Escribir potencia(3,6)
+  Escribir potencia(2,20)
+  Escribir potencia(2,30)
 FinAlgoritmo
+
+SubAlgoritmo resultado = potencia(base, exponente)
+  Definir resultado Como Entero
+  Definir i Como Entero
+  resultado = base
+  Para i=2 Hasta exponente Hacer
+    resultado = resultado * base 
+  FinPara
+FinSubAlgoritmo
+
