@@ -37,3 +37,17 @@ SubAlgoritmo textoDia = diaDeLaSemana(numeroDia)
 FinSubAlgoritmo
 
 ---------------------------------------------------------------------
+Algoritmo PruebaSubAlgoritmoPotencia
+  Definir base Como Entero
+  Definir potencia Como Entero
+  Definir i Como Entero
+  
+  base = 2
+  potencia = 10
+  
+  Para i = 2 Hasta potencia Hacer
+    base = base * 2
+  FinPara
+  Escribir base
+  
+FinAlgoritmo
