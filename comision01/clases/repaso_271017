@@ -1,3 +1,87 @@
 ---------------------------------------------------------------------
       Repaso: viernes 27/10/17
 ---------------------------------------------------------------------
+Sintaxis de SubAlgoritmo
+
+SubAlgoritmo retorno=nombre_del_metodo(argumento_1,argumento_2,... )
+    acción 1
+    acción 1
+    acción n
+FinSubAlgoritmo
+
+---------------------------------------------------------------------
+Ambito de las variables
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+Buenas prácticas de programación
+---------------------------------------------------------------------
+
+
+---------------------------------------------------------------------
+Estructuras de datos
+---------------------------------------------------------------------
+Arreglos
+
+Dimension <identificador> (<maxl>,...,<maxN>)
+
+Ejemplo:
+  Definir arregloClientes Como Texto
+   Dimension arregloClientes [30]
+
+---------------------------------------------------------------------
+Algoritmo meses 
+  Definir arregloMes Como Texto 
+  Dimension arregloMes[12] 
+  Definir indice Como Entero 
+  Definir nroMes Como Entero 
+
+  arregloMes[0]= "Enero" 
+  arregloMes[1]= "Febrero" 
+  arregloMes[2]= "Marzo" 
+  arregloMes[3]= "Abril" 
+  arregloMes[4]= "Mayo" 
+  arregloMes[5]= "Junio" 
+  arregloMes[6]= "Julio" 
+  arregloMes[7]= "Agosto“
+  arregloMes[8]= "Septiembre" 
+  arregloMes[9]= "Octubre“
+  arregloMes[10]= "Noviembre" 
+  arregloMes[11]= "Diciembre" 
+
+  Escribir "Ingrese el nro de mes" 
+  leer nroMes 
+  indice = nroMes – 1
+  Escribir "El mes es " arregloMes[indice] 
+FinAlgoritmo 
+
+
+---------------------------------------------------------------------
+Construya un algoritmo que tenga un arreglo de números y se los muestre al usuario
+- El arreglo debe ser llamado num 
+- El arreglo num debe almacenarlos siguientes datos: 20, 14, 8, 0, 5, 19 y 24.
+- Mostrar los valores resultantes del arreglo
+
+Algoritmo MuestraArray
+  Definir num Como Entero
+  Dimension num[7]
+  Definir indice Como Entero
+  
+  num[0] = 20
+  num[1] = 14
+  num[2] = 8
+  num[3] = 0
+  num[4] = 5
+  num[5] = 19
+  num[6] = 24
+  
+  indice = 0
+  Mientras indice < 7 hacer
+    Escribir num[indice]
+    indice = indice + 1
+  FinMientras
+  
+FinAlgoritmo
+
+---------------------------------------------------------------------
