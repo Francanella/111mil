@@ -27,4 +27,3 @@ SubAlgoritmo resultado = cantidadDeDivisores(num)
 		FinSi
 	FinPara
 FinSubAlgoritmo
-	
