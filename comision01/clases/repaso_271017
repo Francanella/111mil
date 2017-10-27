@@ -82,6 +82,9 @@ Algoritmo MuestraArray
     indice = indice + 1
   FinMientras
   
+  // Para indice = 0 hasta 6 hacer
+  //     Escribir num[indice]
+  // FinPara
 FinAlgoritmo
 
 ---------------------------------------------------------------------
