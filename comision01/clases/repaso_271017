@@ -93,16 +93,32 @@ Algoritmo NroArregloUsr
   Dimension nroDeseadoArreglo[5] 
   Definir nro Como Entero 
   Definir indice Como Entero
-
-  indice = 0 
+ 
   Para indice = 0 hasta 4 Con Paso 1 Hacer 
-    Escribir "Indique el numero que desea incorporar en la posicion " indice 
+    Escribir "Indique el numero que desea incorporar en la posicion" indice 
     Leer nro nroDeseadoArreglo[indice] = nro 
   FinPara 
 
   Para indice = 0 hasta 4 Con Paso 1 Hacer 
     Escribir "El numero en la posicion " indice " es “ nroDeseadoArreglo[indice] 
   FinPara 
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Dado un arreglo de dimensión 5, se cargan valores en cada una de sus posiciones y, a continuación, se muestra el arreglo completo
+
+Algoritmo NumerosDeseados
+  Definir num Como Entero
+  Dimension num[5]
+  Definir i Como Entero
+  
+  para i = 0 hasta 5 Hacer
+    Leer num[i]
+  FinPara
+  
+  para i = 0 hasta 5 Hacer
+    Escribir num[i]
+  FinPara
 FinAlgoritmo
 
 ---------------------------------------------------------------------
