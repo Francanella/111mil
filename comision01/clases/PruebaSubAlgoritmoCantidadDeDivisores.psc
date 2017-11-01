@@ -22,7 +22,7 @@ SubAlgoritmo resultado = cantidadDeDivisores(num)
 	
 	resultado = 0
 	para i = 1 hasta num hacer
-		si num mod i = 0 entonces
+		si esMultiplo(num, i) entonces
 			resultado = resultado + 1
 		FinSi
 	FinPara

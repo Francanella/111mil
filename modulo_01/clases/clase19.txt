@@ -1,0 +1,132 @@
+---------------------------------------------------------------------
+Clase 19
+Fecha:  lunes 30 de octubre
+---------------------------------------------------------------------
+          Programación
+---------------------------------------------------------------------
+Repaso de la presentación de la clase 2
+
+Estructuras repetitivas: Introducción
+
+---------------------------------------------------------------------
+Algoritmo Repetitivas01Hola
+  Escribir "Hola"
+  Escribir "Hola"
+  Escribir "Hola"
+  Escribir "Hola"
+  Escribir "Hola"
+  
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Repetitivas02Serie
+  Escribir 1
+  Escribir 2
+  Escribir 3
+  Escribir 4
+  Escribir 5
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Repetitivas03Mientras
+  Definir contador Como Entero
+  
+  contador = 1
+  
+  Mientras contador <= 5 Hacer
+    Escribir "Hola"
+    contador = contador + 1
+  FinMientras
+  
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Repetitivas03Mientras
+  Definir contador Como Entero
+  Definir cantidadDeHolas Como Entero
+  
+  Escribir Sin Saltar "Cuantos holas?: "
+  Leer cantidadDeHolas
+  
+  contador = 1
+  
+  Mientras contador <= cantidadDeHolas Hacer
+    Escribir "Hola"
+    contador = contador + 1
+  FinMientras
+  
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Repetitivas04Ascendente
+  Definir contador Como Entero
+  Definir valorFinal Como Entero
+  
+  valorFinal = 5
+  contador = 1
+  
+  Mientras contador < valorFinal Hacer
+    Escribir contador
+    contador = contador + 1
+  FinMientras
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Repetitivas04Descendente
+  Definir contador Como Entero
+  Definir valorFinal Como Entero
+  
+  valorFinal = 0
+  contador = 5
+  
+  Mientras contador > valorFinal Hacer
+    Escribir contador
+    contador = contador - 1
+  FinMientras
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Repetitivas06Entrada
+  Definir entrada Como Entero
+  Escribir 'Ingrese un número (0 para salir)'
+  Leer entrada
+  Mientras entrada<>0 Hacer
+    Leer entrada
+  FinMientras
+  Escribir 'Fin del programa (ha ingresado un 0)'
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Repetitivas07Rango
+  Definir numero Como Entero
+  
+  Escribir "Ingrese un número entre 1 y 10 (ambos inclusive)"
+  Leer numero
+  
+  Mientras (numero < 1) o (numero > 10) Hacer
+    Leer numero
+  FinMientras
+  
+  Escribir "El número ingresado fue: ", numero
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Repetitivas08AdivinarNumero
+  Definir numeroDesconocido Como Entero
+  Definir numero Como Entero
+  Definir contador Como Entero
+  
+  numeroDesconocido = Azar(10)
+  
+  contador = 0
+  Leer numero
+  Mientras numero <> numeroDesconocido Hacer
+    contador = contador + 1
+    Leer numero
+  FinMientras
+  
+  Escribir "Acertó en ", contador, " intentos!"
+    
+FinAlgoritmo
+
+---------------------------------------------------------------------

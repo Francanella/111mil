@@ -1,0 +1,173 @@
+---------------------------------------------------------------------
+Clase 18
+Fecha:  sábado 28 de octubre
+---------------------------------------------------------------------
+          Programación
+---------------------------------------------------------------------
+Estructuras anidadas
+El menor y el mayor de tres números distintos
+
+Algoritmo EstructuraSiAnidada
+  Definir a,b,c Como Entero
+  
+  a = 50
+  b = 100
+  c = 300
+  
+  // Determinar el mayor
+  Si a > b Entonces
+    Si a > c Entonces
+      Escribir "El mayor es a"
+    SiNo
+      Escribir "El mayor es c"
+    FinSi
+  SiNo
+    Si b > c Entonces
+      Escribir "El mayor es b"
+    SiNo
+      Escribir "El mayor es c"
+    FinSi
+  FinSi
+  
+  // Determinar el menor
+  Si a < b Entonces
+    Si a < c Entonces
+      Escribir "El menor es a"
+    SiNo
+      Escribir "El menor es c"
+    FinSi
+  SiNo
+    Si b < c Entonces
+      Escribir "El menor es b"
+    SiNo
+      Escribir "El menor es c"
+    FinSi
+  FinSi
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo EstructuraSiAnidada
+  Definir a,b,c Como Entero
+  
+  a = 50
+  b = 100
+  c = 300
+  
+  // Determinar el mayor y el menor
+  Si a > b Entonces
+    // Determina el mayor
+    Si a > c Entonces
+      Escribir "El mayor es a"
+    SiNo
+      Escribir "El mayor es c"
+    FinSi
+    // Determina el menor
+    Si b < c Entonces
+      Escribir "El menor es b"
+    SiNo
+      Escribir "El menor es c"
+    FinSi
+  SiNo
+    // Determina el mayor
+    Si b > c Entonces
+      Escribir "El mayor es b"
+    SiNo
+      Escribir "El mayor es c"
+    FinSi
+    // Determinar el menor
+    Si a < c Entonces
+      Escribir "El menor es a"
+    SiNo
+      Escribir "El menor es c"
+    FinSi
+  FinSi
+  
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo EstructuraSiAnidadaB
+  Definir dia Como Entero
+  
+  dia = 2
+  
+  Si dia = 1 Entonces
+    Escribir "Lunes"
+  SiNo
+    Si dia = 2 Entonces
+      Escribir "Martes"
+    SiNo
+      Si dia = 3 Entonces
+        Escribir "Miércoles"
+      SiNo
+        Si dia = 4 Entonces
+          Escribir "Jueves"
+        SiNo
+          Si dia = 5 Entonces
+            Escribir "Viernes"
+          SiNo
+            Si dia = 6 Entonces
+              Escribir "Sábado"
+            SiNo
+              Si dia = 7 Entonces
+                Escribir "Domingo"
+              SiNo
+                Escribir "Dia no válido"
+              FinSi
+            FinSi
+          FinSi
+        FinSi
+      FinSi
+    FinSi
+  FinSi
+  
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo DiasDelMes
+  Definir mes Como Entero
+  
+  mes = 9
+  
+  Segun mes hacer
+    1,3,5,7,8,10,12:  
+      Escribir "31"
+    2:  Escribir "28"
+    4,6,9,11: 
+      Escribir "30"
+    De Otro Modo:
+      Escribir "El número no corresponde a un mes!"
+  FinSegun
+  
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo sin_titulo
+  Definir dia Como Caracter
+  
+  dia = "martes"
+  
+  Segun dia hacer
+    "lunes": Escribir 1
+    "martes": Escribir 2
+    De Otro Modo:
+      Escribir "Día no válido!"
+  FinSegun
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo ConsecutivosAscendente
+  Definir a, b, c Como Entero
+  
+  a = 98325
+  b = 98326
+  c = 98327
+  
+  Si (a + 1 = b) y (b + 1 = c) Entonces
+    Escribir "Estan en orden ascendente y son consecutivos!"
+  SiNo
+    Escribir "No son ascendentes y consecutivos!"
+  FinSi
+  
+FinAlgoritmo
+
+---------------------------------------------------------------------
