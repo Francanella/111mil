@@ -1,0 +1,196 @@
+---------------------------------------------------------------------
+Clase 20
+Fecha:  miércoles 1 de noviembre
+---------------------------------------------------------------------
+          Programación
+---------------------------------------------------------------------
+Instrucción Mientras:
+
+Mientras <condición> Hacer 
+  <instrucciones> 
+Fin Mientras 
+
+<condición> es una expresión lógica que evalúa a Verdadero o a Falso.  En el primer caso (Verdadero), se ejecuta el cuerpo del bucle (<instrucciones>).  En el segundo caso (Falso), no se ejecuta el cuerpo del bucle (<instrucciones>).
+
+Una vez terminadas las iteraciones (cuando la condición es falsa), se ejecuta la siguiente instrucción al "Fin Mientras".
+
+---------------------------------------------------------------------
+Algoritmo Mientras01
+  Definir contador Como Entero
+  
+  contador = 0
+  Mientras contador < 10 Hacer
+    Escribir contador
+    contador = contador + 1
+  FinMientras
+  
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Mientras02
+  Definir numero Como Entero
+  
+  leer numero
+  mientras numero <> 0 Hacer
+    leer numero
+  FinMientras
+  
+  Escribir "Ha ingresado un cero!"
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Mientras03
+  // Algoritmo que valida que se haya ingresado un
+  // número comprendido entre 1 y 6, ambos inclusive
+  Definir numero Como Entero
+  
+  Escribir "Ingrese un número entre 1 y 6, ambos inclusive"
+  Leer numero
+  mientras numero < 1 o numero > 6 Hacer
+    Leer numero
+  FinMientras
+  
+  Escribir "Muy bien, ha ingresado: ", numero
+  
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Mientras04
+  // El siguiente algoritmo debe mostrar los números 
+  // comprendidos entre 10 y 19, ambos inclusive
+  Definir numero Como Entero
+  
+  numero = 10
+  Mientras numero < 20 Hacer
+    Escribir numero
+    numero = numero + 1
+  FinMientras
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Mientras05
+  // El siguiente algoritmo debe mostrar los números
+  // pares comprendidos entre 1 y 50 inclusive
+  Definir num Como Entero
+  
+  num = 2
+  Mientras num <= 50 Hacer
+    Escribir num
+    num = num + 2
+  FinMientras
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Mientras06
+  // El siguiente algoritmo muestra los números comprendidos
+  // entre 50 y 40, ambos inclusive, en forma descendente
+  Definir num Como Entero
+  
+  num = 50
+  mientras num >= 40 Hacer
+    Escribir num
+    num = num - 1
+  FinMientras
+  
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Mientras07
+  // El siguiente algoritmo muestra la suma de los
+  // números del 1 al 10, ambos inclusive
+  Definir contador Como Entero
+  Definir sumador Como Entero
+  
+  sumador = 0
+  contador = 1
+  mientras contador <= 10 Hacer
+    sumador = sumador + contador
+    contador = contador + 1
+  FinMientras
+  
+  Escribir sumador
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Mientras08
+  // El siguiente algoritmo muestra la suma de los números pares
+  // inferiores a 100
+  Definir num Como Entero
+  Definir suma Como Entero
+  
+  suma = 0
+  num = 2
+  Mientras num < 100 Hacer
+    suma = suma + num
+    num = num + 2
+  FinMientras
+  
+  Escribir suma
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Mientras09
+  // El siguiente algoritmo muestra la suma y promedio
+  // de 10 números ingresados por teclado
+  Definir contador Como Entero
+  Definir num Como Entero
+  Definir suma Como Entero
+  Definir promedio Como Real
+  
+  suma = 0
+  contador = 0
+  Mientras contador < 10 Hacer
+    Escribir Sin Saltar "Ingrese un número"
+    leer num
+    
+    suma = suma + num
+    contador = contador + 1
+  FinMientras
+  
+  promedio = suma / 10
+  
+  Escribir suma
+  Escribir promedio
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Mientras10
+  // El siguiente algoritmo suma números ingresados por
+  // teclado hasta que se ingrese un número negativo, el
+  // cual no se debe sumar
+  // Al final se muestra la suma obtenida
+  // Prueba de escritorio:
+  // > 10
+  // > 15
+  // > 8
+  // > 12
+  // > -5
+  // 45
+  Definir num Como Entero
+  Definir suma Como Entero
+  
+  suma = 0
+  leer num
+  mientras num >= 0 Hacer
+    suma = suma + num
+    leer num
+  FinMientras
+  
+  Escribir suma
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo Para01
+  Definir i Como Entero
+  Definir suma Como Entero
+  
+  suma = 0
+  Para i = 1 hasta 10 Con Paso 1 Hacer
+    suma = suma + i
+  FinPara
+  
+  Escribir suma
+  
+FinAlgoritmo
+
+---------------------------------------------------------------------
