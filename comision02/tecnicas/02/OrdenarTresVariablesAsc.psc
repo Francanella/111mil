@@ -2,9 +2,9 @@ Algoritmo OrdenarTresVariablesAsc
 	Definir a, b, c Como Entero
 	Definir aux Como Entero
 	
-	a = 1
+	a = 3
 	b = 2
-	c = 3
+	c = 1
 	
 	Escribir "Variables antes de ordenar"
 	Escribir a, " - ", b, " - ", c
@@ -25,7 +25,6 @@ Algoritmo OrdenarTresVariablesAsc
 			b = aux
 		FinSi
 	FinSi
-	
 	
 	Escribir "Variables ordenadas en forma ascendente"
 	Escribir a, " - ", b, " - ", c

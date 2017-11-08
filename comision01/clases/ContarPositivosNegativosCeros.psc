@@ -20,6 +20,18 @@ Algoritmo ContarPositivosNegativosCeros
 	cantNegativos = 0
 	cantCeros = 0
 	
+	Para i=0 Hasta cantElementos-1 Hacer
+		Si arregloNumerico[i] = 0 Entonces
+			cantCeros = cantCeros + 1
+		SiNo
+			Si arregloNumerico[i] < 0 Entonces
+				cantNegativos = cantNegativos + 1
+			SiNo
+				cantPositivos = cantPositivos + 1
+			FinSi
+		FinSi
+	FinPara
+	
 	// Mostrar cuantos positivos, negativos y ceros 
 	// hay en el arreglo
 	Escribir "Hay en el arreglo: "

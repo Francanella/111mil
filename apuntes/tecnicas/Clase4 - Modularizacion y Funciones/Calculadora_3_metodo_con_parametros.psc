@@ -14,9 +14,9 @@ Algoritmo calculadora
 			resultado=numero1-numero2 
 		FinSi 
 	FinSi 
-	dibujarGuiones(30) 
+	dibujarGuiones(70) 
 	Escribir "El resultado de la operacion es: ", resultado      
-	dibujarGuiones(40) 
+	dibujarGuiones(50) 
 FinAlgoritmo		
 
 SubAlgoritmo dibujarGuiones(nroGuiones)   

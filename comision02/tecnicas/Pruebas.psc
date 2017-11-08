@@ -1,13 +1,16 @@
 Algoritmo Pruebas
 	definir numero1 Como Entero
-
-	leer numero1
 	
-	si numero1 > 50
-		Escribir numero1 + 100
-	SiNo
-		Escribir numero1
-	FinSi
+	Escribir "hola mundo"
 	
+	Esperar Tecla
+	
+	Borrar Pantalla
+	
+	Escribir "chau mundo"
+	
+	Esperar 5 segundos
+	
+	Borrar Pantalla
 	
 FinAlgoritmo

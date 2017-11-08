@@ -1,0 +1,297 @@
+---------------------------------------------------------------------
+Clase 22
+Fecha: lunes 6 de noviembre
+---------------------------------------------------------------------
+          Programación
+---------------------------------------------------------------------
+Algoritmo RepasoMientrasConVariableDeControl
+  Definir i Como Entero
+  
+  i = 0
+  Mientras i<10 Hacer
+    // Instrucciones a repetir
+    Escribir i
+    // -----------------------
+    i = i + 1
+  FinMientras
+FinAlgoritmo
+
+
+Algoritmo RepasoMientrasConEntradaDeUsuario
+  Definir clave Como Caracter
+  
+  Escribir "Ingrese un texto (o presione ENTER para salir): "
+  Leer clave
+  Mientras clave <> "" Hacer
+    Leer clave
+  FinMientras
+FinAlgoritmo
+
+
+Algoritmo RepasoPara
+  Definir i Como Entero
+  
+  // valor inicial es 0
+  // valor final es 10
+  // la actualización en cada ciclo es +2
+  Para i=0 Hasta 10 Con Paso 2 Hacer
+    Escribir i
+  FinPara
+FinAlgoritmo
+
+
+Algoritmo RepasoParaDescendente
+  Definir i Como Entero
+  
+  // i es la variable de control
+  // 10 es el valor inicial
+  // 0 es el valor final
+  // la variable de control se actualiza en -1 en cada ciclo
+  Para i=10 hasta 0 Con Paso -1 Hacer
+    Escribir i
+  FinPara
+FinAlgoritmo
+
+
+Algoritmo RepasoRepetirConContador
+  Definir i Como Entero
+  
+  i = 0
+  Repetir
+    Escribir i
+    i = i + 1
+  Hasta Que i = 10
+FinAlgoritmo
+
+
+Algoritmo RepasoRepetirConEntradaDeUsuario
+  Definir clave Como Caracter
+  
+  Escribir "Ingrese una clave (presione ENTER para salir):"
+  Repetir
+    Leer clave
+  Hasta Que clave = ""
+  
+FinAlgoritmo
+
+
+Ejercicio: escribir un algoritmo usando la instrucción MIENTRAS que, de acuerdo a una entrada del usuario, muestre tantos asterisco como esta indique (todos en la misma línea).  Confeccionar dos algoritmos similares pero usando las instrucciones PARA y REPETIR.
+
+Algoritmo Ejercicio01Mientras
+  Definir i, num Como Entero
+  
+  Escribir Sin Saltar "Ingrese un número positivo: "
+  Leer num
+  
+  i = 0
+  Mientras i < num Hacer
+    Escribir Sin Saltar "*"
+    i = i + 1
+  FinMientras
+  
+  Escribir ""
+FinAlgoritmo
+
+
+Algoritmo Ejercicio01Para
+  Definir i, num Como Entero
+  
+  Escribir Sin Saltar "Ingrese un número positivo: "
+  Leer num
+  
+  Para i=1 Hasta num Con Paso 1 Hacer
+    Escribir Sin Saltar "*"
+  FinPara
+  
+  Escribir ""
+FinAlgoritmo
+
+
+Algoritmo Ejercicio01Repetir
+  Definir i, num Como Entero
+  
+  Escribir Sin Saltar "Ingrese un número positivo: "
+  Leer num
+  
+  i = 0
+  Repetir
+    Escribir Sin Saltar "*"
+    i = i + 1
+  Hasta Que i = num
+  
+  Escribir ""
+FinAlgoritmo
+
+
+Ejercicio: Escribir un algoritmo similar al anterior pero en el que el usuario indique dos números y muestre los numeros comprendidos entre ambos inclusive en forma ascendente.  El algoritmo debe reconocer si el primer número es mayor que el segundo y, en ese caso, intercambiarlos.  Por otra parte si ambos números son iguales debe indicarlo de alguna manera.
+
+Algoritmo Ejercicio02Mientras
+  Definir i, num1, num2, aux Como Entero
+  
+  Escribir Sin Saltar "Desde que número: "
+  Leer num1
+  Escribir Sin Saltar "Hasta que número: "
+  Leer num2
+
+  Si num1 = num2 Entonces
+    Escribir "Ambos números son iguales!"
+  SiNo
+    Si num1 > num2 Entonces
+      aux = num1
+      num1 = num2
+      num2 = aux
+    FinSi
+  
+  
+    i = num1
+    Mientras i <= num2 Hacer
+      Escribir i
+      i = i + 1
+    FinMientras
+  FinSi
+
+FinAlgoritmo
+
+
+Algoritmo Ejercicio02Para
+  Definir i, num1, num2, aux Como Entero
+  
+  Escribir Sin Saltar "Desde que número: "
+  Leer num1
+  Escribir Sin Saltar "Hasta que número: "
+  Leer num2
+  
+  Si num1 = num2 Entonces
+    Escribir "Ambos números son iguales!"
+  SiNo
+    Si num1 > num2 Entonces
+      aux = num1
+      num1 = num2
+      num2 = aux
+    FinSi
+    
+    
+    Para i=num1 hasta num2 hacer
+      Escribir i
+    FinPara
+  FinSi
+  
+FinAlgoritmo
+
+
+Algoritmo Ejercicio02Repetir
+  Definir i, num1, num2, aux Como Entero
+  
+  Escribir Sin Saltar "Desde que número: "
+  Leer num1
+  Escribir Sin Saltar "Hasta que número: "
+  Leer num2
+  
+  Si num1 = num2 Entonces
+    Escribir "Ambos números son iguales!"
+  SiNo
+    Si num1 > num2 Entonces
+      aux = num1
+      num1 = num2
+      num2 = aux
+    FinSi
+    
+    
+    i = num1
+    Repetir
+      Escribir i
+      i = i + 1
+    Hasta Que i > num2
+  FinSi
+  
+FinAlgoritmo
+
+
+Ejercicio: Escribir un algoritmo que haga un recuadro de asteriscos
+de acuerdo a dos valores ingresados por teclado por el usuario
+Por ejemplo:
+  num1 = 5
+  num2 = 10
+
+    **********
+    **********
+    **********
+    **********
+    **********
+    
+
+Algoritmo Ejercicio03
+  Definir num1, num2, i,j Como Entero
+  
+  Escribir Sin Saltar "Cuantas filas:    "
+  Leer num1
+  Escribir Sin Saltar "Cuantas columnas: "
+  Leer num2
+  
+  para i=1 Hasta num1 Hacer
+    Para j=1 Hasta num2 Hacer
+      Escribir Sin Saltar "*"
+    FinPara
+    Escribir ""
+  FinPara
+  
+FinAlgoritmo
+
+
+Ejercicio: Escribir un algoritmo que haga un recuadro de asteriscos
+de acuerdo a dos valores ingresados por teclado por el usuario
+Por ejemplo:
+  num1 = 5
+  num2 = 10
+
+    **********
+    *        *
+    *        *
+    *        *
+    **********
+
+Algoritmo Ejercicio04
+  Definir num1, num2, i,j Como Entero
+  
+  Escribir Sin Saltar "Cuantas filas:    "
+  Leer num1
+  Escribir Sin Saltar "Cuantas columnas: "
+  Leer num2
+  
+  // Suponiendo num1 filas
+  //            10 columnas
+  // primera y última fila de num2 asteriscos
+  // (num1-2) filas intermedias de 1 asterisco, (num2-2) espacios y 1 asterisco
+  // **********  
+  // *        *
+  // *        *
+  // *        *
+  // **********
+  
+  // fila superior
+  para i=1 Hasta num2 Hacer
+    Escribir Sin Saltar "*"
+  FinPara
+  Escribir ""
+  
+  // filas intermedias
+  para i=1 hasta num1-2 hacer
+    Escribir sin saltar "*"
+    
+    // Espacios en blanco
+    para j=1 hasta num2-2 Hacer
+      Escribir Sin Saltar " "
+    FinPara
+    
+    Escribir Sin Saltar "*"
+    Escribir ""
+  FinPara
+  
+  // fila inferior
+  para i=1 Hasta num2 Hacer
+    Escribir Sin Saltar "*"
+  FinPara
+  Escribir ""
+  
+FinAlgoritmo
+

@@ -1,8 +1,7 @@
 Algoritmo DiaDeLaSemana
 	Definir dia Como Entero
 	
-	Escribir Sin Saltar "Ingrese el nœmero de d’a de la semana: "
-	Leer dia
+	dia = 1
 	
 	Segun dia hacer
 		1: Escribir "Lunes"
@@ -15,4 +14,5 @@ Algoritmo DiaDeLaSemana
 		De Otro Modo:
 			Escribir "El nœmero de d’a ingresado es incorrecto!"
 	FinSegun
+	
 FinAlgoritmo
