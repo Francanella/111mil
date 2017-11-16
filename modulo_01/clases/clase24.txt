@@ -1,0 +1,133 @@
+---------------------------------------------------------------------
+Clase 24
+Fecha: sábado 11 de noviembre
+---------------------------------------------------------------------
+          Programación
+---------------------------------------------------------------------
+Repaso de estructuras repetitivas (continuación)
+
+Hacer incapié en:
+  Análisis exaustivo del enunciado
+  Escritura en papel de casos de ejemplo (el programador se debe
+  poner en el lugar de la computadora) y ver los resultados
+  Si se puede, reducir el problema (por ejemplo: si hay que revisar 100 números, primero se puede probar con 10)
+
+---------------------------------------------------------------------
+Algoritmo MultiplosDe2y3
+  // números de 1 a 100
+  Definir indice como entero
+  
+  // mostrar los que son múltiplos de 2 y/o 3
+  para indice=1 Hasta 100 Con Paso 1 Hacer
+    si (indice mod 2 = 0) o (indice mod 3 = 0)  Entonces
+      Escribir indice
+    FinSi
+  FinPara
+  
+FinAlgoritmo
+
+// Prueba del 1 al 10
+// Salida:
+// 2
+// 3
+// 4
+// 6
+// 8
+// 9
+// 10
+
+---------------------------------------------------------------------
+Algoritmo ParOImpar
+  // repetir la solicitud de un número hasta que este sea mayor que cero
+  Repetir
+    leer numero
+  Hasta Que numero > 0
+  // indico si es par o impar
+  si numero mod 2 = 0 Entonces
+    Escribir "Es par"
+  SiNo
+    Escribir "Es impar"
+  FinSi
+FinAlgoritmo
+
+---------------------------------------------------------------------
+Algoritmo SumaEntreNumeros
+  
+  // leer dos números
+  leer a
+  leer b
+  
+  // si el primero es mayor que el segundo, intercambiarlos
+  si a > b entonces
+    aux = a
+    a = b
+    b = aux
+  FinSi
+  // calcular la suma de los numeros comprendidos (incluyendo los extremos)
+  suma = 0
+  para indice=a hasta b con paso 1 hacer
+    suma = suma + indice
+  FinPara
+  // mostrar la suma
+  Escribir suma
+FinAlgoritmo
+
+// Razonamiento
+// 2 y 7
+// 2+3+4+5+6+7
+
+// 3 y 8
+// 3+4+5+6+7+8
+
+// 8 y 2
+// 8+7+6+5+4+3+2
+
+// 5 y 2
+// 2+3+4+5
+
+
+---------------------------------------------------------------------
+Algoritmo TablaDeMultiplicar
+  // Ingresar el número del cual se quiere ver la tabla
+  leer tablaNum
+  // Ingresar hasta que número se quiere multiplicar
+  leer hastaNum
+  // Mostrar la tabla
+  
+  para indice = 1 hasta hastaNum Con Paso 1 Hacer
+    escribir tablaNum, " x ", indice, " = ", tablaNum * indice
+  FinPara
+FinAlgoritmo
+
+// Prueba
+// num1: 8
+// num2: 5
+// 8 x 1 = 8
+// 8 x 2 = 16
+// 8 x 3 = 24
+// 8 x 4 = 32
+// 8 x 5 = 40
+
+---------------------------------------------------------------------
+Algoritmo NumeroMayorDistintoDeCero
+  Definir num, mayor Como Entero
+  
+  // ingresar numeros hasta que se ingrese un cero verificando cual es el mayor
+  leer num
+  mayor = num
+  
+  mientras num <> 0 hacer
+    leer num
+    si (num <> 0) y (num > mayor) Entonces
+      mayor = num
+    FinSi
+  FinMientras
+  
+  // mostrar el mayor
+  si mayor = 0 Entonces
+    Escribir "El mayor debe ser un número diferente de 0!"
+  SiNo
+    Escribir mayor
+  FinSi
+FinAlgoritmo
+

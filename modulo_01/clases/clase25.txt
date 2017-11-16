@@ -1,0 +1,116 @@
+---------------------------------------------------------------------
+Clase 25
+Fecha: lunes 13 de noviembre
+---------------------------------------------------------------------
+          Programación
+---------------------------------------------------------------------
+Se resuelven los ejercicios de la clase 3 grupalmente, en clase, poniendo énfasis en las estrategias a seguir para la resolución de los mismos.
+
+1
+-3
+8
+10
+25
+-4
+-1
+8
+0
+Cantidad: 8
+Positivos: 5
+Porcentaje: 62.5
+
+-3
+-2
+-1
+8
+10
+51
+-4
+0
+Cantidad: 7
+Positivos: 3
+Porcentaje: 42.85
+
+-1
+2
+0
+Cantidad: 2
+Positivos: 1
+Porcentaje: 50
+
+-2
+0
+Cantidad: 1
+Positivos: 0
+Porcentaje: 0
+
+0
+Cantidad: 0
+Positivos: 0
+Porcentaje: 0
+
+1
+0
+Cantidad: 1
+Positivos: 1
+Porcentaje: 100
+
+---------------------------------------------------------------------
+Ejercicio de la diapositiva nro: 51
+- Diseñar un algoritmo que lea números enteros hasta teclear 0
+- Determinar y mostrar el máximo, el mínimo y la media de todos los numberos ingresados
+- Pensar cuidadosamente como debemos inicializar las variables
+
+-10, 8, 4, 20, -6, 0
+Max: 20
+Min: -10
+Suma: 16
+Contador: 5
+Media: 3.2
+
+-10, -2, 0
+Max: -2
+Min: -10
+Suma: -12
+Contador: 2
+Media: -6
+
+20, 10, 0
+Max: 20
+Min: 10
+Suma: 30
+Contador: 2
+Media: 15
+
+10, 0
+Max: 10
+Min: 10
+Suma: 10
+Contador: 1
+Media: 10
+
+-5, 0
+Max: -5
+Min: -5
+Suma: -5
+Contador: 1
+Media: -5
+
+---------------------------------------------------------------------
+Calificaciones
+
+Calcular las calificaciones de un grupo de alumnos, donde la nota final de cada alumno se calcula según el siguiente criterio: 
+la parte práctica vale el 10%
+la parte de problemas vale el 50%
+la parte teórica el 40%
+
+Se debe ingresar el nombre del alumno y sus tres notas, se escribirá el resultado y se volverá a pedir los datos del siguiente alumno hasta que el nombre sea una cadena vacía
+
+Las notas deben estar entre 0 y 10 (si no lo están, no imprimirá las notas, mostrara un mensaje de error y continuará con otro alumno
+
+Pepe, 8, 8, 8
+8 + 40 + 32 --> 80 --> 8
+
+Pepito, 5, 7, 9
+5 + 35 + 36 --> 76 --> 7.6
+
