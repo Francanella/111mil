@@ -56,7 +56,7 @@ SubAlgoritmo resultado = promedio(nombre, vectorAlumnos, vectorNota1, vectorNota
 	si indice = cantElementos Entonces
 		resultado = -1
 	SiNo
-		suma = vectorNota1 + vectorNota2 + vectorNota3
+		suma = vectorNota1[indice] + vectorNota2[indice] + vectorNota3[indice]
 		resultado = suma / 3
 	FinSi
 FinSubAlgoritmo
