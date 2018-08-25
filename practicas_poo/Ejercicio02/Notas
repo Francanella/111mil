@@ -1,3 +1,6 @@
 Ejercicio 02
 Se quiere crear una clase para crear objetos de tipo Libro.
+Los libros tienen un título, un tema y cantidad de páginas.
+- Crear las variables para la clase Libro
+- Crear los métodos de acceso
 
