@@ -37,4 +37,12 @@ public class Persona {
     public void setSexo(char s){
         this.sexo = s;
     }
+    
+    public boolean isMayor(){
+        if(this.edad >= 18){
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
