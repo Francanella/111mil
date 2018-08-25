@@ -5,4 +5,5 @@ Se debe agregar métodos "de acceso" para poder leer y modificar los datos de la
 Se necesita un constructor básico para inicializar los datos "en blanco".
 También se necesitará otro constructor para inicializar los objetos con su respectiva edad, nombre, apellido y sexo.
 Crear un método isMayor que retorne un boolean indicando si tiene 18 o mas años de edad.
+Si la edad es mayor o igual a 18 debe retornar true, en caso contrario debe retornar false.
 
