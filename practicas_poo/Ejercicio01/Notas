@@ -1,3 +1,5 @@
 Ejercicio 1
 Necesitamos una clase para modelar objetos de tipo Persona.  Debemos registrar la edad, el nombre, apellido
 y sexo
+Se debe agregar métodos "de acceso" para poder leer y modificar los datos de las instancias.
+
