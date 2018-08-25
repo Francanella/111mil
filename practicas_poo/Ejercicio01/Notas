@@ -3,4 +3,5 @@ Necesitamos una clase para modelar objetos de tipo Persona.  Debemos registrar l
 y sexo
 Se debe agregar métodos "de acceso" para poder leer y modificar los datos de las instancias.
 Se necesita un constructor básico para inicializar los datos "en blanco".
+También se necesitará otro constructor para inicializar los objetos con su respectiva edad, nombre, apellido y sexo.
 
