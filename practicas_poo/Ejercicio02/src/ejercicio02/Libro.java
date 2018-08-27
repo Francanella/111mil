@@ -20,4 +20,16 @@ public class Libro {
     public void setTitulo(String t){
         this.titulo = t;
     }
+    public String getTema(){
+        return this.tema;
+    }
+    public void setTema(String t){
+        this.tema = t;
+    }
+    public int getCantidadDePaginas(){
+        return this.cantidadDePaginas;
+    }
+    public void setCantidadDePaginas(int c){
+        this.cantidadDePaginas = c;
+    }
 }
