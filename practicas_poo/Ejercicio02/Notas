@@ -5,3 +5,13 @@ Los libros tienen un título, un tema y cantidad de páginas.
 - Crear los métodos de acceso
 - Vaya creando/modificando un diagrama UML de clases que refleje el código
 
+Crear, ahora, una clase Autor, para poder generar instancias de objetos de ese tipo, teniendo en cuenta que se quiere registrar el nombre completo del autor y su nacionalidad.
+- Crear las variables necesarias 
+- Crear los métodos de acceso
+- Modifique el diagrama UML
+
+Modificar la clase Libro para que haga referencia a un Autor.
+- Agregar la variable de instancia correspondiente
+- Agregar los métodos de acceso
+- Actualizar el diagrama de clases UML mostrando la asociación entre las clases Libro y Autor y la multiplicidad correspondiente.
+
