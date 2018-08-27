@@ -13,6 +13,7 @@ public class Libro {
     private String titulo;
     private String tema;
     private int cantidadDePaginas;
+    private Autor autor;
     
     public String getTitulo(){
         return this.titulo;
@@ -31,5 +32,11 @@ public class Libro {
     }
     public void setCantidadDePaginas(int c){
         this.cantidadDePaginas = c;
+    }
+    public Autor getAutor(){
+        return this.autor;
+    }
+    public void setAutor(Autor a){
+        this.autor = a;
     }
 }
