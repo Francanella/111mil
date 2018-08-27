@@ -5,6 +5,9 @@
  */
 package ejercicio02;
 
+import java.util.List;
+import java.util.ArrayList;
+
 /**
  *
  * @author claudioaltamiranda
@@ -13,7 +16,7 @@ public class Libro {
     private String titulo;
     private String tema;
     private int cantidadDePaginas;
-    private Autor autor;
+    private List<Autor> autores;
     
     public String getTitulo(){
         return this.titulo;
@@ -33,10 +36,10 @@ public class Libro {
     public void setCantidadDePaginas(int c){
         this.cantidadDePaginas = c;
     }
-    public Autor getAutor(){
-        return this.autor;
+    public Autor getAutor(int i){
+        return this.autores.get(i);
     }
-    public void setAutor(Autor a){
-        this.autor = a;
+    public void addAutor(Autor a){
+        this.autores.add(a);
     }
 }
