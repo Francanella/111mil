@@ -15,3 +15,4 @@ Modificar la clase Libro para que haga referencia a un Autor.
 - Agregar los métodos de acceso
 - Actualizar el diagrama de clases UML mostrando la asociación entre las clases Libro y Autor y la multiplicidad correspondiente.
 
+Modificar el código de la clase Libro para que un libro pueda tener más de un autor
