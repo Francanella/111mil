@@ -14,4 +14,10 @@ public class Libro {
     private String tema;
     private int cantidadDePaginas;
     
+    public String getTitulo(){
+        return this.titulo;
+    }
+    public void setTitulo(String t){
+        this.titulo = t;
+    }
 }
