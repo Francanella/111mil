@@ -1,0 +1,11 @@
+Ejercicio 3
+Se desea crear un juego de combate en el cual existen personajes
+estos tienen un nombre, un valor de fuerza y otro que representa su "salud".
+Crear el UML correspondiente y el código con los métodos de acceso y un
+constructor.
+- Diagrama UML de clases
+- Clase Personaje
+- Variables
+- Métodos de acceso
+- Constructor
+
