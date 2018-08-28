@@ -9,3 +9,5 @@ constructor.
 - Métodos de acceso
 - Constructor
 
+Agregar un método que permita a un personaje restarle "salud" a otro personaje
+
