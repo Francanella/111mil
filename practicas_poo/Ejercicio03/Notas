@@ -7,7 +7,7 @@ constructor.
 - Clase Personaje
 - Variables
 - Métodos de acceso
-- Constructor
+- Constructores: uno con valores por defecto y otro reciba valores a través de parámetros.
 
 Agregar un método que permita a un personaje restarle "salud" a otro personaje
 
