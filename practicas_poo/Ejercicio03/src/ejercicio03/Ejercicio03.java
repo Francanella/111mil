@@ -19,8 +19,8 @@ public class Ejercicio03 {
     public static void main(String[] args) {
         // TODO code application logic here
         Random rnd = new Random();
-        Personaje a = new Personaje("Thor", rnd.nextInt(10), rnd.nextInt(5));
-        Personaje b = new Personaje("Odin", rnd.nextInt(10), rnd.nextInt(5));
+        Personaje a = new Personaje("Thor", rnd.nextInt(10)+1, rnd.nextInt(5));
+        Personaje b = new Personaje("Odin", rnd.nextInt(10)+1, rnd.nextInt(5));
         
         System.out.println("Personaje 1");
         System.out.println(a.getNombre()+", fuerza:"+
