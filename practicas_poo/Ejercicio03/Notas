@@ -10,4 +10,6 @@ constructor.
 - Constructores: uno con valores por defecto y otro reciba valores a través de parámetros.
 
 Agregar un método que permita a un personaje restarle "salud" a otro personaje
+En el ataque el valor de fuerza empleado por cada personaje (dos) es un valor randómico entre cero y el valor de fuerza del mismo.  El personaje que emplee mayor fuerza le quita uno de salud al otro.  De esta manera podría darse que un personaje con menos fuerza le gane a uno que tiene más y que, también, la salud tenga un peso importante en la batalla (porque permite seguir luchando).
+
 
