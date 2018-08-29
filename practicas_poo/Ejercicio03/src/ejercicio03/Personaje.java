@@ -5,6 +5,8 @@
  */
 package ejercicio03;
 
+import java.util.Random;
+
 /**
  *
  * @author claudioaltamiranda
@@ -13,6 +15,7 @@ public class Personaje {
     private String nombre;
     private int fuerza;
     private int salud;
+    private Random rnd = new Random();
     
     public Personaje(){
         this.nombre = "anónimo";
@@ -41,5 +44,23 @@ public class Personaje {
     }
     public void setSalud(int s){
         this.salud = s;
+    }
+    public void ataque(Personaje rival){
+        int fuerza1, fuerza2;
+        fuerza1 = rnd.nextInt(this.getFuerza());
+        fuerza2 = rnd.nextInt(rival.getFuerza());
+        
+        if(fuerza1 > fuerza2){
+            // gana this
+            rival.setSalud(rival.getSalud() - 1);
+            System.out.println("Gana " + this.getNombre());
+        }else if(fuerza2 > fuerza1){
+            // gana rival
+            this.setSalud(this.getSalud() - 1);
+            System.out.println("Gana " + rival.getNombre());
+        }else{
+            // empate
+            System.out.println("Empate de fuerzas");
+        }
     }
 }
