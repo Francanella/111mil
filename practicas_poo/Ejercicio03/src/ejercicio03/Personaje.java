@@ -14,6 +14,16 @@ public class Personaje {
     private int fuerza;
     private int salud;
     
+    public Personaje(){
+        this.nombre = "anónimo";
+        this.fuerza = 0;
+        this.salud = 0;
+    }
+    public Personaje(String n, int f, int s){
+        this.nombre = n;
+        this.fuerza = f;
+        this.salud = s;
+    }
     public String getNombre(){
         return this.nombre;
     }
