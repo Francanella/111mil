@@ -47,8 +47,8 @@ public class Personaje {
     }
     public void ataque(Personaje rival){
         int fuerza1, fuerza2;
-        fuerza1 = rnd.nextInt(this.getFuerza());
-        fuerza2 = rnd.nextInt(rival.getFuerza());
+        fuerza1 = rnd.nextInt(this.getFuerza()+1);
+        fuerza2 = rnd.nextInt(rival.getFuerza()+1);
         
         if(fuerza1 > fuerza2){
             // gana this

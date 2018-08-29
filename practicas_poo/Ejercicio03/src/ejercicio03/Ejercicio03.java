@@ -27,8 +27,20 @@ public class Ejercicio03 {
                 a.getFuerza()+", salud:"+a.getSalud());
         
         System.out.println("Personaje 2");
-        System.out.println(a.getNombre()+", fuerza:"+
-                a.getFuerza()+", salud:"+a.getSalud());
+        System.out.println(b.getNombre()+", fuerza:"+
+                b.getFuerza()+", salud:"+b.getSalud());
+        
+        do{
+            a.ataque(b);
+        }while(a.getSalud() >= 0 & b.getSalud() >= 0);
+        
+        if(a.getSalud() < 0){
+            System.out.println(b.getNombre() + " mata a " + a.getNombre());
+        }else if(b.getSalud() < 0){
+            System.out.println(a.getNombre() + " mata a " + b.getNombre());
+        }else{
+            System.out.println("Empataron!!!");
+        }
     }
     
 }
