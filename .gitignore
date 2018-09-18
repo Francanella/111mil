@@ -1,3 +1,7 @@
 # --- Archivos a ignorar ---
 *.class
 *.swp
+/practicas_poo/Ejercicio02/nbproject/private/
+/practicas_poo/Ejercicio03/nbproject/private/
+/practicas_poo/Ejercicio03/build/
+/practicas_poo/Ejercicio04/nbproject/private/
