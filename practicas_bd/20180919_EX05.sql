@@ -16,4 +16,6 @@ CREATE TABLE paqueteProyectores(
 CREATE TABLE gestorDePaquetesDeProyectores(
   idGestorPaquetes int primary key,
   nombreEmpresa varchar(45));
-  
+
+SHOW TABLES;  
+DESCRIBE gestorDePaquetesDeProyectores;
