@@ -29,4 +29,11 @@ public class Cliente {
     Ejercicio 3: respuesta correcta d
     porque se trata de un algoritmo de ordenación de acuerdo a la
     cantidad de órdenes de cada Cliente.
+
+
+    Ejercicio 5:
+    SELECT orden.idOrden 
+        FROM orden, cliente
+        WHERE orden.cliente_dni = cliente.dni
+            AND cliente.apellido = 'Rodriguez';
 */
