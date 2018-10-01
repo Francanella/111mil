@@ -26,4 +26,12 @@ public class Orden {
     public void setEnvio(Date envio){
         this.envio = envio;
     }
+    
+    public float calcularTotalOrden(){
+        float precioTotal = 0.0f;
+        for(DetalleOrden i: this.items){
+            precioTotal += i.getPrecioUnitario();
+        }
+        return precioTotal;
+    }
 }
