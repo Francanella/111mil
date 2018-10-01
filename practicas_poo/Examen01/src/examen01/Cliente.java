@@ -24,3 +24,9 @@ public class Cliente {
         this.ordenes.add(o);
     }
 }
+
+/* 
+    Ejercicio 3: respuesta correcta d
+    porque se trata de un algoritmo de ordenación de acuerdo a la
+    cantidad de órdenes de cada Cliente.
+*/

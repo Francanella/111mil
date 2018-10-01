@@ -27,6 +27,7 @@ public class Orden {
         this.envio = envio;
     }
     
+    // Ejercicio 2
     public float calcularTotalOrden(){
         float precioTotal = 0.0f;
         for(DetalleOrden i: this.items){
