@@ -31,5 +31,6 @@ public class Colegio {
                 }
             }
         }
+        return cantidad;
     }
 }
