@@ -31,5 +31,7 @@ public class Bicicleta {
     public String getNroDeSerie(){
         return this.nroDeSerie;
     }
-    
+    public boolean equals(Bicicleta otra){
+        return this.getNroDeSerie().equals(otra.getNroDeSerie());
+    }
 }
