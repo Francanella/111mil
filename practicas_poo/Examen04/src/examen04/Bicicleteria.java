@@ -29,4 +29,12 @@ public class Bicicleteria {
             this.cantidadDeVentas++;
         }
     }
+    public Bicicleta buscarBicicleta(String nroDeSerie){
+        for(Bicicleta b: this.bicicletas){
+            if(b.getNroDeSerie().equals(nroDeSerie)){
+                return b;
+            }
+        }
+        return null;
+    }
 }
